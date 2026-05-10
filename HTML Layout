@@ -1,0 +1,1548 @@
+<!-- Stonetop character sheet for Roll20. Based on Stonetop by Jeremy Strandberg, CC BY-SA 4.0. Sheet customizations by Morcoire. -->
+
+<div class="stonetop-main">
+  <input type="hidden" class="stonetop-tabstoggle" name="attr_sheetTab" value="character" />
+  <div class="stonetop-tabs" aria-hidden="true">
+    <button type="action" name="act_character" class="character">Character</button>
+    <button type="action" name="act_inventory" class="inventory">Inventory</button>
+    <button type="action" name="act_followers" class="followers">Followers</button>
+  </div>
+
+  <div class="stonetop-character-section">
+    <h1 class="stonetop-sr-only">Character</h1>
+
+    <input type="hidden" name="attr_activeplaybook" value="none">
+
+    <div class="stonetop-header-row">
+      <label class="stonetop-character-name heading-field">
+        <span>Name:</span>
+        <input type="text" name="attr_character_name" />
+      </label>
+      <div class="stonetop-playbook-title-display">
+        <span class="playbook-display-label heavy-label">The Heavy</span>
+        <span class="playbook-display-label fox-label">The Fox</span>
+        <span class="playbook-display-label wbh-label">The Would-Be Hero</span>
+        <span class="playbook-display-label blessed-label">The Blessed</span>
+        <span class="playbook-display-label judge-label">The Judge</span>
+        <span class="playbook-display-label lightbearer-label">The Lightbearer</span>
+        <span class="playbook-display-label marshal-label">The Marshal</span>
+        <span class="playbook-display-label ranger-label">The Ranger</span>
+        <span class="playbook-display-label seeker-label">The Seeker</span>
+      </div>
+    </div>
+
+    <div class="stonetop-row">
+      <div class="stonetop-column-thirds">
+        <label class="heading-field">
+          <span>Player Name:</span>
+          <input type="text" name="attr_player_name" />
+        </label>
+      </div>
+      <div class="stonetop-column-thirds">
+        <label class="heading-field">
+          <span>Playbook:</span>
+          <select name="attr_class">
+            <option disabled selected>Select One</option>
+            <option value="blessed">The Blessed</option>
+            <option value="fox">The Fox</option>
+            <option value="heavy">The Heavy</option>
+            <option value="judge">The Judge</option>
+            <option value="lightbearer">The Lightbearer</option>
+            <option value="marshal">The Marshal</option>
+            <option value="ranger">The Ranger</option>
+            <option value="seeker">The Seeker</option>
+            <option value="would-be-hero">The Would-Be Hero</option>
+          </select>
+        </label>
+      </div>
+      <div class="stonetop-column-thirds">
+        <div class="stonetop-row stonetop-xp">
+          <label>
+            <span>XP:</span>
+            <input type="number" name="attr_xp" value="0" />
+          </label>
+          <label class="level">
+            <span>Level:</span>
+            <input type="number" name="attr_level" value="1" />
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="stonetop-row">
+      <div class="stonetop-column-thirds">
+        <label class="heading-field">
+          Background:
+          <input type="text" name="attr_background">
+        </label>
+      </div>
+      <div class="stonetop-column-thirds">
+        <label class="heading-field">
+          Instinct:
+          <input type="text" name="attr_drive">
+        </label>
+      </div>
+    </div>
+
+    <div class="stonetop-row">
+      <h3>Stats</h3>
+    </div>
+    
+    <div class="stonetop-row">
+      <div class="stonetop-stat">
+        <div class="octagon bg"></div>
+        <div class="octagon"></div>
+        <div class="stonetop-stat-content">
+          <label for="strength">Strength</label>
+          <input id="strength" type="number" name="attr_str" value="0" />
+          <button type="roll" name="roll_STRCheck" value="/em uses Strength, and rolls [[?{Roll Type | Standard, 2d6 + @{str} | Advantage, 3d6d1 + @{str} | Disadvantage, 3d6dh1 + @{str}}]]"></button>
+        </div>
+      </div>
+      <div class="stonetop-stat">
+        <div class="octagon bg"></div>
+        <div class="octagon"></div>
+        <div class="stonetop-stat-content">
+          <label for="dexterity">Dexterity</label>
+          <input id="dexterity" type="number" name="attr_dex" value="0" />
+          <button type="roll" name="roll_DEXCheck" value="/em uses Dexterity, and rolls [[?{Roll Type | Standard, 2d6 + @{dex} | Advantage, 3d6d1 + @{dex} | Disadvantage, 3d6dh1 + @{dex}}]]"></button>
+        </div>
+      </div>
+      <div class="stonetop-stat">
+        <div class="octagon bg"></div>
+        <div class="octagon"></div>
+        <div class="stonetop-stat-content">
+          <label for="intelligence">Intelligence</label>
+          <input id="intelligence" type="number" name="attr_int" value="0" />
+          <button type="roll" name="roll_INTCheck" value="/em uses Intelligence, and rolls [[?{Roll Type | Standard, 2d6 + @{int} | Advantage, 3d6d1 + @{int} | Disadvantage, 3d6dh1 + @{int}}]]"></button>
+        </div>
+      </div>
+      <div class="stonetop-stat">
+        <div class="octagon bg"></div>
+        <div class="octagon"></div>
+        <div class="stonetop-stat-content">
+          <label for="wisdom">Wisdom</label>
+          <input id="wisdom" type="number" name="attr_wis" value="0" />
+          <button type="roll" name="roll_WISCheck" value="/em uses Wisdom, and rolls [[?{Roll Type | Standard, 2d6 + @{wis} | Advantage, 3d6d1 + @{wis} | Disadvantage, 3d6dh1 + @{wis}}]]"></button>
+        </div>
+      </div>
+      <div class="stonetop-stat">
+        <div class="octagon bg"></div>
+        <div class="octagon"></div>
+        <div class="stonetop-stat-content">
+          <label for="constitution">Constitution</label>
+          <input id="constitution" type="number" name="attr_con" value="0" />
+          <button type="roll" name="roll_CONCheck" value="/em uses Constitution, and rolls [[?{Roll Type | Standard, 2d6 + @{con} | Advantage, 3d6d1 + @{con} | Disadvantage, 3d6dh1 + @{con}}]]"></button>
+        </div>
+      </div>
+      <div class="stonetop-stat">
+        <div class="octagon bg"></div>
+        <div class="octagon"></div>
+        <div class="stonetop-stat-content">
+          <label for="charisma">Charisma</label>
+          <input id="charisma" type="number" name="attr_cha" value="0" />
+          <button type="roll" name="roll_CHACheck" value="/em uses Charisma, and rolls [[?{Roll Type | Standard, 2d6 + @{cha} | Advantage, 3d6d1 + @{cha} | Disadvantage, 3d6dh1 + @{cha}}]]"></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Debilities unchanged -->
+    <div class="stonetop-row">
+      <div class="stonetop-column-thirds">
+        <div class="stonetop-debility">
+          <div class="stonetop-grouping-image"></div>
+          <label>
+            <div class="stonetop-checkbox-wrapper">
+              <input type="checkbox" name="attr_weakened" value="yes">
+            </div>
+            <span>Weakened</span>
+          </label>
+          <span class="description">(take Disadvantage)</span>
+        </div>
+      </div>
+      <div class="stonetop-column-thirds">
+        <div class="stonetop-debility">
+          <div class="stonetop-grouping-image"></div>
+          <label>
+            <div class="stonetop-checkbox-wrapper">
+              <input type="checkbox" name="attr_dazed" value="yes">
+            </div>
+            <span>Dazed</span>
+          </label>
+          <span class="description">(take Disadvantage)</span>
+        </div>
+      </div>
+      <div class="stonetop-column-thirds">
+        <div class="stonetop-debility">
+          <div class="stonetop-grouping-image"></div>
+          <label>
+            <div class="stonetop-checkbox-wrapper">
+              <input type="checkbox" name="attr_miserable" value="yes">
+            </div>
+            <span>Miserable</span>
+          </label>
+          <span class="description">(take Disadvantage)</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHANGE 3: Compact stats row — replaces tall HP block, Notes removed -->
+    <div class="stonetop-compact-stats">
+      <div class="stonetop-hp-compact">
+        <div class="stonetop-current-hp">
+          <div class="octagon bg"></div>
+          <div class="octagon"></div>
+          <div class="stonetop-hp-content">
+            <span name="attr_hp"></span>
+          </div>
+        </div>
+        <div class="stonetop-hp-fields">
+          <label class="compact-field">
+            <span>Max HP:</span>
+            <input type="number" name="attr_hpmax" value="0" />
+          </label>
+          <label class="compact-field">
+            <span>Damage Taken:</span>
+            <input type="number" name="attr_damagetaken" value="0" />
+          </label>
+        </div>
+      </div>
+      <div class="stonetop-damage-compact">
+        <span class="compact-label-top">Do Damage</span>
+        <button type="roll" name="roll_damage" value="/em causes damage, and rolls [[@{damagedie}]]"></button>
+        <select name="attr_damagedie" class="stonetop-damagedie">
+          <option value="0">No Damage</option>
+          <option value="d4">D4</option>
+          <option value="d6">D6</option>
+          <option value="d8">D8</option>
+          <option value="d10">D10</option>
+          <option value="d12">D12</option>
+        </select>
+      </div>
+      <div class="stonetop-armor-compact">
+        <span class="compact-label-top">Armor</span>
+        <input type="number" name="attr_armor" value="0" />
+      </div>
+    </div>
+
+
+
+    <!-- ========== HEAVY PLAYBOOK ========== -->
+    <div class="stonetop-playbook-section heavy-section">
+      <h2>The Heavy</h2>
+      <p class="playbook-reminder"><strong>Damage:</strong> d10 &nbsp;|&nbsp; <strong>HP Max:</strong> 20</p>
+      <p class="playbook-note">You start with <strong>Dangerous</strong> and <strong>Hard to Kill</strong>, plus either <strong>Armored</strong> or <strong>Uncanny Reflexes</strong>.</p>
+      <h3>Moves</h3>
+      <div class="stonetop-moves-list">
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_heavy_armored"> <strong>Armored</strong> (Starting choice)</label>
+          <p>When you carry a shield, mark only ✔ (instead of ✔✔). Also, ignore the <em>cumbersome</em> tag on any armor you wear. If taken at start of play, add an iron hauberk, bronze cuirass, or scale coat to inventory (all 2 armor, warm, cumbersome).</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_heavy_battlejoy"> <strong>Battle Joy</strong></label>
+          <p>When you <em>spill blood and lose yourself in battle</em>, ignore fear, pain, mind-control, and debility effects while fighting. When action stops, roll +CON: 10+, regain 1d4 HP; 7-9, winded but fine; 6-, mark a debility but don't mark XP.</p>
+          <button type="roll" name="roll_heavy_battlejoy" value="/em uses Battle Joy, rolling +CON [[2d6+@{con}]]"></button>
+        </div>
+        <div class="stonetop-move stonetop-move-indent">
+          <label><input type="checkbox" name="attr_heavy_berserker"> <strong>Berserker</strong> (Requires Battle Joy)</label>
+          <p>While in Battle Joy, add the <em>area</em> tag to melee attacks. Roll damage separately for each target.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_heavy_carvedoutofwood"> <strong>Carved Out of Wood</strong></label>
+          <p>Increase your max HP by 4.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_heavy_dangerous" checked> <strong>Dangerous ★</strong> (Starting move)</label>
+          <p>When you <em>deal your damage</em>, you have advantage.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_heavy_formidable"> <strong>Formidable</strong></label>
+          <p>When you <em>wade into battle</em>, roll +CHA: 10+, both; 7-9, pick 1: lesser foes quail/hesitate/flee; doughty foes focus on you as greatest threat. 6-, pick 1 but ask GM what you missed.</p>
+          <button type="roll" name="roll_heavy_formidable" value="/em uses Formidable, rolling +CHA [[2d6+@{cha}]]"></button>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_heavy_frosty"> <strong>Frosty</strong></label>
+          <p>When you <em>Defy Danger by keeping calm and carrying on</em>, on a 10+ also ask a Seek Insight question. Advantage on next roll to act on the answer.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_heavy_guardian"> <strong>Guardian</strong></label>
+          <p>When you Defend, hold 1 extra Readiness. Even on a 6-, hold 1 Readiness.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_heavy_hardtokill" checked> <strong>Hard to Kill ★</strong> (Starting move)</label>
+          <p>When <em>at Death's Door</em>, roll +CON or +nothing (your choice). On a 7-9, mark a debility of your choice to regain 1 HP.</p>
+          <button type="roll" name="roll_heavy_hardtokill" value="/em uses Hard to Kill, rolling +CON [[2d6+@{con}]]"></button>
+        </div>
+        <div class="stonetop-move stonetop-move-indent">
+          <label><input type="checkbox" name="attr_heavy_unstoppable"> <strong>Unstoppable</strong> (Requires Hard to Kill)</label>
+          <p>When reduced to 0 HP in battle, keep fighting. Each hit at 0 HP, mark 1 circle. Regaining HP clears one mark. When you stop, roll Death's Door with -1 per circle marked.</p>
+          <div class="stonetop-tracker">
+            <span>Marks: </span>
+            <input type="checkbox" name="attr_heavy_unstoppable_1">
+            <input type="checkbox" name="attr_heavy_unstoppable_2">
+            <input type="checkbox" name="attr_heavy_unstoppable_3">
+            <input type="checkbox" name="attr_heavy_unstoppable_4">
+            <input type="checkbox" name="attr_heavy_unstoppable_5">
+          </div>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_heavy_improvedstat"> <strong>Improved Stat</strong> □□□ (up to 3 times)</label>
+          <p>Increase one stat by 1 (max +2) each time taken.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_heavy_intimidating"> <strong>Intimidating</strong></label>
+          <p>When you <em>Persuade using violence or threats</em>, you have advantage.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_heavy_musclebound"> <strong>Musclebound</strong> (Requires STR +2 or higher)</label>
+          <p>Hand-to-hand or thrown attacks are <em>forceful</em> and <em>messy</em>. If already forceful/messy, even more so.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_heavy_payback"> <strong>Payback</strong></label>
+          <p>When you <em>deal damage to a foe that harmed you or an ally</em>, deal +1d4 damage.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_heavy_relentless"> <strong>Relentless</strong></label>
+          <p>When you <em>Clash and your foe survives</em>, gain advantage next time you Clash with them.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_heavy_seasonedwarrior"> <strong>Seasoned Warrior</strong> □□□ (Requires level 2+)</label>
+          <p>Take a move from Fox, Marshal, Ranger, or Seeker for which you qualify. Different playbook each time. Not Improved Stat or Superior Stat.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_heavy_situationalawareness"> <strong>Situational Awareness</strong></label>
+          <p>When you Seek Insight, add: biggest threat? enemy's true position? usable weapon? When a fight breaks out, ask the GM 1 Seek Insight question free.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_heavy_uncannyreflexes"> <strong>Uncanny Reflexes</strong> (Starting choice)</label>
+          <p>When unarmored with normal or light load, impose disadvantage on any damage you could dodge or roll with.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_heavy_unfettered"> <strong>Unfettered</strong></label>
+          <p>When subject to <em>physical or mental restraint</em>, mark a debility to immediately break free.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_heavy_terroronthefield"> <strong>Terror on the Field</strong></label>
+          <p>When you <em>reduce a foe to 0 HP</em>, describe how. If particularly brutal or impressive, allies of that foe are impressed, dismayed, or frightened.</p>
+        </div>
+        <h4>Level 6+ Moves</h4>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_heavy_bringerofruin"> <strong>Bringer of Ruin</strong> (Requires level 6+)</label>
+          <p>When you <em>roll 12+ to Clash and foe survives</em>, name something they possess — not something that kills them outright. It is broken, shattered, or lost.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_heavy_cutfromgranite"> <strong>Cut From Granite</strong> (Requires level 6+ and Carved Out of Wood)</label>
+          <p>Gain +1 armor (stacks) and +2 max HP (+6 total with Carved Out of Wood).</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_heavy_mightythews"> <strong>Mighty Thews</strong> (Requires level 6+ and Musclebound)</label>
+          <p>When you <em>perform a feat of extraordinary strength</em>, you do it — but pick 1: takes a while; causes unwanted damage or harm; takes a toll (mark a debility).</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_heavy_nemesis"> <strong>Nemesis</strong> (Requires level 6+ and Relentless)</label>
+          <p>When you <em>Clash and foe survives</em>, all future attacks against them do +1d6 damage.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_heavy_steadfastguardian"> <strong>Steadfast Guardian</strong> (Requires level 6+ and Guardian)</label>
+          <p>While holding Readiness from Defend, you can always suffer damage/effects instead of your ward — no Readiness spend needed.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_heavy_stonecold"> <strong>Stone Cold</strong> (Requires level 6+ and Frosty)</label>
+          <p>When you <em>Defy Danger (or Struggle as One) by keeping calm</em>, treat a 6- as a 7-9.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_heavy_superiorstat"> <strong>Superior Stat</strong> (Requires level 6+)</label>
+          <p>Increase one stat by +1 (max +3).</p>
+        </div>
+      </div>
+    </div>
+    <!-- ========== END HEAVY ========== -->
+
+    <!-- ========== FOX PLAYBOOK ========== -->
+    <div class="stonetop-playbook-section fox-section">
+      <h2>The Fox</h2>
+      <p class="playbook-reminder"><strong>Damage:</strong> d8 &nbsp;|&nbsp; <strong>HP Max:</strong> 16</p>
+      <p class="playbook-note">You start with <strong>Ambush</strong> OR <strong>Skill at Arms</strong>; <strong>Danger Sense</strong> OR <strong>Perceptive</strong>; and 1 of your choice.</p>
+      <h3>Moves</h3>
+      <div class="stonetop-moves-list">
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_fox_allinthewrist"> <strong>All in the Wrist</strong></label>
+          <p>Any knife or dagger gets the <em>thrown</em> tag in your hands. You keep a few iron throwing blades (<em>near</em>) on you; they don't take up inventory space. Reset ammo when you Outfit.</p>
+          <div class="stonetop-tracker">
+            <span>Ammo: </span>
+            <input type="checkbox" name="attr_fox_wrist_ammo1">
+            <input type="checkbox" name="attr_fox_wrist_ammo2">
+            <span class="tracker-label"> (a few left / out)</span>
+          </div>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_fox_ambush"> <strong>Ambush</strong> (Starting choice)</label>
+          <p>When you <em>get the drop on a nearby foe</em>, deal your damage or roll +DEX: 10+, deal damage and pick 2; 7-9, deal damage and pick 1: deal +1d4 damage; stop them raising alarm; slip away before they react; create an opportunity (you or ally gains advantage on next move to act on it).</p>
+          <button type="roll" name="roll_fox_ambush" value="/em uses Ambush, rolling +DEX [[2d6+@{dex}]]"></button>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_fox_burgle"> <strong>Burgle</strong></label>
+          <p>When you <em>sneak off alone into a dangerous place</em>, roll +INT: 7+, you make it back and GM says where you got to and what you learned. 10+, also pick 2; 7-9, pick 1: got away clean; swiped something valuable (GM's choice); set something up to exploit; ask a Seek Insight question about what you saw. 6-, you make it back with trouble, or you're missing in action (your call).</p>
+          <button type="roll" name="roll_fox_burgle" value="/em uses Burgle, rolling +INT [[2d6+@{int}]]"></button>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_fox_catlike"> <strong>Catlike</strong></label>
+          <p>When you carry a light load and act with care, you move silently. When you hide in shadows or darkness, you remain unseen until you draw attention, move positions, or attack.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_fox_dabbler"> <strong>Dabbler</strong> □□□ (Requires level 2+)</label>
+          <p>Each time taken, choose a move from Heavy, Marshal, Ranger, or Seeker for which you qualify. Not Improved Stat or Superior Stat.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_fox_dangersense"> <strong>Danger Sense</strong> (Starting choice)</label>
+          <p>You can always ask the GM "Is there an ambush or trap here?" If yes, roll +INT: 10+, ask both questions; 7-9, ask 1; either way gain advantage on next roll to act on the answer. What will trigger it? What will happen once triggered? 6-, don't mark XP; you know it's there but nothing bad happens yet.</p>
+          <button type="roll" name="roll_fox_dangersense" value="/em uses Danger Sense, rolling +INT [[2d6+@{int}]]"></button>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_fox_freerunning"> <strong>Free Running</strong></label>
+          <p>When you carry a light load and <em>move with speed and grace</em>, gain advantage on any move to surmount or bypass a physical obstacle.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_fox_improvedstat"> <strong>Improved Stat</strong> □□□ (up to 3 times)</label>
+          <p>Increase one stat by 1 (max +2) each time taken.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_fox_irresistible"> <strong>Irresistible</strong></label>
+          <p>When you interact with someone, ask their player if they find you attractive and get an honest answer (usually yes). When you <em>Persuade using your considerable charms as leverage</em>, you have advantage.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_fox_laughatdanger"> <strong>Laugh at Danger</strong></label>
+          <p>When you are about to roll +CON and you <em>make a joke about the adversity you face</em>, you can roll +CHA instead.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_fox_lightfingers"> <strong>Light Fingers</strong></label>
+          <p>When you <em>perform sleight of hand on an unwary mark</em>, you succeed and no one's the wiser. If being watched, roll +DEX: 10+, succeed and no one's the wiser; 7-9, succeed OR no one's the wiser (your choice).</p>
+          <button type="roll" name="roll_fox_lightfingers" value="/em uses Light Fingers, rolling +DEX [[2d6+@{dex}]]"></button>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_fox_perceptive"> <strong>Perceptive</strong> (Starting choice)</label>
+          <p>When you Seek Insight, ask 1 additional question. Even on a 6-, ask 1 question (though you might not like how you learn the answer).</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_fox_rapierwit"> <strong>Rapier Wit</strong></label>
+          <p>When you <em>pierce an NPC's pride with a well-placed quip</em>, they must pick 1: attack (dealing +1d4 damage if they hit, but giving you advantage on your next roll against them); stoop to your level and respond in kind; spend a few moments fuming or controlling their temper.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_fox_skillatarms"> <strong>Skill at Arms</strong> (Starting choice)</label>
+          <p>When you <em>wield a weapon with speed and grace</em>, roll +DEX to Clash instead of +STR.</p>
+        </div>
+        <div class="stonetop-move stonetop-move-indent">
+          <label><input type="checkbox" name="attr_fox_parryriposte"> <strong>Parry &amp; Riposte</strong> (Requires Skill at Arms)</label>
+          <p>When you <em>Defend with a weapon you can wield quickly</em>, spend 1 Readiness to both halve an attack's damage AND strike back (deal damage with disadvantage), instead of spending 1 Readiness for each separately.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_fox_silvertongued"> <strong>Silver Tongued</strong></label>
+          <p>When you <em>use words to avoid suspicion or trouble</em>, roll +CHA: 10+, hold 3 Nerve; 7-9, hold 1 Nerve. Spend Nerve 1-for-1 to: move about unchallenged; withstand direct scrutiny or questioning; direct suspicion or attention elsewhere.</p>
+          <button type="roll" name="roll_fox_silvertongued" value="/em uses Silver Tongued, rolling +CHA [[2d6+@{cha}]]"></button>
+          <div class="stonetop-tracker">
+            <span>Nerve: </span>
+            <input type="checkbox" name="attr_fox_nerve_1">
+            <input type="checkbox" name="attr_fox_nerve_2">
+            <input type="checkbox" name="attr_fox_nerve_3">
+          </div>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_fox_underyourskin"> <strong>Under Your Skin</strong></label>
+          <p>When you <em>engage an NPC in conversation</em>, ask the GM 1 of these and get an honest answer: What are they expecting me to do? What, in general, are they trying to hide? What do they want to happen?</p>
+        </div>
+        <h4>Level 6+ Moves</h4>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_fox_battledancer"> <strong>Battle Dancer</strong> (Requires level 6+ and Skill at Arms)</label>
+          <p>When you <em>roll +DEX to Clash and get a 12+</em>, deal your damage, avoid the enemy's attack, and impress/embarrass/overawe your foes.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_fox_cheapshot"> <strong>Cheap Shot</strong> (Requires level 6+ and Ambush)</label>
+          <p>When you <em>Ambush with a hand weapon</em>, you have advantage on your damage roll.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_fox_eyeonthedoor"> <strong>Eye on the Door</strong> (Requires level 6+)</label>
+          <p>When you and your allies <em>need to get out of here</em>, name your escape route and roll +INT: 10+, you're gone; 7-9, you can stay or go, but if you go it costs you — GM tells you what or who you leave behind.</p>
+          <button type="roll" name="roll_fox_eyeonthedoor" value="/em uses Eye on the Door, rolling +INT [[2d6+@{int}]]"></button>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_fox_pantsonfire"> <strong>Pants on Fire</strong> (Requires level 6+)</label>
+          <p>When you <em>Defy Danger, Persuade, or Interfere by being deceitful</em>, you have advantage. When another move allows a player to ask you a question, you can opt not to answer.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_fox_secondintent"> <strong>Second Intent</strong> (Requires level 6+, Parry &amp; Riposte, and Ambush)</label>
+          <p>When you <em>Defend and spend 1 Readiness to Parry &amp; Riposte</em>, also pick 1 option from the Ambush list.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_fox_slippery"> <strong>Slippery</strong> (Requires level 6+)</label>
+          <p>When you <em>roll to escape being caught or controlled</em>, treat a 6- as a 7-9. On a 12+, say how you turn the tables or use circumstances to your advantage.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_fox_superiorstat"> <strong>Superior Stat</strong> (Requires level 6+)</label>
+          <p>Increase one stat by +1 (max +3).</p>
+        </div>
+      </div>
+    </div>
+    <!-- ========== END FOX ========== -->
+
+    <!-- ========== WOULD-BE HERO PLAYBOOK ========== -->
+    <div class="stonetop-playbook-section wbh-section">
+      <h2>The Would-Be Hero</h2>
+      <p class="playbook-reminder"><strong>Damage:</strong> d6 &nbsp;|&nbsp; <strong>HP Max:</strong> 16</p>
+      <p class="playbook-note">You start with <strong>Anger is a Gift</strong>, <strong>Potential for Greatness</strong>, and 2 other moves of your choice. Stats: assign +1, +0, +0, +0, +0, -1.</p>
+      <h3>Fear &amp; Anger</h3>
+      <p>Choose your fears and what makes you burn with righteous anger. These drive when Anger is a Gift triggers.</p>
+      <label>What I fear most: <input type="text" name="attr_wbh_fear"></label><br>
+      <label>What makes me burn with righteous anger: <input type="text" name="attr_wbh_anger"></label>
+      <h3>Moves</h3>
+      <div class="stonetop-moves-list">
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_wbh_angerisgift" checked> <strong>Anger is a Gift ★</strong> (Starting move)</label>
+          <p>When you <em>burn with righteous anger</em>, hold 2 Resolve. Spend Resolve 1-for-1 to: set aside fear and doubt to do what must be done; act suddenly catching them off-guard; inspire allies or bystanders to follow your lead; strike hard (+1d4 damage, <em>forceful</em>); keep your footing, position, and/or course despite what befalls you.</p>
+          <div class="stonetop-tracker">
+            <span>Resolve: </span>
+            <input type="checkbox" name="attr_wbh_resolve_1">
+            <input type="checkbox" name="attr_wbh_resolve_2">
+          </div>
+        </div>
+        <div class="stonetop-move stonetop-move-indent">
+          <label><input type="checkbox" name="attr_wbh_speaktruth"> <strong>Speak Truth to Power</strong> (Requires Anger is a Gift)</label>
+          <p>When you <em>demand that someone does what is clearly good and right</em>, you have advantage to Persuade. If they refuse, gain +1 Resolve.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_wbh_betterpartofvalor"> <strong>Better Part of Valor</strong></label>
+          <p>When you are <em>outnumbered or facing a foe bigger than you</em>, you have advantage to hide from, escape from, or sneak past them.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_wbh_igetknocked"> <strong>I Get Knocked Down</strong></label>
+          <p>When you <em>take damage despite your best efforts to avoid it</em>, you can choose to halve the damage but pick 1: you lose something (footing, grip, etc.); something on your person breaks; you're out of it for a moment. The GM describes the details.</p>
+        </div>
+        <div class="stonetop-move stonetop-move-indent">
+          <label><input type="checkbox" name="attr_wbh_butigetup"> <strong>But I Get Up Again</strong> (Requires I Get Knocked Down)</label>
+          <p>When you use I Get Knocked Down, you have advantage on your next roll against whatever dealt the damage, and your next blow against them does +1d4 damage.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_wbh_improvedstat"> <strong>Improved Stat</strong> □□□ (up to 3 times)</label>
+          <p>Increase one stat by 1 (max +2) each time taken.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_wbh_inoveryourhead"> <strong>In Over Your Head</strong></label>
+          <p>When <em>another PC rescues you from danger</em>, mark XP.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_wbh_ironwill"> <strong>Iron Will</strong></label>
+          <p>When you are subject to <em>mind control or magic that affects your feelings</em>, you can take 1d4 damage (ignoring armor) to disregard its influence.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_wbh_inquiringminds"> <strong>Inquiring Minds</strong></label>
+          <p>When you <em>seek out and receive honest advice</em>, gain advantage on your next roll to follow that advice.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_wbh_nevergonna"> <strong>Never Gonna Keep Me Down</strong></label>
+          <p>When you have 5 or fewer current HP, you impose disadvantage on any damage you take. Once per session, when you are at Death's Door, don't roll — you get a 10+.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_wbh_potentialforgreatness" checked> <strong>Potential for Greatness ★</strong> (Starting move)</label>
+          <p>Once per level, when you <em>roll a stat and get a 10+</em>, mark one of the following (note the level). You don't have to mark them in order.</p>
+          <div class="stonetop-tracker">
+            <label><input type="checkbox" name="attr_wbh_pfg_stat1"> Increase stat rolled by 1 (max +2) — Level: <input type="text" name="attr_wbh_pfg_stat1_level" style="width:30px"></label><br>
+            <label><input type="checkbox" name="attr_wbh_pfg_stat2"> Increase stat rolled by 1 (max +2) — Level: <input type="text" name="attr_wbh_pfg_stat2_level" style="width:30px"></label><br>
+            <label><input type="checkbox" name="attr_wbh_pfg_stat3"> Increase stat rolled by 1 (max +2) — Level: <input type="text" name="attr_wbh_pfg_stat3_level" style="width:30px"></label><br>
+            <label><input type="checkbox" name="attr_wbh_pfg_stat4"> Increase stat rolled by 1 (max +2) — Level: <input type="text" name="attr_wbh_pfg_stat4_level" style="width:30px"></label><br>
+            <label><input type="checkbox" name="attr_wbh_pfg_hp"> Increase max HP by 4 — Level: <input type="text" name="attr_wbh_pfg_hp_level" style="width:30px"></label><br>
+            <label><input type="checkbox" name="attr_wbh_pfg_damage"> Increase damage die to d8 — Level: <input type="text" name="attr_wbh_pfg_damage_level" style="width:30px"></label>
+          </div>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_wbh_resourceful"> <strong>Resourceful</strong></label>
+          <p>When you <em>Defy Danger and roll a 6-</em>, ask the GM a Seek Insight question after they describe what happens. Gain advantage on your next roll to act on the answer.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_wbh_somethingtorember"> <strong>Something to Remember Me By</strong></label>
+          <p>When you <em>spend Readiness (from Defend) to strike back at an attacker</em>, deal +1d4 damage and scar, mark, or diminish them in some way.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_wbh_toughlove"> <strong>Tough Love</strong></label>
+          <p>When you <em>honestly think another PC is in the wrong and call them on it</em>, they have disadvantage on any rolls against you until you two work it out.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_wbh_underestimated"> <strong>Underestimated</strong></label>
+          <p>As long as you avoid overt hostility, no enemy will consider you a threat. When you <em>first make your move against an enemy who underestimates you</em>, you have advantage.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_wbh_upwithpeople"> <strong>Up With People</strong></label>
+          <p>When you <em>converse with someone (PC or NPC)</em>, hold 2 Rapport with them. If you do, they hold 1 Rapport with you. Spend Rapport 1-for-1 to ask: What weighs you down or holds you back? What drives you forward? What lesson would you have me learn? What do you think of me, truly?</p>
+          <div class="stonetop-tracker">
+            <span>Rapport: </span>
+            <input type="checkbox" name="attr_wbh_rapport_1">
+            <input type="checkbox" name="attr_wbh_rapport_2">
+          </div>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_wbh_versatile"> <strong>Versatile</strong> □□□□ (Requires level 2+)</label>
+          <p>Choose a move from any other playbook as long as you meet its requirements. Different playbook each time. Not Improved Stat or Superior Stat.</p>
+        </div>
+        <h4>Level 6+ Moves</h4>
+        <p class="playbook-note">The first time you use any move marked (*), cross off "Would-be" on the front page.</p>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_wbh_aforcetobereckoned"> <strong>A Force to Be Reckoned With *</strong> (Requires level 6+, replaces Underestimated)</label>
+          <p>Any intelligent creature who looks you in the eye or hears the steel in your voice instinctively knows you are a force to be reckoned with. On a 12+ when you Defy Danger against something trying to harm or constrain you, you turn the tables on them.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_wbh_bigdamnhero"> <strong>Big Damn Hero *</strong> (Requires level 6+, replaces In Over Your Head)</label>
+          <p>When you <em>first leap into danger to protect someone</em>, don't roll to Defend — treat it as a 10+. When you Defend, spend 1 Readiness to lock eyes with an attacker; they have disadvantage on damage rolls against you and your ward for the rest of the fight.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_wbh_superiorstat"> <strong>Superior Stat</strong> (Requires all 6 marks in Potential for Greatness)</label>
+          <p>Increase one stat by +1 (max +3).</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_wbh_undaunted"> <strong>Undaunted *</strong> (Requires level 6+, replaces Better Part of Valor)</label>
+          <p>When you are <em>outnumbered or facing a foe bigger than you</em>, you get +1 armor and deal +1d6 damage.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_wbh_voiceofexperience"> <strong>Voice of Experience *</strong> (Requires level 6+, replaces Inquiring Minds)</label>
+          <p>When <em>another PC comes to you for advice and you tell them what you think is best</em>, they have advantage on their first roll to follow your advice. When you Seek Insight, you can always ask "What is about to happen?" for free, even on a 6-.</p>
+        </div>
+      </div>
+    </div>
+    <!-- ========== END WOULD-BE HERO ========== -->
+
+    <!-- ========== RANGER PLAYBOOK ========== -->
+    <div class="stonetop-playbook-section ranger-section">
+      <h2>The Ranger</h2>
+      <p class="playbook-reminder"><strong>Damage:</strong> d8 &nbsp;|&nbsp; <strong>HP Max:</strong> 18</p>
+      <p class="playbook-note">You start with <strong>Home on the Range</strong>, any moves from your Background, plus 1 of your choice.</p>
+      <h3>Moves</h3>
+      <div class="stonetop-moves-list">
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_ranger_asafeplace"> <strong>A Safe Place</strong></label>
+          <p>When you <em>select and prepare the party's camp site</em>, hold 1 Precaution, or 2 if you are well-versed with this area and its dangers. If trouble finds your camp, spend 1 Precaution to reveal a simple defense, warning, or trick you prepared. Tell us how you knew to make that specific preparation.</p>
+          <div class="stonetop-tracker">
+            <span>Precaution: </span>
+            <input type="checkbox" name="attr_ranger_precaution_1">
+            <input type="checkbox" name="attr_ranger_precaution_2">
+          </div>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_ranger_animalcompanion"> <strong>Animal Companion</strong> (Background: Beast-Bonded)</label>
+          <p>You are accompanied by a beast of uncommon loyalty and cleverness. Treat it as a follower. When you focus on your animal companion for a few moments, you can use any marked actions below, no matter the distance.</p>
+          <div class="stonetop-tracker">
+            <label><input type="checkbox" name="attr_ranger_bond_distance"> Gauge distance and direction</label><br>
+            <label><input type="checkbox" name="attr_ranger_bond_call"> Call it back to your side</label><br>
+            <label><input type="checkbox" name="attr_ranger_bond_emotion"> Sense its emotional state</label><br>
+            <label><input type="checkbox" name="attr_ranger_bond_senses"> Get a brief impression of what it senses</label><br>
+            <label><input type="checkbox" name="attr_ranger_bond_strength"> Lend it your strength — lose 1d6 HP, it regains equal amount</label>
+          </div>
+        </div>
+        <div class="stonetop-move stonetop-move-indent">
+          <label><input type="checkbox" name="attr_ranger_magnificentspecimen"> <strong>Magnificent Specimen</strong> (Requires Animal Companion)</label>
+          <p>Each time you take this move, your companion gains 2 additional options of your choice.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_ranger_biggamehunter"> <strong>Big Game Hunter</strong></label>
+          <p>When you <em>strike at the weak spot of a large or huge creature</em>, you deal +2 damage.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_ranger_blotoutthesun"> <strong>Blot Out the Sun</strong></label>
+          <p>When you <em>Let Fly with a bow</em>, you can deplete your ammunition before you roll. If you do, choose 1: gain advantage on your damage roll; add the <em>area</em> tag to your attack and roll damage separately for each target.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_ranger_calltheshot"> <strong>Call the Shot</strong></label>
+          <p>When you <em>take your time and calmly line up the perfect shot</em>, either deal your damage or roll +DEX: on a 10+, deal damage and pick 2; on a 7-9, deal damage and pick 1: ignore armor or deal +1d4 damage; stun, hobble, or hinder them; make them trip or drop what they're holding; do no harm.</p>
+          <button type="roll" name="roll_ranger_calltheshot" value="/em uses Call the Shot, rolling +DEX [[2d6+@{dex}]]"></button>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_ranger_experttracker"> <strong>Expert Tracker</strong> (Background: Mighty Hunter)</label>
+          <p>When you <em>Seek Insight by searching for signs left by passing creatures</em>, you can ask "What happened here recently?" for free, even on a 6-. When you <em>follow a creature's trail</em>, roll +WIS: on a 7+, follow it to a significant change; on a 10+, also ask the GM a reasonable question about your quarry.</p>
+          <button type="roll" name="roll_ranger_experttracker" value="/em uses Expert Tracker, rolling +WIS [[2d6+@{wis}]]"></button>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_ranger_homeontherange" checked> <strong>Home on the Range ★</strong> (Starting move)</label>
+          <p>When <em>a journey requires you to Defy Danger or Struggle as One</em>, treat a 6- as a 7-9.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_ranger_improvedstat"> <strong>Improved Stat</strong> □□□ (up to 3 times)</label>
+          <p>Increase one stat by 1 (max +2) each time taken.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_ranger_mentalmap"> <strong>Mental Map</strong> (Background: Wide Wanderer)</label>
+          <p>You can always retrace your steps and accurately gauge distances and directions. When you <em>think back on a place you've been</em>, you can Seek Insight retroactively, as if you were still there.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_ranger_naturalist"> <strong>Naturalist</strong></label>
+          <p>When you <em>Know Things about beasts, natural environs, or spirits of the wild</em>, you have advantage.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_ranger_onthehoof"> <strong>On the Hoof</strong></label>
+          <p>When you <em>travel through the wilderness</em>, you can procure 1d6 uses of provisions each day (roll with disadvantage in winter or barren terrain). Provisions can substitute for supplies when you Make Camp.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_ranger_packhorse"> <strong>Pack Horse</strong></label>
+          <p>You can carry up to 4 ✔ with a light load, 7 ✔ with a normal load, and 10 ✔ with a heavy load.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_ranger_pathfinder"> <strong>Pathfinder</strong></label>
+          <p>When you <em>lead your people to Pull Together or Deploy beyond sight of home</em>, you have advantage.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_ranger_predator"> <strong>Predator</strong></label>
+          <p>When you Seek Insight, add: Who or what here is the easiest prey? How is ________ weak or vulnerable? When acting on the answer to either, deal an extra 1d4 damage.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_ranger_sniffoutcorruption"> <strong>Sniff Out Corruption</strong></label>
+          <p>When you Seek Insight, you can ask "What here stinks of the unnatural?" for free, even on a 6-.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_ranger_stalker"> <strong>Stalker</strong> (Background: Mighty Hunter)</label>
+          <p>When you <em>carry a normal or light load and move with care</em>, you make no noise and leave no sign of your passing. When you <em>hide yourself in a natural environment</em>, you remain unseen until you draw attention to yourself, move positions, or attack.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_ranger_survivalist"> <strong>Survivalist</strong></label>
+          <p>When you Forage, pick 1 extra choice (even on a 6-, pick 1) and add "Find or fashion some useful item or supply (GM can veto)" to the list of options.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_ranger_wardenofthewild"> <strong>Warden of the Wild</strong></label>
+          <p>When you <em>defeat a perversion of nature</em>, ask the GM 2 of the following: Will it come back? If so, how can I stop it? Will its taint spread? If so, how can I contain it? What useful bits can I harvest? What else can I learn about it or its ilk?</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_ranger_wildspeech"> <strong>Wild Speech</strong></label>
+          <p>The grunts, barks, chirps, and calls of natural beasts are as a language to you. You can understand their intentions and communicate basic ideas. When you <em>Persuade a beast</em>, you can choose to roll +WIS.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_ranger_worldly"> <strong>Worldly</strong> □□□ (Requires level 2+)</label>
+          <p>Take a move from Blessed, Fox, Heavy, Marshal, or Seeker for which you qualify. Different playbook each time. Not Improved Stat or Superior Stat.</p>
+        </div>
+        <h4>Level 6+ Moves</h4>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_ranger_alpha"> <strong>Alpha</strong> (Requires level 6+ and Wild Speech)</label>
+          <p>When you <em>assert dominance over another</em>, roll +WIS: on a 7+, they must pick 1; on a 10+, also have advantage on your next roll against them. Pick 1: accept your authority for now; slink away or flee then avoid you; fight you for dominance.</p>
+          <button type="roll" name="roll_ranger_alpha" value="/em uses Alpha, rolling +WIS [[2d6+@{wis}]]"></button>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_ranger_constantvigilance"> <strong>Constant Vigilance</strong> (Requires level 6+)</label>
+          <p>Unless you're dazed, you're never caught off guard — not even when asleep or if you roll a 6-. When you <em>intercept a sudden threat</em>, you have advantage on whatever move you make.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_ranger_giantslayer"> <strong>Giant Slayer</strong> (Requires level 6+ and Big Game Hunter)</label>
+          <p>When you <em>strike at a weak spot of a large or huge creature</em>, you deal another +2 damage (+4 total).</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_ranger_superiorstat"> <strong>Superior Stat</strong> (Requires level 6+)</label>
+          <p>Increase one stat by +1 (max +3).</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_ranger_trailblazer"> <strong>Trailblazer</strong> (Requires level 6+, replaces Home on the Range)</label>
+          <p>When a journey causes you to <em>Defy Danger or Struggle as One</em>, on a 10+ you also learn or discover something interesting and useful — ask the GM what.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_ranger_walkitoff"> <strong>Walk it Off</strong> (Requires level 6+)</label>
+          <p>When you'd mark a debility, you can mark this move instead to no ill effect. Clear it as you would a debility.</p>
+          <div class="stonetop-tracker">
+            <span>Marked: </span>
+            <input type="checkbox" name="attr_ranger_walkitoff_marked">
+          </div>
+        </div>
+      </div>
+      <h3>Animal Companion</h3>
+      <p class="playbook-note">Only if you have the Animal Companion move.</p>
+      <div class="stonetop-moves-list">
+        <div class="stonetop-move">
+          <label>Name: <input type="text" name="attr_ranger_companion_name"></label>
+        </div>
+        <div class="stonetop-move">
+          <label>Type: <input type="text" name="attr_ranger_companion_type" placeholder="e.g. Predator, Steed, Bird"></label>
+        </div>
+        <div class="stonetop-move">
+          <label>Instinct: <input type="text" name="attr_ranger_companion_instinct"></label>
+        </div>
+        <div class="stonetop-move">
+          <label>Cost: <input type="text" name="attr_ranger_companion_cost"></label>
+        </div>
+        <div class="stonetop-move">
+          <label>Tags: <input type="text" name="attr_ranger_companion_tags"></label>
+        </div>
+        <div class="stonetop-row">
+          <label>HP: <input type="number" name="attr_ranger_companion_hp" value="0" style="width:60px"></label> &nbsp;
+          <label>Armor: <input type="number" name="attr_ranger_companion_armor" value="0" style="width:60px"></label>
+        </div>
+        <div class="stonetop-tracker">
+          <span>Loyalty: </span>
+          <input type="checkbox" name="attr_ranger_companion_loyalty_1">
+          <input type="checkbox" name="attr_ranger_companion_loyalty_2">
+          <input type="checkbox" name="attr_ranger_companion_loyalty_3">
+        </div>
+      </div>
+    </div>
+    <!-- ========== END RANGER ========== -->
+
+    <!-- ========== BLESSED PLAYBOOK ========== -->
+    <div class="stonetop-playbook-section blessed-section">
+      <h2>The Blessed</h2>
+      <p class="playbook-reminder"><strong>Damage:</strong> d6 &nbsp;|&nbsp; <strong>HP Max:</strong> 18</p>
+      <p class="playbook-note">You start with <strong>Spirit Tongue</strong>, <strong>Call the Spirits</strong>, 1 move from your Background, and 1 of your choice.</p>
+      <h3>Sacred Pouch</h3>
+      <p>Your sacred pouch (<em>magical</em>) doesn't take up inventory space. It holds up to 3 Stock (sacred herbs, powders, stones, pigments, chalks, clay, etc.). Each time you gain an even-numbered level, your pouch can hold +1 Stock. When anyone but you looks inside and touches the materials, the Stock is ruined. When you have a few days of downtime in familiar terrain, you may replenish your Stock. When you Forage, you can produce Stock instead of provisions.</p>
+      <div class="stonetop-tracker">
+        <span>Stock: </span>
+        <input type="checkbox" name="attr_blessed_stock_1">
+        <input type="checkbox" name="attr_blessed_stock_2">
+        <input type="checkbox" name="attr_blessed_stock_3">
+        <input type="checkbox" name="attr_blessed_stock_4">
+        <input type="checkbox" name="attr_blessed_stock_5">
+        <input type="checkbox" name="attr_blessed_stock_6">
+        <span class="tracker-label"> (max 3 at level 1; +1 per even level)</span>
+      </div>
+      <h3>Moves</h3>
+      <div class="stonetop-moves-list">
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_blessed_amuletstalismans"> <strong>Amulets &amp; Talismans</strong></label>
+          <p>When you <em>craft a protective charm for someone</em>, spend 1 Stock and name a source of harm. When they would suffer such harm while bearing your charm, roll +INT: on a 10+, they ignore the harm entirely; on a 7-9, they suffer only half the damage or effect; on a 6-, they suffer the harm normally. One can benefit from only 1 charm at a time, and it loses its potency after 1 use.</p>
+          <button type="roll" name="roll_blessed_amulets" value="/em uses Amulets and Talismans, rolling +INT [[2d6+@{int}]]"></button>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_blessed_barkskin"> <strong>Barkskin</strong></label>
+          <p>When you are <em>touching the earth</em>, you have 2 armor. When you <em>mark another with 1 Stock</em>, they gain this benefit so long as the mark remains.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_blessed_borrowpower"> <strong>Borrow Power</strong> (Requires Spirit Tongue)</label>
+          <p>When a <em>spirit or beast loans you power</em>, ask the GM for one of its tags or moves. Store it in your pouch in place of 1 Stock. When you <em>use the borrowed tag or move</em>, roll +WIS: on a 10+, you do it and can use the power again; on a 7-9, you do it, but lose the power.</p>
+          <button type="roll" name="roll_blessed_borrowpower" value="/em uses Borrow Power, rolling +WIS [[2d6+@{wis}]]"></button>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_blessed_callthespirits" checked> <strong>Call the Spirits ★</strong> (Starting move, requires Spirit Tongue)</label>
+          <p>When you <em>spend 1 Stock and perform a short rite</em>, the spirit(s) of a place or object manifest and hear you out. What they do next is up to them.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_blessed_danusgrasp"> <strong>Danu's Grasp</strong> (Background: Vessel)</label>
+          <p>When you <em>call on the world itself to bind a spirit or a perversion of nature</em>, spend 1 Stock and roll +WIS: on a 7-9, roots, vines, and earth pull at them and they pick 1; on a 10+, as 7-9 but both apply: they're restrained until your focus slips or they tear free; they take 2d4 damage (ignores armor). If this brings them to 0 HP, they are pulled into the earth and bound in rune-etched stone.</p>
+          <button type="roll" name="roll_blessed_danusgrasp" value="/em uses Danu's Grasp, rolling +WIS [[2d6+@{wis}]]"></button>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_blessed_healersarts"> <strong>Healer's Arts</strong></label>
+          <p>When someone <em>Recovers under your care</em>, they recover extra HP equal to your WIS. If you also <em>spend 1 Stock</em>, they heal an extra 5 HP and their wounds are stabilized.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_blessed_heedmywords"> <strong>Heed My Words</strong></label>
+          <p>When you <em>Persuade by talking sense or warning against foolishness</em>, you have advantage.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_blessed_improvedstat"> <strong>Improved Stat</strong> □□□ (up to 3 times)</label>
+          <p>Increase one stat by 1 (max +2) each time taken.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_blessed_intothelionden"> <strong>Into the Lion's Den</strong></label>
+          <p>When you <em>approach a beast calmly and show no fear</em>, it will not harm you (though it may threaten you and test your nerve). When you <em>lay your hand gently upon a beast</em>, it calms to your touch.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_blessed_ritesoftheland"> <strong>Rites of the Land</strong> (Background: Initiate)</label>
+          <p>Once per season, when you <em>oversee the sacred rites</em>, hold 1 Favor. If you also sacrifice 1 Surplus, hold 4 Favor instead. Spend Favor in lieu of Stock, 1-for-1. When you <em>publicly sacrifice something much-loved</em>, either clear a steading debility or gain advantage when the steading next rolls +Fortunes.</p>
+          <div class="stonetop-tracker">
+            <span>Favor: </span>
+            <input type="checkbox" name="attr_blessed_favor_1">
+            <input type="checkbox" name="attr_blessed_favor_2">
+            <input type="checkbox" name="attr_blessed_favor_3">
+            <input type="checkbox" name="attr_blessed_favor_4">
+          </div>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_blessed_spirittongue" checked> <strong>Spirit Tongue ★</strong> (Starting move)</label>
+          <p>You can speak with beasts and spirits. You can always ask the GM "What spirits are active here?" and get an honest answer.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_blessed_tracklessstep"> <strong>Trackless Step</strong> (Background: Raised by Wolves)</label>
+          <p>When you <em>move through nature with care and patience</em>, you make no sound, leave no trace, and can ignore hindering terrain. When you <em>spend 1 Stock and mark others</em>, they each gain this benefit so long as the mark remains. 1 Stock can mark a number of individuals up to your level+INT.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_blessed_veil"> <strong>Veil</strong></label>
+          <p>When you <em>wrap yourself or another in a subtle veil</em>, spend 1 Stock and choose 1: a type of being you name will tend to ignore your presence; people will perceive you as someone else (you must wear something of an individual's to impersonate them). When your deception comes under scrutiny, roll +INT: on a 10+, the veil holds; on a 7-9, the veil holds but there is further scrutiny or a complication.</p>
+          <button type="roll" name="roll_blessed_veil" value="/em uses Veil, rolling +INT [[2d6+@{int}]]"></button>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_blessed_wardsbindings"> <strong>Wards &amp; Bindings</strong></label>
+          <p>When you <em>mark a boundary with sacred signs</em>, spend 1 Stock and describe who or what they affect. Choose whether affected beings are repelled or trapped. When wards are first tested, roll +INT: on a 10+, they hold as long as signs remain unmarred; on a 7-9, they hold for now but may be overcome.</p>
+          <button type="roll" name="roll_blessed_wards" value="/em uses Wards and Bindings, rolling +INT [[2d6+@{int}]]"></button>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_blessed_wildsoul"> <strong>Wild Soul</strong> □□ (Requires level 2+)</label>
+          <p>Each time taken, gain a Ranger move of your choice for which you qualify. Can't pick Improved Stat or Superior Stat.</p>
+        </div>
+        <h4>Level 6+ Moves</h4>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_blessed_natureswrath"> <strong>Nature's Wrath</strong> (Requires level 6+ and Danu's Grasp)</label>
+          <p>Danu's Grasp gains the <em>area</em> tag and can affect any creature. A mortal reduced to 0 HP is subdued or killed (your choice) rather than bound in stone.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_blessed_potentworkings"> <strong>Potent Workings</strong> (Requires level 6+ and Amulets &amp; Talismans)</label>
+          <p>When you <em>craft a protective charm</em>, you may spend 1 additional Stock to choose 1: name an additional type of harm; on a 10+, the charm retains its potency.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_blessed_sharedsouls"> <strong>Shared Souls</strong> (Requires level 6+ and Into the Lion's Den)</label>
+          <p>When you <em>mark a beast with 1 Stock</em>, you can direct its actions and perceive through its senses no matter the distance. Treat it as a follower with 3 Loyalty; when you spend its last Loyalty, the effect ends.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_blessed_suckthepoisonout"> <strong>Suck the Poison Out</strong> (Requires level 6+ and Healer's Arts)</label>
+          <p>When you <em>draw a malady from a patient's body, mind, or soul</em>, spend 1 Stock and roll +WIS: on a 10+, remove the malady and safely discard it or store it in your sacred pouch; on a 7-9, remove it but choose 1: your patient suffers lingering harm; you suffer some of the malady's effects; it will be dangerous to discard.</p>
+          <button type="roll" name="roll_blessed_suckpoison" value="/em uses Suck the Poison Out, rolling +WIS [[2d6+@{wis}]]"></button>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_blessed_superiorstat"> <strong>Superior Stat</strong> (Requires level 6+)</label>
+          <p>Increase one stat by +1 (max +3).</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_blessed_voiceofearthmother"> <strong>Voice of the Earth Mother</strong> (Requires level 6+ and Spirit Tongue)</label>
+          <p>When you <em>speak on behalf of Danu</em>, natural beasts and spirits of the wild respect your authority. All but the most headstrong will do as you command, even against their instincts.</p>
+        </div>
+      </div>
+    </div>
+    <!-- ========== END BLESSED ========== -->
+
+    <!-- ========== JUDGE PLAYBOOK ========== -->
+    <div class="stonetop-playbook-section judge-section">
+      <h2>The Judge</h2>
+      <p class="playbook-reminder"><strong>Damage:</strong> d6 &nbsp;|&nbsp; <strong>HP Max:</strong> 20</p>
+      <p class="playbook-note">You start with <strong>Censure</strong>, <strong>Chronicler of Stonetop</strong>, plus 2 more of your choice.</p>
+      <h3>Moves</h3>
+      <div class="stonetop-moves-list">
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_judge_aegisoffaith"> <strong>Aegis of Faith</strong></label>
+          <p>When you wield a shield, it can turn away spells, magical effects, and insubstantial attacks as if they were physical blows.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_judge_armored"> <strong>Armored</strong></label>
+          <p>When you carry a shield, mark only ✔ (instead of ✔✔). Also, ignore the <em>cumbersome</em> tag on any armor you wear. If taken at start of play, add an iron hauberk, bronze cuirass, or scale coat to inventory (all 2 armor, warm, cumbersome).</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_judge_bearwitness"> <strong>Bear Witness</strong></label>
+          <p>When you <em>speak the truth with conviction and candor</em>, none can doubt you. They might deny what you say, but in their hearts they recognize the truth.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_judge_breakbread"> <strong>Break Bread</strong></label>
+          <p>When you <em>share a proper meal with someone and each of you eats your fill</em>, each of you recovers 1d8 extra HP.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_judge_bulwark"> <strong>Bulwark</strong></label>
+          <p>When you Defend, you can spend 1 Readiness to stand fast, holding your position despite what befalls you.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_judge_censure" checked> <strong>Censure ★</strong> (Starting move)</label>
+          <p>When you <em>first denounce an individual in your presence as an agent of chaos or anathema to civilization</em>, they pick 1: they are ashamed and act accordingly; they are doubtful and hesitate; they are afraid and seek to escape; they are enraged and lash out predictably (next roll against them has advantage).</p>
+        </div>
+        <div class="stonetop-move stonetop-move-indent">
+          <label><input type="checkbox" name="attr_judge_castigate"> <strong>Castigate</strong> (Requires level 2+ and Censure)</label>
+          <p>When you Censure someone, your voice deals 1d4 damage to them (<em>near, loud, ignores armor</em>).</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_judge_chronicler" checked> <strong>Chronicler of Stonetop ★</strong> (Starting move)</label>
+          <p>When you <em>write up detailed session notes and share them with the other players</em>, hold +1 Diligence. You can spend 1 Diligence at any time to add +1 to a roll that you or a fellow player just made.</p>
+          <div class="stonetop-tracker">
+            <span>Diligence: </span>
+            <input type="checkbox" name="attr_judge_diligence_1">
+            <input type="checkbox" name="attr_judge_diligence_2">
+            <input type="checkbox" name="attr_judge_diligence_3">
+            <input type="checkbox" name="attr_judge_diligence_4">
+            <input type="checkbox" name="attr_judge_diligence_5">
+          </div>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_judge_forthegreategood"> <strong>For the Greater Good</strong></label>
+          <p>When you <em>Persuade someone to act in defense of their community or civilization at large</em>, you have advantage.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_judge_houndofaratis"> <strong>Hound of Aratis</strong></label>
+          <p>When you Seek Insight, you can always ask "What here is tainted by chaos?" for free, even on a 6-.</p>
+        </div>
+        <div class="stonetop-move stonetop-move-indent">
+          <label><input type="checkbox" name="attr_judge_likeadogwithabone"> <strong>Like a Dog with a Bone</strong> (Requires Hound of Aratis)</label>
+          <p>When you <em>attack something you know to be tainted by chaos</em>, deal +1d6 damage.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_judge_improvedstat"> <strong>Improved Stat</strong> □□□ (up to 3 times)</label>
+          <p>Increase one stat by 1 (max +2) each time taken.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_judge_knowledgeispower"> <strong>Knowledge is Power</strong></label>
+          <p>When you <em>roll 10+ to Know Things</em>, you or an ally gain advantage on the next roll to act on what you learn.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_judge_manyhandsmake"> <strong>Many Hands Make Light Work</strong></label>
+          <p>When you <em>jump in to help another character who just rolled</em>, tell us how and ask the GM what else is required or what the consequences will be. If you accept, increase your ally's roll by +1.</p>
+        </div>
+        <div class="stonetop-move stonetop-move-indent">
+          <label><input type="checkbox" name="attr_judge_bundleofsticks"> <strong>A Bundle of Sticks Unbroken</strong> (Requires Many Hands Make Light Work)</label>
+          <p>When you Struggle as One, you and one ally of your choice have advantage.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_judge_hammerandbook"> <strong>The Hammer and the Book</strong></label>
+          <p>When you <em>strike a thing of supernatural chaos</em>, roll +WIS: on a 10+, deal damage and choose 1; on a 7-9, deal damage and choose 1, but you also expose yourself to harm or unwanted attention. Choose 1: deal +1d6 damage; ignore the thing's armor or other defenses; suppress one of its unnatural powers; force it from its host.</p>
+          <button type="roll" name="roll_judge_hammerandbook" value="/em uses The Hammer and the Book, rolling +WIS [[2d6+@{wis}]]"></button>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_judge_truthorconsequences"> <strong>Truth or Consequences</strong></label>
+          <p>When you <em>look into someone's eyes and gaze upon their soul</em>, ask their player "Are you lying or hiding something from me?" and get an honest answer. If yes, advantage on your next roll against them. When you lie or deceive through words, you have disadvantage on your next roll against them.</p>
+        </div>
+        <div class="stonetop-move stonetop-move-indent">
+          <label><input type="checkbox" name="attr_judge_bindingarbitration"> <strong>Binding Arbitration</strong> (Requires Truth or Consequences)</label>
+          <p>When you <em>bear witness to someone's promise or oath</em>, you may henceforth ask their player if they have kept their word and get an honest answer. If they have broken their word, you gain advantage on all rolls against them until they admit their wrong and suffer an appropriate consequence.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_judge_visionunclouded"> <strong>Vision Unclouded</strong></label>
+          <p>When you Seek Insight, you can always ask "What here is hidden by illusion or magic?" for free, even on a 6-.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_judge_wellread"> <strong>Well-Read</strong></label>
+          <p>When you <em>name the source in which you read about the matter at hand</em>, roll +WIS to Know Things instead of +INT.</p>
+          <button type="roll" name="roll_judge_wellread" value="/em uses Well-Read to Know Things, rolling +WIS [[2d6+@{wis}]]"></button>
+        </div>
+        <h4>Level 6+ Moves</h4>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_judge_amightyramp"> <strong>A Mighty Rampart</strong> (Requires level 6+, replaces Bulwark)</label>
+          <p>When you hold Readiness from Defend, you cannot be forced from your position. Also, spend 1 Readiness to completely ignore the effects/damage of an attack you suffer.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_judge_armistice"> <strong>Armistice</strong> (Requires level 6+ and Bear Witness)</label>
+          <p>When you <em>approach an enemy to negotiate in good faith</em>, they will at least hear you out. Even the most debased and savage foe will delay violence until you've had your say.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_judge_condemn"> <strong>Condemn</strong> (Requires level 6+ and Censure)</label>
+          <p>When you Censure someone, they are marked with a mystical brand that cannot be removed or hidden until you dismiss it. Any intelligent creature who sees the mark recognizes the bearer as an agent of chaos and anathema to civilization.</p>
+        </div>
+        <div class="stonetop-move stonetop-move-indent">
+          <label><input type="checkbox" name="attr_judge_proclamation"> <strong>Proclamation</strong> (Requires level 6+ and Condemn)</label>
+          <p>When you Censure, you may denounce a group or faction. Apply the effects of Censure to every member of that group, regardless of distance.</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_judge_mirrorshield"> <strong>Mirrorshield</strong> (Requires level 6+ and Aegis of Faith)</label>
+          <p>When you <em>Defend with a shield</em>, you can spend 1 Readiness to intercept a magical force and redirect it to a different target (or none).</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_judge_superiorstat"> <strong>Superior Stat</strong> (Requires level 6+)</label>
+          <p>Increase one stat by +1 (max +3).</p>
+        </div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_judge_thetoweretern"> <strong>The Tower Eternal</strong> (Requires level 6+)</label>
+          <p>When you <em>Defy Danger against magic</em>, treat a result of 6- as a 7-9.</p>
+        </div>
+      </div>
+    </div>
+    <!-- ========== END JUDGE ========== -->
+
+    <!-- ========== LIGHTBEARER PLAYBOOK ========== -->
+    <div class="stonetop-playbook-section lightbearer-section">
+      <h2>The Lightbearer</h2>
+      <p class="playbook-reminder"><strong>Damage:</strong> d4 &nbsp;|&nbsp; <strong>HP Max:</strong> 18</p>
+      <p class="playbook-note">You start with <strong>Consecrated Flame</strong> and <strong>Invoke the Sun God</strong>, plus 1 more of your choice.</p>
+      <h3>Invocations</h3>
+      <p>You start knowing 2 Invocations. Each time you reach an even-numbered level, learn 1 new Invocation. While one Invocation is <em>ongoing</em>, you can't use another. An invocation's range equals that of its light source. You can end an Invocation whenever you wish; it ends immediately if your holy light is extinguished.</p>
+      <div class="stonetop-moves-list">
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_lb_inv_bathofhealing"> <strong>Bath of Healing Light</strong></label><p>Cup your hands around your light and focus it. Your patient picks 2 (reduced: pick only 1): regains 5 HP (can pick twice); clears a debility (can pick twice); one problematic wound stabilized; recovers from a minor condition. <em>Empowered:</em> add — regains 10 HP (can pick twice); fully recovers from a problematic wound; cured of a dire affliction, poison, or disease.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_lb_inv_blindinglight"> <strong>Blinding Light</strong> (ongoing)</label><p>Your light blazes. Any in range who look at it are temporarily blinded. Those not looking directly must avert their eyes. You are unaffected. <em>Reduced:</em> flares only for a moment. <em>Empowered:</em> your allies are unaffected if you wish.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_lb_inv_cleansinglight"> <strong>Cleansing Light</strong></label><p>Your light flares, dispelling magical effects within range. Potent, lasting magics are merely suppressed. <em>Reduced:</em> potent lasting magics unaffected; others merely suppressed. <em>Empowered:</em> ongoing — any magical effects created in or brought into range are dispelled/suppressed.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_lb_inv_coldlightofday"> <strong>Cold Light of Day</strong> (ongoing)</label><p>All in your light appears as it really is, without illusion, shapeshifting, or disguise. <em>Reduced:</em> lasts only moments. <em>Empowered:</em> illusions dispelled, shapeshifters momentarily stunned.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_lb_inv_dancinglight"> <strong>Dancing Light</strong> (ongoing)</label><p>Your light takes to the air, floating as you direct it, untethered from its fuel. Move it anywhere you can see it; change its shape or color. <em>Reduced:</em> dims, range reduced one step. <em>Empowered:</em> you can use another Invocation through the Dancing Light while ongoing.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_lb_inv_gobacktoshadow"> <strong>Go Back to the Shadow</strong></label><p>Spirits of darkness in your light take 2d8 damage (ignores armor). Roll separately for each spirit. 0 HP: banished from this world or back to whatever tethers it here. <em>Reduced:</em> 1d8 damage. <em>Empowered:</em> 0 HP means utterly destroyed OR banished and tether destroyed (GM's choice).</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_lb_inv_holdbackdarkness"> <strong>Hold Back the Darkness</strong> (ongoing)</label><p>Spirits and creatures of darkness are repelled and cannot approach. Cowardly or mindless flee outright. Those forced into range deal damage with disadvantage. <em>Reduced:</em> must maintain unbroken litany of prayers. <em>Empowered:</em> entities forced into range are vulnerable to mundane weapons.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_lb_inv_mothtoflame"> <strong>Moth to a Flame</strong> (ongoing)</label><p>Name an individual or type of mortal creature. They gaze raptly at your light and will follow it slowly. Effect ends if they take damage. <em>Reduced:</em> lasts briefly OR only some affected. <em>Empowered:</em> effect continues briefly after first damage; second damage ends it.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_lb_inv_terribleasdawn"> <strong>Terrible as the Dawn</strong> (ongoing)</label><p>Name an individual or type of mortal creature. Your light fills them with dread, causing them to recoil and back away. Cowardly flee outright. <em>Reduced:</em> all mortal creatures including your allies affected. <em>Empowered:</em> even the brave must cower or flee.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_lb_inv_warmthofthesun"> <strong>Warmth of the Sun</strong> (ongoing)</label><p>While in your light, you and your allies are free of fear and doubt, and unharmed by extreme cold. <em>Reduced:</em> only one person protected. <em>Empowered:</em> also protects from necromantic and life-draining effects.</p></div>
+      </div>
+      <h3>Moves</h3>
+      <div class="stonetop-moves-list">
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_lb_acandle"> <strong>A Candle Against the Dark</strong></label><p>When you <em>wield a holy light but go otherwise unarmed</em>, you have 2 Armor.</p></div>
+        <div class="stonetop-move stonetop-move-indent"><label><input type="checkbox" name="attr_lb_luminousshield"> <strong>Luminous Shield</strong> (Requires A Candle Against the Dark)</label><p>When you <em>brandish a holy light to turn aside an attack against body, mind, or soul</em>, roll +CHA: on a 10+, attack deflected and attacker briefly blinded (if in range); on a 7-9, attack deflected but holy light flickers and threatens to go out; on a 6-, light snuffed out and attack unimpeded.</p><button type="roll" name="roll_lb_luminousshield" value="/em uses Luminous Shield, rolling +CHA [[2d6+@{cha}]]"></button></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_lb_allisilluminated"> <strong>All is Illuminated</strong></label><p>When you <em>look closely on another and see their soul laid bare</em>, roll +WIS: on a 10+, ask their player 1 question from the list plus "what would make them feel loved, beautiful, or worthy?"; on a 7-9, ask 1 question. They must answer truthfully. Questions: Of what are they most ashamed? What do they most desire? What hope have they abandoned? Who or what is most precious to them?</p><button type="roll" name="roll_lb_allisilluminated" value="/em uses All is Illuminated, rolling +WIS [[2d6+@{wis}]]"></button></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_lb_andbehold"> <strong>And Behold a Pale Horse</strong></label><p>When you <em>spend the night gazing into a flame</em>, ask the GM to reveal an impending doom or grim portent that will come to pass unless you intervene, and how you might yet do so.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_lb_consecratedflame" checked> <strong>Consecrated Flame ★</strong> (Starting move)</label><p>When you <em>whisper words of consecration to a flame</em>, the flame casts a holy light. Holy light is uncomfortable for creatures of darkness to look upon, but does no true harm. Lasts until the flame goes out or until you consecrate another flame.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_lb_firewithin"> <strong>Fire Within</strong></label><p>When you are <em>in darkness</em>, you can see by the light of your inner fire. When you <em>take damage from cold or fire</em>, reduce that damage by 2.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_lb_guidinglight"> <strong>Guiding Light</strong></label><p>When you <em>lead one or more NPCs through danger</em>, roll +CHA: on a 10+, you all make it through; on a 7-9, the GM will tell you what's required to get everyone through safely.</p><button type="roll" name="roll_lb_guidinglight" value="/em uses Guiding Light, rolling +CHA [[2d6+@{cha}]]"></button></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_lb_heliorseye"> <strong>Helior's Unblinking Eye</strong></label><p>When you <em>stare into the sun long enough to lose your vision</em>, name a person or place you know and roll +WIS: on a 10+, briefly glimpse your subject as if from a great height and choose 2; on a 7-9, glimpse and choose 1: the glimpse lasts as long as you wish; your point of view shifts to very close range; you recover vision quickly.</p><button type="roll" name="roll_lb_heliorseye" value="/em uses Helior's Unblinking Eye, rolling +WIS [[2d6+@{wis}]]"></button></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_lb_improvedstat"> <strong>Improved Stat</strong> □□□ (up to 3 times)</label><p>Increase one stat by 1 (max +2) each time taken.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_lb_invokesungod" checked> <strong>Invoke the Sun God ★</strong> (Starting move)</label><p>When you <em>imbue a holy light with Helior's power</em>, choose an Invocation you know and roll +WIS: on a 10+, it works as described but choose 1 consequence; on a 7-9, it works but you and the GM each choose 1. Consequences: the Invocation has its reduced effect; the effort taxes you (mark a debility); the light is snuffed out when the Invocation is complete; you must bask in sunlight for an hour before using that Invocation again.</p><button type="roll" name="roll_lb_invokesungod" value="/em uses Invoke the Sun God, rolling +WIS [[2d6+@{wis}]]"></button></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_lb_keepthehomefires"> <strong>Keep the Home-Fires Burning</strong></label><p>When you <em>build a camp fire and sprinkle it with ash from your own hearth</em>, anyone who Makes Camp with you is free from nightmares and recovers extra HP equal to your CHA.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_lb_lamplighter"> <strong>Lamplighter</strong></label><p>When you <em>whisper to a flammable object</em> (a torch, a wick, kindling, etc.), it ignites in moments.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_lb_piety"> <strong>Piety</strong></label><p>When you <em>spend at least an hour in proper worship to Helior</em>, hold 1 Blessing. Other faithful PCs who partake also hold 1 Blessing. At any time, spend 1 Blessing to add +1 to a roll you just made in pursuit of a righteous cause.</p><div class="stonetop-tracker"><span>Blessing: </span><input type="checkbox" name="attr_lb_blessing_1"></div></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_lb_purifyingflames"> <strong>Purifying Flames</strong></label><p>When you <em>wield a holy light against a creature of darkness</em>, it counts as a weapon (d10 damage, <em>hand, close, area, 2 piercing</em>) and you can choose to roll +WIS to Clash.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_lb_radiantcountenance"> <strong>Radiant Countenance</strong></label><p>When you <em>give someone your fond attention</em>, you can then Persuade them with advantage. If they are a follower, you can instead choose to Strengthen Your Bond (as if you paid their cost).</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_lb_riselikethesun"> <strong>Rise Like the Sun</strong></label><p>When you <em>draw attention to yourself by word or deed</em>, roll +CHA: on a 10+, everyone turns and looks and you hold their gaze as long as you keep giving them reason; on a 7-9, everyone turns and looks.</p><button type="roll" name="roll_lb_riselikethesun" value="/em uses Rise Like the Sun, rolling +CHA [[2d6+@{cha}]]"></button></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_lb_springsfirstthaw"> <strong>Spring's First Thaw</strong></label><p>When you <em>spend time seeking to stir hope, kindness, or mercy in an NPC</em>, roll +CHA: on a 10+, you light a fire deep within them and affect a lasting change; on a 7-9, you kindle goodness in their heart for now but they will eventually return to their old ways; on a 6-, their heart hardens and you can't use this move on them again.</p><button type="roll" name="roll_lb_springsfirstthaw" value="/em uses Spring's First Thaw, rolling +CHA [[2d6+@{cha}]]"></button></div>
+        <h4>Level 6+ Moves</h4>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_lb_burntwiceasbright"> <strong>Burn Twice as Bright</strong> (Requires level 6+ and Invoke the Sun God)</label><p>When you Invoke the Sun God, you may mark a debility to use 2 Invocations at once. Roll once, apply consequences to both.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_lb_empoweredinvocations"> <strong>Empowered Invocations</strong> (Requires level 6+ and Invoke the Sun God)</label><p>When you Invoke the Sun God, you can choose an extra consequence before you roll. If you do, the Invocation has its empowered effect.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_lb_gloriousservant"> <strong>Glorious Servant</strong> (Requires level 6+ and Invoke the Sun God)</label><p>When you Invoke the Sun God and roll a 10+, you need not choose a consequence; on a 7-9, you choose a consequence but the GM does not.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_lb_hungryflames"> <strong>Hungry Flames</strong> (Requires level 6+ and Purifying Flames)</label><p>When you <em>deal damage with a holy light</em>, deal +1d6 damage and your target is engulfed in holy light and flames.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_lb_lightmorelight"> <strong>Light, More Light</strong> (Requires level 6+ and Consecrated Flame)</label><p>When you consecrate a flame, it burns brighter than normal: rushlight or candle illuminates to <em>reach</em> range; oil lamp or torch to <em>near</em> range; bullseye lantern to <em>far</em> range.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_lb_superiorstat"> <strong>Superior Stat</strong> (Requires level 6+)</label><p>Increase one stat by +1 (max +3).</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_lb_wielderofwhiteflame"> <strong>Wielder of the White Flame</strong> (Requires level 6+ and Invoke the Sun God)</label><p>When you <em>channel Helior's essence into an object you carry</em>, roll +WIS: on a 10+, it ignites with a white flame that casts holy light and burns neither you nor the object, and you may Invoke the Sun God right now as if you rolled a 10+; on a 7-9, it ignites with white flame casting holy light but without the free Invocation.</p><button type="roll" name="roll_lb_wielder" value="/em uses Wielder of the White Flame, rolling +WIS [[2d6+@{wis}]]"></button></div>
+      </div>
+    </div>
+    <!-- ========== END LIGHTBEARER ========== -->
+
+    <!-- ========== MARSHAL PLAYBOOK ========== -->
+    <div class="stonetop-playbook-section marshal-section">
+      <h2>The Marshal</h2>
+      <p class="playbook-reminder"><strong>Damage:</strong> d8 &nbsp;|&nbsp; <strong>HP Max:</strong> 20</p>
+      <p class="playbook-note">You start with <strong>Crew</strong>, <strong>Logistics</strong>, any moves from your Background, and 1 move of your choice.</p>
+      <h3>Crew</h3>
+      <p>Your Crew is a half-dozen strong by default. Treat them as a follower with the <em>group</em> tag. Use the Followers tab to track them in detail.</p>
+      <div class="stonetop-moves-list">
+        <div class="stonetop-move"><label>Crew Name/Description: <input type="text" name="attr_marshal_crewname"></label></div>
+        <div class="stonetop-move"><label>Tags: <input type="text" name="attr_marshal_crewtags" value="group, "></label></div>
+        <div class="stonetop-move"><label>Instinct: <input type="text" name="attr_marshal_crewinstinct"></label></div>
+        <div class="stonetop-move"><label>Cost: <input type="text" name="attr_marshal_crewcost"></label></div>
+        <div class="stonetop-tracker">
+          <span>Loyalty: </span>
+          <input type="checkbox" name="attr_marshal_crew_loyalty_1">
+          <input type="checkbox" name="attr_marshal_crew_loyalty_2">
+          <input type="checkbox" name="attr_marshal_crew_loyalty_3">
+        </div>
+      </div>
+      <h3>Moves</h3>
+      <div class="stonetop-moves-list">
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_marshal_armored"> <strong>Armored</strong></label><p>When you carry a shield, mark only ✔ (instead of ✔✔). Also, ignore the <em>cumbersome</em> tag on any armor you wear. If taken at start of play, add an iron hauberk, bronze cuirass, or scale coat to inventory (all 2 armor, warm, cumbersome).</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_marshal_artsofwar"> <strong>Arts of War</strong> □□□ (Requires level 2+)</label><p>Take a move from Fox, Heavy, Judge, Ranger, or Seeker for which you qualify. Different playbook each time. Not Improved Stat or Superior Stat.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_marshal_crew" checked> <strong>Crew ★</strong> (Starting move)</label><p>You've got a crew of stalwarts, six or so residents of Stonetop with some steel to them. See the Crew section above and the Followers tab for tracking.</p></div>
+        <div class="stonetop-move stonetop-move-indent"><label><input type="checkbox" name="attr_marshal_veterancrew"> <strong>Veteran Crew</strong> □□ (Requires Crew)</label><p>Each time taken, pick 1: select 2 new tags for your Crew; increase their damage die from d6 to d8; increase their max HP by 2 each.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_marshal_frontlineleader"> <strong>Front Line Leader</strong></label><p>When you <em>lead your crew into battle</em>, hold 2 Presence. Spend Presence in lieu of your crew's Loyalty or as Readiness (as if you Defended them).</p><div class="stonetop-tracker"><span>Presence: </span><input type="checkbox" name="attr_marshal_presence_1"><input type="checkbox" name="attr_marshal_presence_2"></div></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_marshal_improvedstat"> <strong>Improved Stat</strong> □□□ (up to 3 times)</label><p>Increase one stat by 1 (max +2) each time taken.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_marshal_logistics" checked> <strong>Logistics ★</strong> (Starting move)</label><p>When you <em>have a steading Muster or Pull Together, or when you Requisition</em>, you have advantage.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_marshal_readtheland"> <strong>Read the Land</strong></label><p>When you <em>take a moment to survey the terrain</em>, ask the GM one of the following and gain advantage on your next roll to act on the answer: What's the best way in, out, through, or past? Where's the best spot for a trap or an ambush? Where's the most defensible position? What here is out of place?</p></div>
+        <div class="stonetop-move stonetop-move-indent"><label><input type="checkbox" name="attr_marshal_prepareawelcome"> <strong>Prepare a Welcome</strong> (Requires Read the Land)</label><p>When you <em>have your allies fortify a position and lie in wait</em>, hold 1 Surprise if rushed or 2 if you can take your time. Once battle is joined, spend 1 Surprise to reveal a ploy, defense, or dirty trick and roll +INT: on a 10+, it works as expected and regain 1 Surprise; on a 7-9, it works as expected.</p><button type="roll" name="roll_marshal_prepareawelcome" value="/em uses Prepare a Welcome, rolling +INT [[2d6+@{int}]]"></button><div class="stonetop-tracker"><span>Surprise: </span><input type="checkbox" name="attr_marshal_surprise_1"><input type="checkbox" name="attr_marshal_surprise_2"></div></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_marshal_setupstrike"> <strong>Set-Up Strike</strong></label><p>When you <em>Clash and get a 7+</em>, you can choose to deal damage with disadvantage. If you do, you create an opening for an ally to act on, as if you provided Aid.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_marshal_shakeitoff"> <strong>Shake it Off</strong></label><p>When you <em>order an ally to overcome fear, pain, doubt, or delusion</em>, roll +CHA: on a 10+, they do it; on a 7-9, a PC gets advantage to do it; an NPC will do it but they'll need time, they'll resent you, or they'll feel humiliated (GM decides).</p><button type="roll" name="roll_marshal_shakeitoff" value="/em uses Shake it Off, rolling +CHA [[2d6+@{cha}]]"></button></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_marshal_shieldwall"> <strong>Shield Wall</strong></label><p>When you <em>have your crew form a shield wall</em>, they Defend with advantage and on a 7+ hold +2 Readiness (instead of the usual +1 for shields). As long as they maintain formation, they can go on the offensive without losing Readiness.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_marshal_sirpermission"> <strong>Sir, Permission to Die, Sir</strong></label><p>When <em>one of your followers would die</em>, you can spend 1 of their Loyalty to have them survive (out of the action, but alive). If you let them go, mark XP.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_marshal_speaksoftly"> <strong>Speak Softly</strong></label><p>When you <em>offer peace but your enemy refuses</em>, gain advantage on your next roll against them.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_marshal_stentorian"> <strong>Stentorian</strong></label><p>When you raise your voice, it carries far and cuts through even the din of battle. When you <em>go into battle</em>, hold 2 Command. Spend 1 Command to shout an order or warning and pick 1: PCs get advantage on their next roll to do as you say; you have advantage to Order Followers or Deploy.</p><div class="stonetop-tracker"><span>Command: </span><input type="checkbox" name="attr_marshal_command_1"><input type="checkbox" name="attr_marshal_command_2"></div></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_marshal_takethemeasure"> <strong>Take the Measure</strong></label><p>When you <em>size someone up</em>, ask their player one of the following and get an honest answer. If they fear or respect you, ask another. You can't use this on them again until your relationship significantly changes. Questions: Can I trust them? What do they intend to do? How are they most useful/dangerous? What weakness can I exploit?</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_marshal_wehappyfew"> <strong>We Happy Few</strong> (Background: Luminary)</label><p>When you <em>give an inspiring speech to your allies before facing a dire threat</em>, roll +CHA: on a 10+, each ally holds 2 Inspiration; on a 7-9, each holds 1; on a 6-, each holds 1, but you have disadvantage on all rolls until you share your nagging doubts with someone. Allies spend Inspiration 1-for-1 to: act fearlessly; keep 1 HP instead of being reduced to 0; add 1d6 to a damage roll.</p><button type="roll" name="roll_marshal_wehappyfew" value="/em uses We Happy Few, rolling +CHA [[2d6+@{cha}]]"></button></div>
+        <h4>Level 6+ Moves</h4>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_marshal_battlefieldgrace"> <strong>Battlefield Grace</strong> (Requires level 6+ and Front Line Leader)</label><p>When you <em>take damage while leading your allies in battle</em>, the damage roll has disadvantage.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_marshal_focusfire"> <strong>Focus Fire</strong> (Requires level 6+ and Stentorian)</label><p>You can spend 1 Command to order your allies to bring down a foe. Each ally has advantage on their next damage roll against that foe.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_marshal_heroestothelast"> <strong>Heroes to the Last</strong> □□ (Requires level 6+ and Veteran Crew)</label><p>Each time taken, pick 1: they are exceptional (roll +2 instead of +1); they are inured to terror and horror; increase their max HP by 4 each; increase their damage die one size (max d10).</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_marshal_likeopenbook"> <strong>Like an Open Book</strong> (Requires level 6+ and Take the Measure)</label><p>When you <em>Take the Measure of someone who fears or respects you</em>, your second question can be anything you want.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_marshal_noblemien"> <strong>Noble Mien</strong> (Requires level 6+)</label><p>When you <em>lead an NPC through danger and return them to safety</em>, if they aren't part of your crew they will either offer to join your crew or pledge their future aid and support.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_marshal_peacethroughstrength"> <strong>Peace Through Strength</strong> (Requires level 6+ and Speak Softly)</label><p>When you <em>stand ready to fight alongside like-minded allies</em>, anything capable of fear recognizes you as a serious threat and treats you accordingly.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_marshal_superiorstat"> <strong>Superior Stat</strong> (Requires level 6+)</label><p>Increase one stat by +1 (max +3).</p></div>
+      </div>
+    </div>
+    <!-- ========== END MARSHAL ========== -->
+
+    <!-- ========== SEEKER PLAYBOOK ========== -->
+    <div class="stonetop-playbook-section seeker-section">
+      <h2>The Seeker</h2>
+      <p class="playbook-reminder"><strong>Damage:</strong> d6 &nbsp;|&nbsp; <strong>HP Max:</strong> 16</p>
+      <p class="playbook-note">You start with <strong>Well Versed</strong>, <strong>Work With What You've Got</strong>, plus 1 from your Background.</p>
+      <h3>Well Versed Topics</h3>
+      <p>Mark your starting topic (from Background) plus 1 more. Each additional time you take Well Versed, mark 2 more topics. When you Know Things about one of your topics, ask the GM a follow-up question of your choice (even on a 6-).</p>
+      <div class="stonetop-moves-list">
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_seeker_topic_lastdoor"> The Last Door, death, and the undead</label><br>
+          <label><input type="checkbox" name="attr_seeker_topic_humanity"> The civilizations of humanity</label><br>
+          <label><input type="checkbox" name="attr_seeker_topic_fae"> The Fae and their strange ways</label><br>
+          <label><input type="checkbox" name="attr_seeker_topic_makers"> The Makers and their arts</label><br>
+          <label><input type="checkbox" name="attr_seeker_topic_primordial"> The primordial powers</label><br>
+          <label><input type="checkbox" name="attr_seeker_topic_thingsbelow"> The Things Below</label><br>
+          <label><input type="checkbox" name="attr_seeker_topic_wildworld"> The wild world and its spirits</label>
+        </div>
+      </div>
+      <h3>Major Arcanum</h3>
+      <p>Your Background grants you 1 major arcanum. Note it here along with which mysteries you've begun to unlock.</p>
+      <div class="stonetop-moves-list">
+        <div class="stonetop-move"><label>Major Arcanum: <input type="text" name="attr_seeker_majorarcanum"></label></div>
+        <div class="stonetop-move"><label>Notes: <textarea name="attr_seeker_arcanumnotes" style="width:100%;height:60px"></textarea></label></div>
+        <div class="stonetop-tracker">
+          <span>Conduit Marks (permanent, never clear): </span>
+          <input type="checkbox" name="attr_seeker_conduit_1">
+          <input type="checkbox" name="attr_seeker_conduit_2">
+          <input type="checkbox" name="attr_seeker_conduit_3">
+        </div>
+      </div>
+      <h3>Moves</h3>
+      <div class="stonetop-moves-list">
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_seeker_attuned"> <strong>Attuned</strong></label><p>When you Seek Insight, you can always ask "What here is infused with magic?" for free, even on a 6-.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_seeker_conduitofpower"> <strong>Conduit of Power</strong></label><p>When you <em>would mark a Consequence from a major arcanum</em>, you can mark 1 Conduit box above instead, with no negative effect. These marks never clear.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_seeker_countermeasures"> <strong>Countermeasures</strong></label><p>When you <em>witness a magical effect</em>, you may ask the GM "How can this be countered or interrupted?" and get an honest answer. You or an ally gain advantage on your next roll to act on the answer.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_seeker_everythingbleeds"> <strong>Everything Bleeds</strong> (Background: Witch Hunter)</label><p>When you <em>exploit an unnatural foe's specific weakness or vulnerability</em>, deal +1d6 damage.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_seeker_everythingburns"> <strong>Everything Burns</strong></label><p>When you <em>inspect a work of artifice or magic for a fatal flaw</em>, roll +INT: on a 7+, the GM reveals the best way to destroy or sabotage it; on a 10+, you or an ally also gain advantage to act on the info.</p><button type="roll" name="roll_seeker_everythingburns" value="/em uses Everything Burns, rolling +INT [[2d6+@{int}]]"></button></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_seeker_improvedstat"> <strong>Improved Stat</strong> □□□ (up to 3 times)</label><p>Increase one stat by 1 (max +2) each time taken.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_seeker_initiatesecretarts"> <strong>Initiate of the Secret Arts</strong> □□□ (Requires level 2+)</label><p>You have a sacred pouch (3 Stock, magical), as per the Blessed, but with no remarkable traits. Each time taken, choose a Blessed move for which you qualify. Not Improved Stat or Superior Stat.</p><div class="stonetop-tracker"><span>Stock: </span><input type="checkbox" name="attr_seeker_stock_1"><input type="checkbox" name="attr_seeker_stock_2"><input type="checkbox" name="attr_seeker_stock_3"></div></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_seeker_letsmakeadeal"> <strong>Let's Make a Deal</strong> (Background: Patriot)</label><p>When you Seek Insight, add "What do they really want or need?" to the list of questions. When you <em>Persuade by offering them something you know they want or need</em>, treat a 7-9 as a 10+.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_seeker_logbook"> <strong>Logbook</strong></label><p>You have a logbook (2 uses, <em>slow</em>) that doesn't take up inventory space. When you consult your logbook and expend a use, ignore a Know Things roll you just made and treat it as a 10+. When the Seasons Change, reset your logbook to 2 uses.</p><div class="stonetop-tracker"><span>Logbook Uses: </span><input type="checkbox" name="attr_seeker_logbook_1"><input type="checkbox" name="attr_seeker_logbook_2"></div></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_seeker_magpie"> <strong>Magpie</strong></label><p>When you <em>Have What You Need</em>, you can produce something strange, specific, maybe even valuable or a little bit magical, but tell us where you got it and 2 of the following: how it's not quite right but maybe it'll do; the trouble you caused back home by getting it; why using it will draw unwanted attention; that it's the only one and will only work the one time.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_seeker_neverataloss"> <strong>Never at a Loss</strong></label><p>When you <em>Know Things and roll a 6-</em>, you may choose not to mark XP. If you don't, the worst that happens is the GM tells you nothing useful — instead they tell you how you could learn more.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_seeker_polyglot"> <strong>Polyglot</strong> (Background: Antiquarian)</label><p>When you <em>first encounter a living language in play</em>, describe your proficiency with it and how you came to acquire it. When you <em>Know Things about any script, text, runes or symbols</em> you encounter, you have advantage.</p></div>
+        <div class="stonetop-move stonetop-move-indent"><label><input type="checkbox" name="attr_seeker_cryptologist"> <strong>Cryptologist</strong> (Requires Polyglot)</label><p>When you <em>study encoded, forgotten, or arcane marks or writing</em>, roll +INT: on a 10+, fully decipher in just a few minutes; on a 7-9, get the gist in a few minutes but full deciphering takes an hour or so.</p><button type="roll" name="roll_seeker_cryptologist" value="/em uses Cryptologist, rolling +INT [[2d6+@{int}]]"></button></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_seeker_quickstudy"> <strong>Quick Study</strong></label><p>When you <em>study something magical that should take months to understand</em>, it instead takes weeks. If weeks, it takes days. If days, it takes only a few hours.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_seeker_safetyfirst"> <strong>Safety First</strong></label><p>When you <em>spend an hour or so preparing your mystical defenses</em>, hold 2 Protection. When you are affected by harmful magic, spend 1 Protection either to gain advantage on any roll to resist it or to halve its damage/effects.</p><div class="stonetop-tracker"><span>Protection: </span><input type="checkbox" name="attr_seeker_protection_1"><input type="checkbox" name="attr_seeker_protection_2"></div></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_seeker_sageadvice"> <strong>Sage Advice</strong></label><p>When <em>another PC asks you for guidance</em>, they get advantage on their next roll to follow your advice.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_seeker_wellversed" checked> <strong>Well Versed ★</strong> (Starting move)</label><p>Mark 1 topic from Background plus 1 more of your choice. Each additional time taken, mark 2 more topics. When you Know Things about one of your topics, ask a follow-up question of your choice (even on a 6-).</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_seeker_workwithwhatyougot" checked> <strong>Work With What You've Got ★</strong> (Starting move)</label><p>When you <em>cleverly use your environment to harm or impede your foe(s)</em>, roll +INT: on a 10+, pick 2; on a 7-9, pick 1: interrupt or thwart their actions; create an opportunity giving you or an ally advantage on the next roll to exploit it; deal damage appropriate to the source (d4 bruises, d6 bloodshed, d8 broken bones, d10 if it'd kill a common person).</p><button type="roll" name="roll_seeker_workwithwhat" value="/em uses Work With What You've Got, rolling +INT [[2d6+@{int}]]"></button></div>
+        <h4>Level 6+ Moves</h4>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_seeker_arcaneadept"> <strong>Arcane Adept</strong> (Requires level 6+)</label><p>When you <em>wish to invent a spell or magical effect</em>, detail its workings with the GM and Make a Plan to invent it. If you like, pick one requirement and ask the GM to provide an alternative.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_seeker_deepinsight"> <strong>Deep Insight</strong> (Requires level 6+ and Attuned)</label><p>When you <em>Seek Insight about something magical</em>, you may ask one additional question not limited to the list. Even on a 6-, you get to ask this question.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_seeker_improvise"> <strong>Improvise</strong> (Requires level 6+ and Quick Study)</label><p>When you <em>wish to use an arcanum's move or option without having unlocked it</em>, ask the GM what fool risks or consequences you'll incur. If you go for it, roll +INT: on a 7+, trigger the move or use the option as if you'd unlocked it; on a 10+, also mark one step towards unlocking the arcanum's mysteries.</p><button type="roll" name="roll_seeker_improvise" value="/em uses Improvise, rolling +INT [[2d6+@{int}]]"></button></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_seeker_mindovermagic"> <strong>Mind Over Magic</strong> (Requires level 6+)</label><p>When you <em>roll to study or use an arcanum</em>, you can roll +INT instead of the stat you'd normally roll.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_seeker_overchannel"> <strong>Overchannel</strong> (Requires level 6+ and Conduit of Power)</label><p>When you <em>would mark a Consequence from a major arcanum</em>, you may mark a debility instead.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_seeker_proofagainstdetection"> <strong>Proof Against Detection</strong> (Requires level 6+ and Safety First)</label><p>When you <em>hold Protection</em>, you can't be scried upon or sensed by magical means, and have advantage to Defy Danger by being stealthy.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_seeker_superiorstat"> <strong>Superior Stat</strong> (Requires level 6+)</label><p>Increase one stat by +1 (max +3).</p></div>
+      </div>
+    </div>
+    <!-- ========== END SEEKER ========== -->
+
+    <!-- CHANGE 4: Additional Moves at bottom of character tab (replaces mid-page repeating_moves) -->
+    <div class="stonetop-additional-moves">
+      <h3>Additional Moves</h3>
+      <p class="playbook-note">For moves acquired from other playbooks through advancement.</p>
+      <fieldset class="repeating_moves">
+        <div class="stonetop-repeating">
+          <div class="stonetop-row">
+            <label class="stonetop-repeating-name">
+              <span>Name:</span>
+              <input type="text" name="attr_movename" value="">
+            </label>
+            <button type="roll" name="roll_move" value="/em uses @{movename}, and rolls [[?{Roll Type | Standard, 2d6 + @{skillstat} | Advantage, 3d6d1 + @{skillstat} | Disadvantage, 3d6dh1 + @{skillstat}}]]"></button>
+          </div>
+          <div class="stonetop-row">
+            <label>
+              <span>Roll Skill: </span>
+              <select name="attr_skillstat" class="skillstat">
+                <option value="0">No Skill</option>
+                <option value="@{str}">Strength</option>
+                <option value="@{dex}">Dexterity</option>
+                <option value="@{int}">Intelligence</option>
+                <option value="@{wis}">Wisdom</option>
+                <option value="@{con}">Constitution</option>
+                <option value="@{cha}">Charisma</option>
+              </select>
+            </label>
+          </div>
+          <label for="stonetop-description">Description:</label>
+          <textarea id="stonetop-description" name="attr_desription"></textarea>
+        </div>
+      </fieldset>
+    </div>
+
+  </div>
+  <!-- END stonetop-character-section -->
+
+  <!-- ========== INVENTORY TAB ========== -->
+  <div class="stonetop-inventory-section">
+    <input type="hidden" name="attr_activeplaybook_inv" value="none">
+    <h1 class="stonetop-sr-only">Inventory</h1>
+    <div class="stonetop-row">
+      <div class="stonetop-column-thirds">
+        <h3>Have What You Need</h3>
+        <label class="stonetop-inventory-field">
+          <span>Undefined:</span>
+          <input type="number" name="attr_undefinedresources" value="0" />
+        </label>
+        <h3>Supplies</h3>
+        <label class="stonetop-inventory-field">
+          <div class="left">
+            <input type="checkbox" name="attr_supplieschecked">
+            <span>Supplies:</span>
+          </div>
+          <input type="number" name="attr_supplies" value="4" />
+        </label>
+        <label class="stonetop-inventory-field">
+          <div class="left">
+            <input type="checkbox" name="attr_moresupplieschecked">
+            <span>More Supplies:</span>
+          </div>
+          <input type="number" name="attr_moresupplies" value="4" />
+        </label>
+        <label class="stonetop-inventory-field">
+          <div class="left">
+            <input type="checkbox" name="attr_evenmoresupplieschecked">
+            <span>Even More Supplies:</span>
+          </div>
+          <input type="number" name="attr_evenmoresupplies" value="4" />
+        </label>
+      </div>
+      <div class="stonetop-column-thirds">
+        <h3>Large Items</h3>
+        <fieldset class="repeating_largeitems">
+          <div class="stonetop-repeating-inventory">
+            <div class="stonetop-row">
+              <label class="stonetop-inventory-field">
+                <span class="name">Name:</span>
+                <input type="text" name="attr_itemname" value="">
+              </label>
+            </div>
+            <div class="stonetop-row">
+              <label class="stonetop-inventory-field left">
+                <span>Weight:</span>
+                <input type="number" name="attr_itemweight" value="1" />
+              </label>
+              <label class="stonetop-inventory-field">
+                <span>Uses:</span>
+                <input type="number" name="attr_itemuses" value="0" />
+              </label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+      <div class="stonetop-column-thirds">
+        <h3>Small Items</h3>
+        <fieldset class="repeating_smallitems">
+          <div class="stonetop-repeating-inventory">
+            <div class="stonetop-row">
+              <label class="stonetop-inventory-field">
+                <span class="name">Name:</span>
+                <input type="text" name="attr_itemname" value="">
+              </label>
+            </div>
+            <label class="stonetop-inventory-field">
+              <span>Uses:</span>
+              <input type="number" name="attr_itemuses" value="0" />
+            </label>
+          </div>
+        </fieldset>
+      </div>
+    </div>
+
+    <!-- CHANGE 5: Special Possessions moved here, playbook-specific checklists -->
+    <div class="stonetop-special-possessions">
+      <h3>Special Possessions</h3>
+
+      <div class="sp-section blessed-section">
+        <p class="playbook-note">Pick 2, in addition to your sacred pouch.</p>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_blessed_apiary"> <strong>Apiary</strong></label><p>Beeswax, candles (close, area, ~1 hr), honey, bee smokers, hat &amp; veils, etc.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_blessed_offerings"> <strong>Collected Offerings</strong> □□□</label><p>Expend a use to produce something valuable to a spirit of the wild. Restore 1 use each season.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_blessed_goatherd"> <strong>Goat Herd</strong></label><p>Milk, cheese, pelts, meat, blood, horn, wool, etc. Each season, 1-in-4 chance of a bezoar (swallow to cure poison).</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_blessed_herbgarden"> <strong>Herb Garden</strong></label><p>Shears, mortars &amp; pestles, herbs, seeds, remedies, mild poisons, spades, etc. Each spring, d4 uses of bendis root (reach, area, burns ~1 hr, fumes repel perversions of nature).</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_blessed_mastiffs"> <strong>Mastiffs</strong> (2–3 followers)</label><p><em>Alert, keen-nosed, fierce, overprotective</em>; HP 6; Damage d6 (hand, grabby); Instinct: bark &amp; threaten; Cost: affection.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_blessed_custom"> <strong>___________________</strong> (discuss with GM)</label></div>
+      </div>
+
+      <div class="sp-section fox-section">
+        <p class="playbook-note">Pick 2.</p>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_fox_burglarkit"> <strong>Burglar's Kit</strong></label><p>Picks, files, snippers, wire, prybars, hacksaws, a lantern (□□□□□ hours, close, area), a grappling hook, etc.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_fox_carpentertools"> <strong>Carpenter's Tools</strong></label><p>Chisels, files, nails, pitch, prybars, saws, □□ firkins, barrels, etc.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_fox_distillery"> <strong>Distillery</strong></label><p>Skins of fine whisky (□□ uses, advantage to Persuade), copper tubes, malt, □□ firkins, stills, barrels, etc.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_fox_hiddenstash"> <strong>Hidden Stash</strong> □□□</label><p>Each use produces valuables worth a purse of silvers (Value 2).</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_fox_mummerskit"> <strong>Mummer's Kit</strong></label><p>Juggling balls, whirlybird seeds, motley, ribbons, bells, □ puppets, □ a fiddle, etc.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_fox_scribestools"> <strong>Scribe's Tools</strong></label><p>Parchment, ink, pigments, vials, quills, □ a notebook, etc.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_fox_tannery"> <strong>Tannery</strong> (or access to it)</label><p>Lime, acid, salts, thick gloves, □ a boiled leather cuirass (1 armor), etc.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_fox_tradecontacts"> <strong>Trade Contacts</strong></label><p>Small amounts of salt, glass, silk, spice, medicinal herbs, pigments, ivory, etc.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_fox_custom"> <strong>___________________</strong> (discuss with GM)</label></div>
+      </div>
+
+      <div class="sp-section heavy-section">
+        <p class="playbook-note">Pick 2.</p>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_heavy_distillery"> <strong>Distillery</strong></label><p>Skins of fine whisky (□□ uses, advantage to Persuade), copper tubes, malt, □□ firkins, stills, barrels, etc.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_heavy_chirurgeon"> <strong>Chirurgeon's Tools</strong></label><p>Catgut, straps, bandages, tubes, poultices, willow bark, bonesaws, etc.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_heavy_husbandry"> <strong>Husbandry Tools</strong></label><p>Brushes, muzzles, collars, feed, whips, bridles, etc. Advantage to Persuade domestic beasts.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_heavy_smithy"> <strong>Smithy</strong> (or access to it)</label><p>Iron goods, ingots, thick gloves, tongs, bellows, an anvil, etc.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_heavy_stoneworker"> <strong>Stoneworker's Tools</strong></label><p>Chisels, drills, prybars, spikes, block &amp; tackles, wheelbarrow, etc.</p></div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_sp_heavy_weaponsofwar"> <strong>Weapons of War</strong> (choose up to 3):</label>
+          <div class="stonetop-tracker">
+            <label><input type="checkbox" name="attr_sp_heavy_sword"> Sword, iron (close, +1 damage)</label><br>
+            <label><input type="checkbox" name="attr_sp_heavy_battleaxe"> Battleaxe, iron (close, messy)</label><br>
+            <label><input type="checkbox" name="attr_sp_heavy_warhammer"> Warhammer, iron (close, 2 piercing)</label><br>
+            <label><input type="checkbox" name="attr_sp_heavy_mace"> Mace or flail, iron (close, forceful)</label><br>
+            <label><input type="checkbox" name="attr_sp_heavy_crossbow"> Crossbow (far, +1 damage, reload, x piercing, low ammo, all out)</label>
+          </div>
+        </div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_heavy_custom"> <strong>___________________</strong> (discuss with GM)</label></div>
+      </div>
+
+      <div class="sp-section judge-section">
+        <p class="playbook-note">Pick 1, in addition to your symbol of authority and scribe's kit.</p>
+        <div class="stonetop-move">
+          <label><strong>★ Symbol of Authority</strong> (pick 1):</label>
+          <div class="stonetop-tracker">
+            <label><input type="checkbox" name="attr_sp_judge_maul"> Black iron maul, immune to all magic (close, forceful, awkward, +1 damage)</label><br>
+            <label><input type="checkbox" name="attr_sp_judge_shield"> Makerglass shield, etched with Aratis's symbol (indestructible, +1 armor, +1 Readiness on Defend 7+)</label><br>
+            <label><input type="checkbox" name="attr_sp_judge_helm"> Helm set with a dark ice "jewel" — advantage to resist mind-affecting magic</label>
+          </div>
+        </div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_judge_scribestools"> <strong>★ Scribe's Tools</strong></label><p>Parchment, ink, pigments, vials, quills, a notebook, etc.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_judge_aviary"> <strong>Aviary</strong></label><p>Thick gloves, bird hoods, tethers, seed, messenger birds, birdcages, etc.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_judge_carpentertools"> <strong>Carpenter's Tools</strong></label><p>Chisels, files, nails, pitch, prybars, saws, firkins, barrels, etc.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_judge_engineertools"> <strong>Engineer's Tools</strong></label><p>Rulers, tapes, rods, plumb-bobs, tripods, block &amp; tackles, wheelbarrow, etc.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_judge_smithy"> <strong>Smithy</strong> (or access to it)</label><p>Iron goods, ingots, thick gloves, tongs, bellows, an anvil, etc.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_judge_custom"> <strong>___________________</strong> (discuss with GM)</label></div>
+      </div>
+
+      <div class="sp-section lightbearer-section">
+        <p class="playbook-note">Pick 2.</p>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_lb_apiary"> <strong>Apiary</strong></label><p>Beeswax, candles (close, area, ~1 hr), honey, bee smokers, hats &amp; veils, etc.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_lb_books"> <strong>Books &amp; Scrolls</strong> □□□□□</label><p>Expend a use to turn a Know Things roll you just made into a 10+.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_lb_chandlery"> <strong>Chandlery</strong></label><p>Beeswax, candles (close, area, ~1 hr), wicks, scented herbs, soap, lye, ash, etc.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_lb_distillery"> <strong>Distillery</strong></label><p>Skins of fine whisky (□□ uses, advantage to Persuade), copper tubes, malt, □□ firkins, stills, barrels, etc.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_lb_glassworks"> <strong>Glassworks</strong></label><p>Vials, charms, lenses, sand, marbles, bellows, crucible, lanterns (□□□□□ hours, close, area), etc.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_lb_holyrelics"> <strong>Holy Relics</strong> □□□</label><p>When you have one in inventory and Invoke the Sun God, mark a use in lieu of choosing a consequence.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_lb_luthier"> <strong>Luthier's Tools</strong></label><p>Chisels, files, catgut, various woods, stains, □ a lute, □ a fiddle, etc.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_lb_custom"> <strong>___________________</strong> (discuss with GM)</label></div>
+      </div>
+
+      <div class="sp-section marshal-section">
+        <p class="playbook-note">Pick 2.</p>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_marshal_chirurgeon"> <strong>Chirurgeon's Tools</strong></label><p>Catgut, straps, bandages, tubes, poultice, willow bark, bonesaws, etc.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_marshal_distillery"> <strong>Distillery</strong></label><p>Skins of fine whisky (□□ uses, advantage to Persuade), copper tubes, malt, □□ firkins, stills, barrels, etc.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_marshal_engineertools"> <strong>Engineer's Tools</strong></label><p>Rulers, tapes, rods, plumb-bobs, tripods, block &amp; tackles, wheelbarrow, etc.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_marshal_personalsymbol"> <strong>Personal Symbol</strong></label><p>When you display it dramatically, your crew holds +1 Loyalty (max 3).</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_marshal_scribestools"> <strong>Scribe's Tools</strong></label><p>Parchment, ink, pigments, vials, quills, a notebook, etc.</p></div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_sp_marshal_weaponsofwar"> <strong>Weapons of War</strong> (choose up to 3):</label>
+          <div class="stonetop-tracker">
+            <label><input type="checkbox" name="attr_sp_marshal_sword"> Sword, iron (close, +1 damage)</label><br>
+            <label><input type="checkbox" name="attr_sp_marshal_longspear"> Long spear, fine steel (reach, 2 piercing)</label><br>
+            <label><input type="checkbox" name="attr_sp_marshal_battleaxe"> Battleaxe, iron (close, messy)</label><br>
+            <label><input type="checkbox" name="attr_sp_marshal_bow"> Composite bow (far, +1 damage, x piercing; low ammo, all out)</label>
+          </div>
+        </div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_marshal_custom"> <strong>___________________</strong> (discuss with GM)</label></div>
+      </div>
+
+      <div class="sp-section ranger-section">
+        <p class="playbook-note">Pick 2, in addition to your composite bow.</p>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_ranger_bow"> <strong>★ Composite Bow</strong></label><p>Far, +1 damage, x piercing; □ low ammo, □ all out.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_ranger_distillery"> <strong>Distillery</strong></label><p>Skins of fine whisky (□□ uses, advantage to Persuade), copper tubes, malt, □□ firkins, stills, barrels, etc.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_ranger_hideouts"> <strong>Hideouts</strong> □□□</label><p>Expend a use to have a well-stocked, safe shelter nearby; GM can veto.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_ranger_husbandry"> <strong>Husbandry Tools</strong></label><p>Brushes, muzzles, collars, feed, whips, bridles, etc. Advantage to Persuade domestic beasts.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_ranger_hounds"> <strong>Hounds</strong> (2–3 followers)</label><p><em>Trackers, keen-nosed, fast</em>; HP 6; Damage d6 (hand, grabby); Instinct: give chase; Cost: training.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_ranger_layoftheland"> <strong>Lay of the Land</strong> □□□</label><p>Expend a use to know where to find ___, without having to Know Things; GM can veto.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_ranger_trappinggear"> <strong>Trapping Gear</strong></label><p>Snares, pelts, musk, bait, etc. When you Forage, get +1 use of provisions.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_ranger_custom"> <strong>___________________</strong> (discuss with GM)</label></div>
+      </div>
+
+      <div class="sp-section seeker-section">
+        <p class="playbook-note">Pick 2, in addition to your scribe's tools.</p>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_seeker_scribestools"> <strong>★ Scribe's Tools</strong></label><p>Parchment, ink, pigments, vials, quills, a notebook, etc.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_seeker_books"> <strong>Books &amp; Scrolls</strong> □□□□□</label><p>Expend a use to turn a Know Things roll you just made into a 10+.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_seeker_distillery"> <strong>Distillery</strong></label><p>Skins of fine whisky (□□ uses, advantage to Persuade), copper tubes, malt, □□ firkins, stills, barrels, etc.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_seeker_engineertools"> <strong>Engineer's Tools</strong></label><p>Rulers, tapes, rods, plumb-bobs, tripods, block &amp; tackles, wheelbarrow, etc.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_seeker_laboratory"> <strong>Laboratory</strong></label><p>Chemics, reagents, vials, measures, scales, decanters, etc. Every season, produce d4-1 uses of naphtha (thrown, area, dangerous, ignores armor).</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_seeker_paraphernalia"> <strong>Paraphernalia</strong></label><p>Crystals, incense, talismans, blood, bone, horn, eye of newt, braziers, □□ a cauldron, etc.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_seeker_tradecontacts"> <strong>Trade Contacts</strong></label><p>Small amounts of salt, glass, silk, spice, medicinal herbs, pigments, ivory, etc.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_seeker_custom"> <strong>___________________</strong> (discuss with GM)</label></div>
+      </div>
+
+      <div class="sp-section wbh-section">
+        <p class="playbook-note">Pick 2.</p>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_wbh_expectations"> <strong>A Heap of Expectations</strong></label><p>Of little use.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_wbh_gooddog"> <strong>A Good Dog</strong> (follower)</label><p><em>Retriever or herder, keen-nosed, clever</em>; HP 6; Damage d6 (hand, grabby); Instinct: play; Cost: affection.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_wbh_husbandry"> <strong>Husbandry Tools</strong></label><p>Brushes, muzzles, collars, feed, whips, bridles, etc. Advantage to Persuade domestic beasts.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_wbh_smithy"> <strong>Smithy</strong> (or access to it)</label><p>Iron goods, ingots, thick gloves, tongs, bellows, an anvil, etc.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_wbh_stoneworker"> <strong>Stoneworker's Tools</strong></label><p>Chisels, drills, prybars, spikes, block &amp; tackles, wheelbarrow, etc.</p></div>
+        <div class="stonetop-move">
+          <label><input type="checkbox" name="attr_sp_wbh_personaltoken"> <strong>Personal Token, Fraught with Meaning</strong> (pick 1):</label>
+          <div class="stonetop-tracker">
+            <label><input type="checkbox" name="attr_sp_wbh_token_shield"> A shield, bearing ___'s crest</label><br>
+            <label><input type="checkbox" name="attr_sp_wbh_token_cloak"> A wool cloak, woven just for you by ___</label><br>
+            <label><input type="checkbox" name="attr_sp_wbh_token_letter"> A letter, spattered with tears &amp; blood</label><br>
+            <label><input type="checkbox" name="attr_sp_wbh_token_flute"> A flute, a gift from someone you loved</label><br>
+            <label><input type="checkbox" name="attr_sp_wbh_token_locket"> A fine locket, holding a strand of hair</label><br>
+            <label><input type="checkbox" name="attr_sp_wbh_token_tinderbox"> A tinderbox, lovingly engraved</label>
+          </div>
+        </div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_wbh_tannery"> <strong>Tannery</strong> (or access to it)</label><p>Lime, acid, salts, thick gloves, □ a boiled leather cuirass (1 armor), etc.</p></div>
+        <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_wbh_custom"> <strong>___________________</strong> (discuss with GM)</label></div>
+      </div>
+
+    </div>
+    <!-- END SPECIAL POSSESSIONS -->
+
+  </div>
+  <!-- END INVENTORY TAB -->
+
+  <!-- ========== FOLLOWERS TAB ========== -->
+  <div class="stonetop-followers-section">
+    <h1 class="stonetop-sr-only">Followers</h1>
+    <fieldset class="repeating_followers">
+      <div class="stonetop-row">
+        <div class="stonetop-repeating-followers">
+          <div class="stonetop-row">
+            <div class="stonetop-column-thirds">
+              <label class="stonetop-follower-header">
+                <span class="name">Name:</span>
+                <input type="text" name="attr_followername" value="">
+              </label>
+            </div>
+            <div class="stonetop-column-thirds">
+              <label class="stonetop-follower-header">
+                <span class="name">Tags:</span>
+                <input type="text" name="attr_followertags" value="">
+              </label>
+            </div>
+            <div class="stonetop-column-thirds">
+              <label class="stonetop-follower-header">
+                <span>Instinct:</span>
+                <input type="text" name="attr_followerinstinct" />
+              </label>
+            </div>
+          </div>
+          <div class="stonetop-row stonetop-follower-stats">
+            <div class="stonetop-column-thirds">
+              <label class="stonetop-follower-stat">
+                <span>HP:</span>
+                <input type="number" name="attr_followerhp" value="0" />
+              </label>
+              <label class="stonetop-follower-stat">
+                <span>Armor:</span>
+                <input type="number" name="attr_followerarmor" value="0" />
+              </label>
+              <label class="stonetop-follower-stat stonetop-damage">
+                <span>Do Damage:</span>
+                <button type="roll" name="roll_followerdamage" value="/em The Follower @{followername} causes damage, and rolls [[@{followerdamagedie}]]"></button>
+                <select name="attr_followerdamagedie" class="stonetop-damagedie">
+                  <option value="0">No Damage</option>
+                  <option value="d4">D4</option>
+                  <option value="d6">D6</option>
+                  <option value="d8">D8</option>
+                  <option value="d10">D10</option>
+                  <option value="d12">D12</option>
+                </select>
+              </label>
+            </div>
+            <div class="stonetop-column-thirds">
+              <label class="stonetop-follower-text">
+                <span>Cost:</span>
+                <input type="text" name="attr_followercost" />
+              </label>
+              <label class="stonetop-follower-text">
+                <span>Moves:</span>
+                <input type="text" name="attr_followermoves" />
+              </label>
+              <label class="stonetop-follower-text">
+                <span>Gear:</span>
+                <input type="text" name="attr_followergear" />
+              </label>
+              <!-- CHANGE 6: Relationship field added -->
+              <label class="stonetop-follower-text">
+                <span>Relationship:</span>
+                <input type="text" name="attr_followerrelationship" />
+              </label>
+            </div>
+            <div class="stonetop-column-thirds stonetop-notes">
+              <label for="stonetop-follower-notes">Notes:</label>
+              <textarea id="stonetop-follower-notes" name="attr_followerdesription"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+  <!-- END FOLLOWERS TAB -->
+
+</div>
+
+<script type="text/worker">
+  on('change:hpmax change:damagetaken sheet:opened', () => {
+    getAttrs(['hpmax', 'damagetaken'], (attrs) => {
+      setAttrs({ hp: (parseInt(attrs.hpmax) || 0) - (parseInt(attrs.damagetaken) || 0) });
+    });
+  });
+
+  on('clicked:character clicked:inventory clicked:followers', (e) => {
+    setAttrs({ sheetTab: e.triggerName.replace('clicked:', '') });
+  });
+
+   on('change:class sheet:opened', () => {
+    getAttrs(['class'], (attrs) => {
+      const val = attrs['class'] || 'none';
+      setAttrs({ activeplaybook: val, activeplaybook_inv: val });
+    });
+  });
+</script>
