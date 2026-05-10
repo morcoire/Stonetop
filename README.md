@@ -1,4 +1,4 @@
-Stonetop character sheet for Roll20. Based on Stonetop by Jeremy Strandberg, CC BY-SA 4.0. Sheet customizations by Morcoire.
+Stonetop character sheet for Roll20. Based on Stonetop by Jeremy Strandberg, CCBYSA 4.0. Sheet customizations by Morcoire.
 
 Use of these character sheets requires Roll20 Pro account in order to build a custom character sheet.
 
