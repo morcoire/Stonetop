@@ -1,0 +1,855 @@
+/* Stonetop character sheet for Roll20. Based on Stonetop by Jeremy Strandberg, CC BY-SA 4.0. Sheet customizations by Morcoire. */
+
+.stonetop-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.stonetop-main,
+.stonetop-main * {
+  box-sizing: border-box;
+  color: #3a3a46;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+.stonetop-main input,
+.stonetop-main select,
+.stonetop-main textarea,
+.stonetop-main button {
+  font-family: 'DM Sans', sans-serif;
+}
+
+.stonetop-main h2 {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.6em;
+  letter-spacing: 0.04em;
+  margin-bottom: 4px;
+}
+
+.stonetop-main h3 {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1em;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin: 20px 0px;
+}
+
+.stonetop-main h4 {
+  font-family: Georgia, 'Times New Roman', serif;
+  letter-spacing: 0.03em;
+}
+
+.stonetop-main .stonetop-tabs button {
+  font-family: Georgia, 'Times New Roman', serif;
+  letter-spacing: 0.05em;
+}
+
+.stonetop-main .stonetop-sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.stonetop-main .stonetop-tabs {
+  border-bottom: 2px solid #3a3a46;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.stonetop-main .stonetop-tabs button {
+  background-color: white;
+  border: 2px solid #3a3a46;
+  border-bottom: none;
+  border-radius: 5px 5px 0px 0px;
+  color: #3a3a46;
+  cursor: pointer;
+  font: inherit;
+  height: 3em;
+  margin: 0px 5px;
+  outline: inherit;
+  padding: 5px;
+}
+
+.stonetop-main .stonetop-character-section,
+.stonetop-main .stonetop-followers-section,
+.stonetop-main .stonetop-inventory-section {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: visible;
+}
+
+.stonetop-main .stonetop-tabstoggle[value=character] ~ div.stonetop-character-section,
+.stonetop-main .stonetop-tabstoggle[value=inventory] ~ div.stonetop-inventory-section,
+.stonetop-main .stonetop-tabstoggle[value=followers] ~ div.stonetop-followers-section {
+  height: auto;
+  left: auto;
+  position: relative;
+  width: auto;
+}
+
+.stonetop-main .stonetop-tabstoggle[value=character] ~ .stonetop-tabs button.character,
+.stonetop-main .stonetop-tabstoggle[value=inventory] ~ .stonetop-tabs button.inventory,
+.stonetop-main .stonetop-tabstoggle[value=followers] ~ .stonetop-tabs button.followers {
+  background-color: #3a3a46;
+  color: white;
+}
+
+.stonetop-main .stonetop-row {
+  display: flex;
+  align-items: center;
+}
+
+.stonetop-main .stonetop-column-thirds {
+  align-self: flex-start;
+  flex: 0 0 auto;
+  margin-right: 30px;
+  width: calc(33% - 30px * 2 / 3);
+}
+
+.stonetop-main .stonetop-column-thirds:last-of-type {
+  margin-right: 0px;
+}
+
+.stonetop-main textarea {
+  width: 100%;
+}
+
+.stonetop-main .heading-field {
+  align-items: center;
+  display: flex;
+  max-width: 350px;
+  min-width: 150px;
+  margin: 10px 0px;
+  padding: 0px;
+}
+
+.stonetop-main .heading-field span {
+  flex: none;
+}
+
+.stonetop-main .heading-field input[type=text] {
+  flex: auto;
+  margin-left: 10px;
+  min-width: 100px;
+}
+
+.stonetop-main .heading-field input[type=radio] {
+  margin-right: 10px;
+}
+
+.stonetop-main .heading-field select {
+  margin-left: 10px;
+  margin-bottom: 0px;
+}
+
+.stonetop-main button[type=roll] {
+  flex: none;
+  height: 23px;
+  width: 23px;
+}
+
+.stonetop-main .stonetop-stat {
+  height: 100px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  margin-right: 15px;
+  position: relative;
+  width: calc((100% - 15px * 5) / 6);
+}
+
+.stonetop-main .stonetop-stat:last-of-type {
+  margin-right: 0px;
+}
+
+.stonetop-main .stonetop-stat .stonetop-stat-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  left: 0;
+  position: absolute;
+  top: -22px;
+  width: 100%;
+  z-index: 10;
+}
+
+.stonetop-main .stonetop-stat label {
+  width: auto;
+  padding: 0px;
+  color: #1a1a1a;
+}
+
+.stonetop-main .stonetop-stat input {
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+.stonetop-main .stonetop-debility {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+
+.stonetop-main .stonetop-debility .stonetop-grouping-image {
+  border: solid #3a3a46 2px;
+  border-radius: 0px 0px 1em 1em;
+  border-top: none;
+  height: 1em;
+  width: 100%;
+}
+
+.stonetop-main .stonetop-debility label {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: -1em;
+  padding: 0px;
+}
+
+.stonetop-main .stonetop-debility label .stonetop-checkbox-wrapper {
+  background-color: white;
+  padding: 5px;
+}
+
+.stonetop-main .stonetop-debility .description {
+  font-style: italic;
+  font-size: 0.8em;
+}
+
+.stonetop-main .stonetop-repeating {
+  border: 2px solid #3a3a46;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.stonetop-main .stonetop-repeating .stonetop-row {
+  margin-bottom: 20px;
+}
+
+.stonetop-main .stonetop-repeating label {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  margin-bottom: 10px;
+}
+
+.stonetop-main .stonetop-repeating label.stonetop-repeating-name {
+  padding-right: 10px;
+}
+
+.stonetop-main .stonetop-repeating label span {
+  margin-bottom: 10px;
+}
+
+.stonetop-main .stonetop-repeating label input {
+  width: 100%;
+}
+
+.stonetop-main .stonetop-repeating label select {
+  margin-bottom: 0px;
+  width: 100%;
+}
+
+.stonetop-main .stonetop-repeating textarea {
+  margin-bottom: 0px;
+}
+
+.stonetop-main .stonetop-hp .stonetop-row {
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.stonetop-main .stonetop-hp label {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
+}
+
+.stonetop-main .stonetop-hp label span {
+  flex: none;
+  height: auto;
+}
+
+.stonetop-main .stonetop-hp .stonetop-current-hp {
+  height: 50px;
+  width: 50px;
+  position: relative;
+}
+
+.stonetop-main .stonetop-hp .stonetop-current-hp .octagon {
+  height: 25px;
+  top: calc(25px / 2);
+}
+
+.stonetop-main .stonetop-hp .stonetop-current-hp .octagon.bg::before {
+  top: -14px;
+  border-bottom: 14px solid;
+  border-bottom-color: inherit;
+  border-left: 14px solid transparent;
+  border-right: 14px solid transparent;
+  width: calc(100% - 28px);
+}
+
+.stonetop-main .stonetop-hp .stonetop-current-hp .octagon.bg::after {
+  bottom: -14px;
+  border-top: 14px solid;
+  border-top-color: inherit;
+  border-left: 14px solid transparent;
+  border-right: 14px solid transparent;
+  width: calc(100% - 28px);
+}
+
+.stonetop-main .stonetop-hp .stonetop-current-hp .octagon:before {
+  top: -12px;
+  border-bottom: 12px solid;
+  border-bottom-color: inherit;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  width: calc(100% - 24px);
+}
+
+.stonetop-main .stonetop-hp .stonetop-current-hp .octagon:after {
+  bottom: -12px;
+  border-top: 12px solid;
+  border-top-color: inherit;
+  border-right: 12px solid transparent;
+  border-left: 12px solid transparent;
+  width: calc(100% - 24px);
+}
+
+.stonetop-main .stonetop-hp .stonetop-current-hp .stonetop-hp-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  z-index: 10;
+}
+
+.stonetop-main .stonetop-hp .stonetop-current-hp .stonetop-hp-content span {
+  font-size: 2rem;
+}
+
+/* ========== COMPACT STATS ========== */
+
+.stonetop-main .stonetop-compact-stats {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 12px;
+}
+
+.stonetop-main .stonetop-hp-compact {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+}
+
+.stonetop-main .stonetop-hp-compact .stonetop-current-hp {
+  height: 50px;
+  width: 50px;
+  position: relative;
+}
+
+.stonetop-main .stonetop-hp-compact .stonetop-current-hp .octagon {
+  height: 25px;
+  top: calc(25px / 2);
+}
+
+.stonetop-main .stonetop-hp-compact .stonetop-current-hp .octagon.bg::before {
+  top: -14px;
+  border-bottom: 14px solid;
+  border-bottom-color: inherit;
+  border-left: 14px solid transparent;
+  border-right: 14px solid transparent;
+  width: calc(100% - 28px);
+}
+
+.stonetop-main .stonetop-hp-compact .stonetop-current-hp .octagon.bg::after {
+  bottom: -14px;
+  border-top: 14px solid;
+  border-top-color: inherit;
+  border-left: 14px solid transparent;
+  border-right: 14px solid transparent;
+  width: calc(100% - 28px);
+}
+
+.stonetop-main .stonetop-hp-compact .stonetop-current-hp .octagon::before {
+  top: -12px;
+  border-bottom: 12px solid;
+  border-bottom-color: inherit;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  width: calc(100% - 24px);
+}
+
+.stonetop-main .stonetop-hp-compact .stonetop-current-hp .octagon::after {
+  bottom: -12px;
+  border-top: 12px solid;
+  border-top-color: inherit;
+  border-right: 12px solid transparent;
+  border-left: 12px solid transparent;
+  width: calc(100% - 24px);
+}
+
+.stonetop-main .stonetop-hp-compact .stonetop-current-hp .stonetop-hp-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.stonetop-main .stonetop-hp-compact .stonetop-hp-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.stonetop-main .stonetop-damage-compact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.stonetop-main .stonetop-armor-compact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.stonetop-main .compact-label-top {
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.stonetop-main .compact-field {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+}
+
+.stonetop-main .stonetop-hp .stonetop-damagedie {
+  margin: 0px;
+  width: 8em;
+}
+
+.stonetop-main .stonetop-xp {
+  justify-content: space-between;
+}
+
+.stonetop-main .stonetop-xp label {
+  align-items: center;
+  display: flex;
+  margin: 10px 0px;
+  padding-right: 0px;
+}
+
+.stonetop-main .stonetop-xp label.level {
+  justify-content: flex-end;
+}
+
+.stonetop-main .stonetop-xp label span {
+  padding-right: 10px;
+}
+
+.stonetop-main label.stonetop-inventory-field {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 0;
+}
+
+.stonetop-main label.stonetop-inventory-field.left {
+  margin-right: 10px;
+}
+
+.stonetop-main label.stonetop-inventory-field .left {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.stonetop-main label.stonetop-inventory-field .left input[type=checkbox] {
+  margin-right: 10px;
+}
+
+.stonetop-main .stonetop-repeating-inventory {
+  border-bottom: 2px solid #3a3a46;
+  margin-bottom: 20px;
+}
+
+.stonetop-main .stonetop-repeating-inventory .name {
+  padding-right: 10px;
+}
+
+.stonetop-main .stonetop-repeating-followers {
+  border-bottom: 2px solid #3a3a46;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.stonetop-main .stonetop-repeating-followers .stonetop-follower-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  padding: 0;
+  width: 100%;
+}
+
+.stonetop-main .stonetop-repeating-followers .stonetop-follower-header input {
+  flex: 1 1 auto;
+  margin-left: 10px;
+  min-width: 6em;
+}
+
+.stonetop-main .stonetop-repeating-followers .stonetop-follower-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.stonetop-main .stonetop-repeating-followers .stonetop-follower-text span {
+  margin-bottom: 10px;
+}
+
+.stonetop-main .stonetop-repeating-followers .stonetop-notes {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+.stonetop-main .stonetop-repeating-followers .stonetop-notes textarea {
+  flex: 1 0 auto;
+}
+
+.stonetop-main .stonetop-repeating-followers .stonetop-follower-stats {
+  flex: 1 0 auto;
+}
+
+.stonetop-main .stonetop-repeating-followers .stonetop-follower-stats .stonetop-follower-stat {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.stonetop-main .stonetop-repeating-followers .stonetop-follower-stats .stonetop-follower-stat.stonetop-damage {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.stonetop-main .stonetop-repeating-followers .stonetop-follower-stats .stonetop-follower-stat.stonetop-damage span {
+  margin-bottom: 10px;
+}
+
+.stonetop-main .stonetop-repeating-followers .stonetop-follower-stats .stonetop-follower-stat .stonetop-damagedie {
+  margin: 0px;
+  width: 8em;
+}
+
+.stonetop-main .stonetop-repeating-followers .stonetop-follower-stats .stonetop-stat-follower .stonetop-stat {
+  width: 100%;
+}
+
+.stonetop-main .stonetop-repeating-followers .name {
+  padding-right: 10px;
+}
+
+.stonetop-main .stonetop-character-name {
+  font-size: 1.5em;
+}
+
+/* ========== HEADER ROW ========== */
+
+.stonetop-main .stonetop-header-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 4px;
+}
+
+/* ========== PLAYBOOK TITLE DISPLAY ========== */
+
+.stonetop-playbook-title-display .playbook-display-label {
+  display: none;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.8em;
+  font-style: italic;
+  font-weight: bold;
+  letter-spacing: 0.04em;
+}
+
+/* ========== OCTAGON BORDER ========== */
+
+.octagon {
+  border-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  z-index: 2;
+}
+
+.octagon.bg {
+  border-color: #3a3a46;
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  background: #3a3a46;
+  z-index: 1;
+}
+
+.octagon.bg::before {
+  top: -23px;
+  border-bottom: 23px solid;
+  border-bottom-color: inherit;
+  border-left: 23px solid transparent;
+  border-right: 23px solid transparent;
+  width: calc(100% - 46px);
+}
+
+.octagon.bg::after {
+  bottom: -23px;
+  border-top: 23px solid;
+  border-top-color: inherit;
+  border-left: 23px solid transparent;
+  border-right: 23px solid transparent;
+  width: calc(100% - 46px);
+}
+
+.octagon:before {
+  content: "";
+  position: absolute;
+  top: -22px;
+  left: 0px;
+  width: calc(100% - 44px);
+  height: 0px;
+  border-bottom: 22px solid;
+  border-bottom-color: inherit;
+  border-left: 22px solid transparent;
+  border-right: 22px solid transparent;
+  z-index: 3;
+  color: #ecf0f1;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.octagon:after {
+  content: "";
+  position: absolute;
+  bottom: -22px;
+  right: 0px;
+  width: calc(100% - 44px);
+  height: 0px;
+  border-top: 22px solid;
+  border-top-color: inherit;
+  border-right: 22px solid transparent;
+  border-left: 22px solid transparent;
+  z-index: 1;
+}
+
+/* ========== PLAYBOOK SHOW/HIDE ========== */
+
+.stonetop-playbook-section { display: none; }
+
+input[name="attr_activeplaybook"][value="heavy"] ~ .heavy-section { display: block; }
+input[name="attr_activeplaybook"][value="fox"] ~ .fox-section { display: block; }
+input[name="attr_activeplaybook"][value="would-be-hero"] ~ .wbh-section { display: block; }
+input[name="attr_activeplaybook"][value="blessed"] ~ .blessed-section { display: block; }
+input[name="attr_activeplaybook"][value="judge"] ~ .judge-section { display: block; }
+input[name="attr_activeplaybook"][value="lightbearer"] ~ .lightbearer-section { display: block; }
+input[name="attr_activeplaybook"][value="marshal"] ~ .marshal-section { display: block; }
+input[name="attr_activeplaybook"][value="ranger"] ~ .ranger-section { display: block; }
+input[name="attr_activeplaybook"][value="seeker"] ~ .seeker-section { display: block; }
+
+/* ========== PLAYBOOK TITLE SHOW/HIDE ========== */
+
+input[name="attr_activeplaybook"][value="heavy"] ~ .stonetop-header-row .heavy-label { display: inline; }
+input[name="attr_activeplaybook"][value="fox"] ~ .stonetop-header-row .fox-label { display: inline; }
+input[name="attr_activeplaybook"][value="would-be-hero"] ~ .stonetop-header-row .wbh-label { display: inline; }
+input[name="attr_activeplaybook"][value="blessed"] ~ .stonetop-header-row .blessed-label { display: inline; }
+input[name="attr_activeplaybook"][value="judge"] ~ .stonetop-header-row .judge-label { display: inline; }
+input[name="attr_activeplaybook"][value="lightbearer"] ~ .stonetop-header-row .lightbearer-label { display: inline; }
+input[name="attr_activeplaybook"][value="marshal"] ~ .stonetop-header-row .marshal-label { display: inline; }
+input[name="attr_activeplaybook"][value="ranger"] ~ .stonetop-header-row .ranger-label { display: inline; }
+input[name="attr_activeplaybook"][value="seeker"] ~ .stonetop-header-row .seeker-label { display: inline; }
+
+/* ========== SPECIAL POSSESSIONS SHOW/HIDE ========== */
+
+.stonetop-special-possessions .sp-section { display: none; }
+
+input[name="attr_activeplaybook_inv"][value="heavy"] ~ .stonetop-special-possessions .heavy-section { display: block; }
+input[name="attr_activeplaybook_inv"][value="fox"] ~ .stonetop-special-possessions .fox-section { display: block; }
+input[name="attr_activeplaybook_inv"][value="would-be-hero"] ~ .stonetop-special-possessions .wbh-section { display: block; }
+input[name="attr_activeplaybook_inv"][value="blessed"] ~ .stonetop-special-possessions .blessed-section { display: block; }
+input[name="attr_activeplaybook_inv"][value="judge"] ~ .stonetop-special-possessions .judge-section { display: block; }
+input[name="attr_activeplaybook_inv"][value="lightbearer"] ~ .stonetop-special-possessions .lightbearer-section { display: block; }
+input[name="attr_activeplaybook_inv"][value="marshal"] ~ .stonetop-special-possessions .marshal-section { display: block; }
+input[name="attr_activeplaybook_inv"][value="ranger"] ~ .stonetop-special-possessions .ranger-section { display: block; }
+input[name="attr_activeplaybook_inv"][value="seeker"] ~ .stonetop-special-possessions .seeker-section { display: block; }
+
+/* ========== PLAYBOOK STYLING ========== */
+
+.stonetop-moves-list {
+  margin-top: 8px;
+}
+
+.stonetop-move {
+  margin-bottom: 12px;
+  padding: 8px 10px;
+  border-left: 3px solid #ccc;
+  background: #fafafa;
+}
+
+.stonetop-move label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 4px;
+  cursor: pointer;
+}
+
+.stonetop-move p {
+  margin: 4px 0 0 22px;
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+
+.stonetop-move h4 {
+  margin-top: 16px;
+  margin-bottom: 4px;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #555;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 4px;
+}
+
+.stonetop-move-indent {
+  margin-left: 24px;
+  border-left: 3px solid #e0e0e0;
+}
+
+.stonetop-tracker {
+  margin: 6px 0 0 22px;
+  font-size: 0.85em;
+  color: #555;
+}
+
+.stonetop-tracker input[type="checkbox"] {
+  margin-right: 4px;
+}
+
+.playbook-reminder {
+  font-size: 0.9em;
+  color: #444;
+  margin: 0 0 6px 0;
+}
+
+.playbook-note {
+  font-size: 0.88em;
+  color: #555;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.tracker-label {
+  font-size: 0.85em;
+  color: #777;
+}
+
+/* ========== SPECIAL POSSESSIONS ========== */
+
+.stonetop-special-possessions {
+  margin-top: 24px;
+  border-top: 2px solid #3a3a46;
+  padding-top: 12px;
+}
+
+.stonetop-special-possessions h3 {
+  margin-top: 0;
+}
+
+/* ========== ADDITIONAL MOVES ========== */
+
+.stonetop-additional-moves {
+  margin-top: 24px;
+  border-top: 2px solid #3a3a46;
+  padding-top: 12px;
+}
+
+.stonetop-additional-moves h3 {
+  margin-top: 0;
+}
+
+/* ========== PLAYBOOK COLOR THEMES ========== */
+
+.heavy-section .stonetop-move { border-left-color: #9b1a1a; }
+.heavy-section h2 { color: #7a0000; }
+
+.fox-section .stonetop-move { border-left-color: #c8860a; }
+.fox-section h2 { color: #8a5a00; }
+
+.ranger-section .stonetop-move { border-left-color: #4a7c4e; }
+.ranger-section h2 { color: #2d5c31; }
+
+.blessed-section .stonetop-move { border-left-color: #6b8c3e; }
+.blessed-section h2 { color: #3e5c1a; }
+
+.judge-section .stonetop-move { border-left-color: #888888; }
+.judge-section h2 { color: #444444; }
+
+.lightbearer-section .stonetop-move { border-left-color: #c8a020; }
+.lightbearer-section h2 { color: #8a6a00; }
+
+.marshal-section .stonetop-move { border-left-color: #3a5f8c; }
+.marshal-section h2 { color: #1a3a6b; }
+
+.seeker-section .stonetop-move { border-left-color: #6b3a8c; }
+.seeker-section h2 { color: #4a1a6b; }
+
+.wbh-section .stonetop-move { border-left-color: #4a90c4; }
+.wbh-section h2 { color: #1a5f8a; }
+
+.stonetop-main input[name="attr_activeplaybook"][value="heavy"] ~ .stonetop-header-row .heavy-label { color: #7a0000; }
+.stonetop-main input[name="attr_activeplaybook"][value="fox"] ~ .stonetop-header-row .fox-label { color: #8a5a00; }
+.stonetop-main input[name="attr_activeplaybook"][value="would-be-hero"] ~ .stonetop-header-row .wbh-label { color: #1a5f8a; }
+.stonetop-main input[name="attr_activeplaybook"][value="blessed"] ~ .stonetop-header-row .blessed-label { color: #3e5c1a; }
+.stonetop-main input[name="attr_activeplaybook"][value="judge"] ~ .stonetop-header-row .judge-label { color: #444444; }
+.stonetop-main input[name="attr_activeplaybook"][value="lightbearer"] ~ .stonetop-header-row .lightbearer-label { color: #8a6a00; }
+.stonetop-main input[name="attr_activeplaybook"][value="marshal"] ~ .stonetop-header-row .marshal-label { color: #1a3a6b; }
+.stonetop-main input[name="attr_activeplaybook"][value="ranger"] ~ .stonetop-header-row .ranger-label { color: #2d5c31; }
+.stonetop-main input[name="attr_activeplaybook"][value="seeker"] ~ .stonetop-header-row .seeker-label { color: #4a1a6b; }
