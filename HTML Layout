@@ -2358,9 +2358,7 @@
       </div>
     </details>
 
-<!-- ═══════════════════════════════════════════ -->
-    <!-- MINOR ARCANA  -->
-    <!-- ═══════════════════════════════════════════ -->
+<!-- MINOR ARCANA  -->
 
     <!-- MINOR 1: A Folktale → Truth Seeds -->
     <details class="arcana-card arcana-minor">
@@ -2404,7 +2402,7 @@
           <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
             <input type="checkbox" name="attr_mn02_possessed" value="1"> Possessed
           </label>
-          <span class="arcana-tags">, fragile → Laoj Daveth's Galvanic Infusion</span>
+          <span class="arcana-tags"> fragile → Laoj Daveth's Galvanic Infusion</span>
         </div>
       </summary>
       <div class="arcana-card-body">
@@ -2437,7 +2435,7 @@
           <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
             <input type="checkbox" name="attr_mn03_possessed" value="1"> Possessed
           </label>
-          <span class="arcana-tags">, magical → The Fiery Veil</span>
+          <span class="arcana-tags"> magical → The Fiery Veil</span>
         </div>
       </summary>
       <div class="arcana-card-body">
@@ -4514,104 +4512,142 @@
       </div>
     </details>
 
-    <!-- MINOR 62: A Sealed Clay Pot → Smoke of Forgetting -->
+    <!-- MINOR 62: A treasure map → The Silver Branch --> <!--done-->
     <details class="arcana-card arcana-minor">
       <summary class="arcana-summary">
         <div class="arcana-summary-top">
-          <span class="arcana-title">A Sealed Clay Pot</span>
+          <span class="arcana-title">A treasure map</span>
         </div>
         <div class="arcana-summary-bottom">
           <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
             <input type="checkbox" name="attr_mn62_possessed" value="1"> Possessed
           </label>
-          <span class="arcana-tags">, fragile, magical → Smoke of Forgetting</span>
+          <span class="arcana-tags">fragile</span>
         </div>
       </summary>
       <div class="arcana-card-body">
         <input type="checkbox" class="arcana-unlock-trigger" id="mn62_unlocked" name="attr_mn62_unlocked" value="1">
         <label class="arcana-unlock-label" for="mn62_unlocked">Unlocked</label>
         <div class="arcana-front">
-          <p>A small clay pot, sealed with wax that has been stamped with a sigil you don't recognize. It smells faintly sweet even through the seal. Cracking the wax open and inhaling even briefly produces a sudden, sharp clarity — followed by a gap in memory lasting several minutes. To unlock its secrets, you must…</p>
+          <p>A tattered scrap of parchment. It shows a path from a particular set of standing stones: through a marsh, up a river, to a place behind a waterfall, then through a forest of sword-sharp trees. Forest Folk glyphs are scrawled all about, but at the end: a silver tree, and X marks the spot. To unlock the map’s mysteries and claim the prize at the end, you must...</p>
           <p class="arcana-req-heading">Requirements — mark when complete:</p>
           <div class="arcana-requirements">
-            <label><input type="checkbox" name="attr_mn62_req1" value="1"> …determine what the pot originally contained and how it was made.</label>
-            <label><input type="checkbox" name="attr_mn62_req2" value="1"> …acquire and prepare the same ingredients (Value 1, slow).</label>
-            <label><input type="checkbox" name="attr_mn62_req3" value="1"> …test the preparation on yourself and survive the consequences.</label>
+            <label><input type="checkbox" name="attr_mn62_req1" value="1"> …find the standing stones that mark the start of the path.</label>
+            <label><input type="checkbox" name="attr_mn62_req2" value="1"> …follow the map to the waterfall.</label>
+            <label><input type="checkbox" name="attr_mn62_req3" value="1"> …enter the Fae domain beyond.</label>
+            <label><input type="checkbox" name="attr_mn62_req4" value="1"> …navigate the sword-tree forest.</label>
+            <label><input type="checkbox" name="attr_mn62_req5" value="1"> …risk falling under the soporific spell of the silver tree.</label>
+            <label><input type="checkbox" name="attr_mn62_req6" value="1"> …claim a branch from the silver tree.</label>
+            <label><input type="checkbox" name="attr_mn62_req7" value="1"> …make it home again.</label>
           </div>
         </div>
         <div class="arcana-back">
-          <p class="arcana-back-heading">Smoke of Forgetting</p>
+          <p class="arcana-back-heading">The Silver Branch</p>
           <p><em>Uses: </em><input type="number" name="attr_mn62_uses" value="0" style="width:44px"></p>
-          <p>When you prepare a batch of the smoke (Value 1, slow), gain 1d4+1 uses. When you break a sealed container of the smoke in an enclosed space or in a target's face, all who breathe the smoke must roll +CON: on a 10+, they remember nothing from the last hour; on a 7-9, they remember fragments — impressions, emotions, no specifics; on a 6-, they remember everything clearly. You are immune to your own smoke. The smoke dissipates in about a minute in open air; in a closed room, it lingers for several minutes. Objects cannot be made to "forget" but anyone who witnessed their handling will not recall doing so.</p>
+          <p>A few feet long, laden with white flowers and jingling golden fruits. Surprisingly sturdy, and stays fresh indefinitely unless its powers are used. Only one such branch can leave the Fae domain at a time. When you jingle the silver branch, all who hear it (reach, area except you) are filled with bliss and forget their woes for a few hours. Roll +CHA: on a 10+, pick 1; on a 7-9, pick 1 and the GM picks another; on a 6-, all 3.</p>
+        <ul>
+            <li>The branch starts to fade; if already fading, it goes bare, its powers gone</li>
+            <li>Some (GM’s choice of who) are blissed out for days or weeks, growing weak and wretched in the meantime</li>
+            <li>Some (GM’s choice of who) become obsessed with hearing it jingle again</li>
+          </ul>
         </div>
       </div>
     </details>
 
-    <!-- MINOR 63: A Piece of Living Stone → Stonespeaker -->
+    <!-- MINOR 63: An oversized crown → Void Elemental --> <!--done-->
     <details class="arcana-card arcana-minor">
       <summary class="arcana-summary">
         <div class="arcana-summary-top">
-          <span class="arcana-title">A Piece of Living Stone</span>
+          <span class="arcana-title">An oversized crown</span>
         </div>
         <div class="arcana-summary-bottom">
           <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
             <input type="checkbox" name="attr_mn63_possessed" value="1"> Possessed
           </label>
-          <span class="arcana-tags">, magical, indestructible → Stonespeaker</span>
+          <span class="arcana-tags">beautiful, magical, fireproof</span>
         </div>
       </summary>
       <div class="arcana-card-body">
         <input type="checkbox" class="arcana-unlock-trigger" id="mn63_unlocked" name="attr_mn63_unlocked" value="1">
         <label class="arcana-unlock-label" for="mn63_unlocked">Unlocked</label>
         <div class="arcana-front">
-          <p>A fist-sized chunk of grey-green stone, warm to the touch. It hums at a frequency just below hearing. It is not a rock — it responds differently to pressure at different points, as if something inside is shifting. When you hold it and listen carefully, you sometimes hear a low resonant tone that seems to have structure, rhythm, intention. To unlock its mysteries, you must…</p>
+          <p>A circlet of black, glossy metal set with eight spires of aetherium. It’s sized for a head maybe twice as large as yours, and is always a bit chill to the touch. Even cast into the hottest furnace, it will not melt nor even heat.</p>
+          <p>When you touch the crown with bare flesh and open your mind, you can speak to the primordial spirit to which the crown is attuned. But to fully unlock the mysteries of this crown,, you must…</p>
           <p class="arcana-req-heading">Requirements — mark when complete:</p>
           <div class="arcana-requirements">
-            <label><input type="checkbox" name="attr_mn63_req1" value="1"> …learn to recognize the stone's language (weeks of careful listening and experimentation).</label>
-            <label><input type="checkbox" name="attr_mn63_req2" value="1"> …respond to it in kind, matching its resonance with your voice or touch.</label>
-            <label><input type="checkbox" name="attr_mn63_req3" value="1"> …ask it a question it is willing to answer, and understand the reply.</label>
+            <label><input type="checkbox" name="attr_mn63_req1" value="1"> …risk your sense of self as you commune with this spirit of the void.</label>
+            <label><input type="checkbox" name="attr_mn63_req2" value="1"> …learn the Words of Being, which will force the spirit to manifest.</label>
+            <label><input type="checkbox" name="attr_mn63_req3" value="1"> …learn the Words of Unbeing, which will send the spirit home.</label>
+            <label><input type="checkbox" name="attr_mn63_req4" value="1"> …convince the spirit to manifest and then successfully dismiss it.</label>
           </div>
         </div>
         <div class="arcana-back">
-          <p class="arcana-back-heading">Stonespeaker</p>
-          <p>When you hold the living stone against any natural stone surface and listen, you can ask the stone one of the following and receive an honest, if slow and literal, answer: What has passed here recently? / What lies beyond this stone (describe up to 50 feet)? / What is this stone's greatest point of weakness? / Is there something alive or dead within or beneath this stone? When you ask a question of the stone about the deep past — centuries or more ago — you have advantage on the roll. On a 6- on any roll involving the living stone, it goes dormant until you spend a week in close contact with it, coaxing it back.</p>
+          <p class="arcana-back-heading">Void Elemental</p>
+          <p>When you touch the crown and speak the Words of Being, the spirit manifests. Treat it as a follower, with 3 Loyalty to start (it can never gain more). When you touch the crown and chant the Words of Unbeing, the spirit can return to the void—if it wants.</p>
+          <p>Void elemental:Spirit, primordial, confused, angry</p>
+          <p>HP 15; Armor 1 (lacks organs)</p>
+          <p>Damage void touch 1d10 w/advantage (hand, grabby, ignores armor)</p>
+          <p>Special qualities immune to most harm. Instinct to rage at all the noise and chaos</p>
+          <ul>
+            <li>Manifest as a black hole in reality</li>
+            <li>Snuff out a source of energy</li>
+            <li>Become confused, unsure what to do</li>
+          </ul>
         </div>
       </div>
     </details>
 
-    <!-- MINOR 64: A Crow's Feather → Crow Tongue -->
+    <!-- MINOR 64: A metal puzzle box → Runes of Creation --> <!--done-->
     <details class="arcana-card arcana-minor">
       <summary class="arcana-summary">
         <div class="arcana-summary-top">
-          <span class="arcana-title">A Crow's Feather</span>
+          <span class="arcana-title">A metal puzzle box</span>
         </div>
         <div class="arcana-summary-bottom">
           <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
             <input type="checkbox" name="attr_mn64_possessed" value="1"> Possessed
           </label>
-          <span class="arcana-tags">, magical → Crow Tongue</span>
+          <span class="arcana-tags">magical</span>
         </div>
       </summary>
       <div class="arcana-card-body">
         <input type="checkbox" class="arcana-unlock-trigger" id="mn64_unlocked" name="attr_mn64_unlocked" value="1">
         <label class="arcana-unlock-label" for="mn64_unlocked">Unlocked</label>
         <div class="arcana-front">
-          <p>A single black feather, iridescent in good light, that never molts or loses its sheen. Crows seem to notice you now, watching from fenceposts and rooftops with unusual attention. On three separate occasions since you found the feather, a crow has left a small, unusual object at your feet and flown away before you could catch it. To unlock the feather's mysteries, you must…</p>
+          <p>A 6” cube of dull gray metal, covered in hinges, knobs, dials, sliders, levers, and the like. A thing of mad genius, resisting all attempts to open it by brute force. To unlock the feather's mysteries, you must…</p>
           <p class="arcana-req-heading">Requirements — mark when complete:</p>
           <div class="arcana-requirements">
-            <label><input type="checkbox" name="attr_mn64_req1" value="1"> …return a gift to the crows: leave something shiny and of value at a crossroads at dawn.</label>
-            <label><input type="checkbox" name="attr_mn64_req2" value="1"> …let a crow land on your hand and look you in the eye without flinching.</label>
-            <label><input type="checkbox" name="attr_mn64_req3" value="1"> …speak a secret aloud to an audience of crows, one that you have never told another person.</label>
+            <label><input type="checkbox" name="attr_mn64_req1" value="1"> …roll +INT to open the box: on a 10+, it takes a few days of fiddling; on a 7-9, it takes a few obsessive weeks; on a 6-, it’s beyond you.</label>
+            <label><input type="checkbox" name="attr_mn64_req2" value="1"> …spend a season deciphering the symbols etched along the inside.</label>
+            <label><input type="checkbox" name="attr_mn64_req3" value="1"> …risk never being able to decipher the symbols, and/or developing some mental quirk as you do so.</label>
+            <label><input type="checkbox" name="attr_mn64_req4" value="1"> …commune with a primordial spirit and learn the Silent Words from it.</label>
+            <label><input type="checkbox" name="attr_mn64_req5" value="1"> …spend a few weeks practicing the spell, risking all sorts of harm and collateral damage.</label>
           </div>
         </div>
         <div class="arcana-back">
-          <p class="arcana-back-heading">Crow Tongue</p>
-          <p>You can speak with crows and understand them. They are not loyal or friendly, but they are curious and mercenary. When you offer a crow something it values (bright objects, scraps of meat, interesting things) and ask it a question about what it has seen, roll +CHA: on a 10+, it tells you clearly and in detail; on a 7-9, it tells you, but the information is partial, jumbled with irrelevancies, or comes at an additional price; on a 6-, it takes your offering and tells you nothing useful, or something actively misleading. Crows remember faces. If you have cheated, harmed, or disrespected a crow before, you have disadvantage on all rolls to deal with crows until you make meaningful amends. When you call out to all crows within hearing and ask them to carry a message, they will — eventually, and in their own fashion.</p>
+          <p class="arcana-back-heading">Runes of Creation</p>
+          <p>When you carefully inscribe an object with the runes of creation, pick 1 desired effect:</p>
+          <ul>
+            <li>It will flow into any shape you imagine</li>
+            <li>It will become indestructible</li>
+            <li>It will become beautiful</li>
+            <li>It will blaze with terrible heat (1d10 damage, messy), if only for a moment</li>
+          </ul>
+          <p>When you speak the Silent Word that completes the spell (far range) mark a debility as elemental forces flow through you into the object. The effect works, but roll +CON: on a 10+, pick 1; on a 7-9, pick 1 and the GM picks another; on a 6-, all 3.</p>
+          <ul>
+            <li>Mark another debility & lose 1d10 HP</li>
+            <li>The elements run amok, triggering a fire/earthquake/avalanche/storm/etc.</li>
+            <li>The effect lasts only while you focus on it, and then the object is damaged in a manner of the GM’s choosing</li>
+          </ul>
+          <p>
         </div>
+
+
+
+</div>
       </div>
     </details>
 
-    <!-- END OF ALL ARCANA CONTENT -->
     
   </div>
   <!-- END ARCANA TAB -->
