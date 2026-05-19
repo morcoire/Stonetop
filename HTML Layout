@@ -2358,13 +2358,8 @@
       </div>
     </details>
 
-    <!-- MINOR ARCANA GO HERE (Sessions D, E, and F) -->
-
-    <h2 class="arcana-section-heading">Minor Arcana</h2>
-    <!-- MINOR ARCANA CARDS GO HERE (Sessions D, E, and F) -->
-
 <!-- ═══════════════════════════════════════════ -->
-    <!-- MINOR ARCANA 1–22 (Session D)              -->
+    <!-- MINOR ARCANA  -->
     <!-- ═══════════════════════════════════════════ -->
 
     <!-- MINOR 1: A Folktale → Truth Seeds -->
@@ -4288,34 +4283,40 @@
       </div>
     </details>
 
-    <!-- MINOR 55: A Clay Tablet → Wards of the Hearth -->
+    <!-- MINOR 55: A Silvery Signet Ring → Sigil of Authority -->
     <details class="arcana-card arcana-minor">
       <summary class="arcana-summary">
         <div class="arcana-summary-top">
-          <span class="arcana-title">A Clay Tablet</span>
+          <span class="arcana-title">A Silvery Signet Ring</span>
         </div>
         <div class="arcana-summary-bottom">
           <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
             <input type="checkbox" name="attr_mn55_possessed" value="1"> Possessed
           </label>
-          <span class="arcana-tags">, fragile → Wards of the Hearth</span>
+          <span class="arcana-tags">, magical, beautiful</span>
         </div>
       </summary>
       <div class="arcana-card-body">
         <input type="checkbox" class="arcana-unlock-trigger" id="mn55_unlocked" name="attr_mn55_unlocked" value="1">
         <label class="arcana-unlock-label" for="mn55_unlocked">Unlocked</label>
         <div class="arcana-front">
-          <p>A thick slab of fired clay, about the size of two hands laid flat, covered in tiny marks that look almost like footprints. It smells faintly of woodsmoke and something sweeter. When you hold it near a hearth fire, the marks begin to glow faintly orange. The tablet contains instructions for a protective ritual, which you can learn if you…</p>
+          <p>A ring of white metal, untarnished and gleaming, a single glyph carved into the bezel. The symbol squirms under your gaze, like it exists in more dimensions than you can perceive. The ring fits you perfectly, of course.</p>
           <p class="arcana-req-heading">Requirements — mark when complete:</p>
           <div class="arcana-requirements">
-            <label><input type="checkbox" name="attr_mn55_req1" value="1"> …decipher the marks, which are in an older form of the local script.</label>
-            <label><input type="checkbox" name="attr_mn55_req2" value="1"> …spend a week practicing the ritual at different hearths.</label>
-            <label><input type="checkbox" name="attr_mn55_req3" value="1"> …convince a hearth spirit to teach you the proper offering.</label>
+            <label><input type="checkbox" name="attr_mn55_req1" value="1"> spend a season wearing the ring and contemplating the glyph.</label>
+            <label><input type="checkbox" name="attr_mn55_req2" value="1"> get used to the headaches & nausea that come from wearing the ring.</label>
+            <label><input type="checkbox" name="attr_mn55_req3" value="1"> spend 1 of your follower’s Loyalty to charge the ring.</label>
+            <label><input type="checkbox" name="attr_mn55_req4" value="1"> attempt to influence one of your followers with the ring, at the risk of failing to ever master its power and/or alienating your follower(s).</label>
           </div>
         </div>
         <div class="arcana-back">
-          <p class="arcana-back-heading">Wards of the Hearth</p>
-          <p>When you perform the ritual at an active hearth, leaving the proper offering and tracing the marks from the tablet around the hearthstone, the hearth's little god is empowered. Until the fire goes cold: spirits, demons, and perversions of nature cannot cross the threshold of any door in the building / anyone who Makes Camp at this hearth recovers +1d4 HP / those who sleep here are free of nightmares and magical unrest. The wards last as long as the fire burns. If the fire is deliberately extinguished, the wards are broken.</p>
+          <p class="arcana-back-heading">Sigil of Authority</p>
+          <p>When you Strengthen Your Bond with a member of your community, you can choose to hold +1 Authority (max 3) in lieu of your follower holding +1 Loyalty. If you remove the ring, lose all Authority.</p>
+          <p>When you Persuade your follower(s) while holding Authority, you have advantage.You can spend Authority 1-for-1 to:</p>
+          <ul>
+            <li>Wrap yourself in majesty for up to a few minutes, drawing all attention, cowing the weak-willed, and speaking in a voice that all can hear (far, area)</li>
+            <li>Will someone in your presence to do as you wish, attempting to Persuade them without words</li>
+            <li>Have one of your nearby followers suffer an attack on your behalf, as if they held Readi ness from Defending</li>
         </div>
       </div>
     </details>
