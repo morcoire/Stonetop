@@ -1,4 +1,4 @@
-<!-- Stonetop character sheet for Roll20. Based on Stonetop by Jeremy Strandberg, CC BY-SA 4.0. Sheet customizations by Morcoire. -->
+ <!-- Stonetop character sheet for Roll20. Based on Stonetop by Jeremy Strandberg, CC BY-SA 4.0. Sheet customizations by Morcoire. -->
 
 <div class="stonetop-main">
   <input type="hidden" class="stonetop-tabstoggle" name="attr_sheetTab" value="character" />
@@ -1548,7 +1548,7 @@
 
     <h2 class="arcana-section-heading">Major Arcana</h2>
 <!-- ═══════════════════════════════════════════ -->
-    <!-- MAJOR ARCANA 1–9 (Session B)               -->
+    <!-- MAJOR ARCANA  -->
     <!-- ═══════════════════════════════════════════ -->
 
     <!-- MAJOR 1: Staff of the Lidless Orb -->
@@ -1561,7 +1561,7 @@
     <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
       <input type="checkbox" name="attr_ma01_possessed" value="1"> Possessed
     </label>
-    <span class="arcana-tags">, close, magical, awkward</span>
+    <span class="arcana-tags">close, magical, awkward</span>
   </div>
 </summary>
       <div class="arcana-card-body">
@@ -1647,7 +1647,7 @@
     <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
       <input type="checkbox" name="attr_ma03_possessed" value="1"> Possessed
     </label>
-    <span class="arcana-tags">1 maror, warm, magical</span>
+    <span class="arcana-tags">1 armor, warm, magical</span>
   </div>
 </summary>
       <div class="arcana-card-body">
@@ -1947,7 +1947,7 @@
           <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
             <input type="checkbox" name="attr_ma10_possessed" value="1"> Possessed
           </label>
-          <span class="arcana-tags">, magical</span>
+          <span class="arcana-tags">magical</span>
         </div>
       </summary>
       <div class="arcana-card-body">
@@ -2044,7 +2044,7 @@
           <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
             <input type="checkbox" name="attr_ma12_possessed" value="1"> Possessed
           </label>
-          <span class="arcana-tags">, 2 armor, magical</span>
+          <span class="arcana-tags">2 armor, magical</span>
         </div>
       </summary>
       <div class="arcana-card-body">
@@ -2087,7 +2087,7 @@
           <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
             <input type="checkbox" name="attr_ma13_possessed" value="1"> Possessed
           </label>
-          <span class="arcana-tags">, magical, indestructible</span>
+          <span class="arcana-tags">magical, indestructible</span>
         </div>
       </summary>
       <div class="arcana-card-body">
@@ -2326,7 +2326,7 @@
           <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
             <input type="checkbox" name="attr_ma18_possessed" value="1"> Possessed
           </label>
-          <span class="arcana-tags">, close, magical, awkward</span>
+          <span class="arcana-tags">close, magical, awkward</span>
         </div>
       </summary>
       <div class="arcana-card-body">
@@ -2370,7 +2370,7 @@
           <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
             <input type="checkbox" name="attr_mn01_possessed" value="1"> Possessed
           </label>
-          <span class="arcana-tags">→ Truth Seeds</span>
+          
         </div>
       </summary>
       <div class="arcana-card-body">
@@ -2402,7 +2402,7 @@
           <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
             <input type="checkbox" name="attr_mn02_possessed" value="1"> Possessed
           </label>
-          <span class="arcana-tags"> fragile → Laoj Daveth's Galvanic Infusion</span>
+          <span class="arcana-tags">fragile</span>
         </div>
       </summary>
       <div class="arcana-card-body">
@@ -2435,7 +2435,7 @@
           <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
             <input type="checkbox" name="attr_mn03_possessed" value="1"> Possessed
           </label>
-          <span class="arcana-tags"> magical → The Fiery Veil</span>
+          <span class="arcana-tags">magical</span>
         </div>
       </summary>
       <div class="arcana-card-body">
@@ -2466,7 +2466,7 @@
           <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
             <input type="checkbox" name="attr_mn04_possessed" value="1"> Possessed
           </label>
-          <span class="arcana-tags">→ The Tomb-bog's Mark</span>
+    
         </div>
       </summary>
       <div class="arcana-card-body">
@@ -2497,7 +2497,7 @@
           <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
             <input type="checkbox" name="attr_mn05_possessed" value="1"> Possessed
           </label>
-          <span class="arcana-tags">, fragile → Old Mother's Wine</span>
+          <span class="arcana-tags">fragile</span>
         </div>
       </summary>
       <div class="arcana-card-body">
@@ -2537,7 +2537,7 @@
           <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
             <input type="checkbox" name="attr_mn06_possessed" value="1"> Possessed
           </label>
-          <span class="arcana-tags">, magical → Aalz Galt's Sudden Sinkhole</span>
+          <span class="arcana-tags">magical</span>
         </div>
       </summary>
       <div class="arcana-card-body">
@@ -2569,7 +2569,7 @@
           <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
             <input type="checkbox" name="attr_mn07_possessed" value="1"> Possessed
           </label>
-          <span class="arcana-tags">→ Shell Game of Souls</span>
+        
         </div>
       </summary>
       <div class="arcana-card-body">
@@ -2604,7 +2604,7 @@
           <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
             <input type="checkbox" name="attr_mn08_possessed" value="1"> Possessed
           </label>
-          <span class="arcana-tags">, cumbersome, magical → Thunderous Bellow</span>
+          <span class="arcana-tags">cumbersome, magical</span>
         </div>
       </summary>
       <div class="arcana-card-body">
@@ -2642,7 +2642,7 @@
           <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
             <input type="checkbox" name="attr_mn09_possessed" value="1"> Possessed
           </label>
-          <span class="arcana-tags">, warm, magical → Mantle Wraiths</span>
+          <span class="arcana-tags">warm, magical</span>
         </div>
       </summary>
       <div class="arcana-card-body">
@@ -2684,7 +2684,7 @@
           <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
             <input type="checkbox" name="attr_mn10_possessed" value="1"> Possessed
           </label>
-          <span class="arcana-tags">, magical → Fear of the Flame</span>
+          <span class="arcana-tags">magical</span>
         </div>
       </summary>
       <div class="arcana-card-body">
@@ -2717,7 +2717,7 @@
           <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
             <input type="checkbox" name="attr_mn11_possessed" value="1"> Possessed
           </label>
-          <span class="arcana-tags">, magical → Shattering Words of Aalz Childric</span>
+          <span class="arcana-tags">magical</span>
         </div>
       </summary>
       <div class="arcana-card-body">
@@ -2749,7 +2749,7 @@
           <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
             <input type="checkbox" name="attr_mn12_possessed" value="1"> Possessed
           </label>
-          <span class="arcana-tags">, immobile → Ffyrnig Tonic</span>
+          <span class="arcana-tags">immobile</span>
         </div>
       </summary>
       <div class="arcana-card-body">
@@ -2789,7 +2789,7 @@
           <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
             <input type="checkbox" name="attr_mn13_possessed" value="1"> Possessed
           </label>
-          <span class="arcana-tags">, magical → Song of the Dool Trees</span>
+          <span class="arcana-tags">magical</span>
         </div>
       </summary>
       <div class="arcana-card-body">
@@ -2831,7 +2831,7 @@
           <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
             <input type="checkbox" name="attr_mn14_possessed" value="1"> Possessed
           </label>
-          <span class="arcana-tags">→ Ward of Still Waters</span>
+          
         </div>
       </summary>
       <div class="arcana-card-body">
@@ -2863,7 +2863,7 @@
           <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
             <input type="checkbox" name="attr_mn15_possessed" value="1"> Possessed
           </label>
-          <span class="arcana-tags">, immobile, fragile → Ice Weaving</span>
+          <span class="arcana-tags">immobile, fragile</span>
         </div>
       </summary>
       <div class="arcana-card-body">
@@ -2901,7 +2901,7 @@
           <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
             <input type="checkbox" name="attr_mn16_possessed" value="1"> Possessed
           </label>
-          <span class="arcana-tags">, magical → The Six Locks of Sajua</span>
+          <span class="arcana-tags">magical</span>
         </div>
       </summary>
       <div class="arcana-card-body">
@@ -2934,7 +2934,7 @@
           <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
             <input type="checkbox" name="attr_mn17_possessed" value="1"> Possessed
           </label>
-          <span class="arcana-tags">→ Nerth Serpent's Vigor</span>
+         
         </div>
       </summary>
       <div class="arcana-card-body">
@@ -2969,7 +2969,7 @@
           <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
             <input type="checkbox" name="attr_mn18_possessed" value="1"> Possessed
           </label>
-          <span class="arcana-tags">, magical → Helior's Shining Ring</span>
+          <span class="arcana-tags">magical</span>
         </div>
       </summary>
       <div class="arcana-card-body">
@@ -3002,7 +3002,7 @@
           <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
             <input type="checkbox" name="attr_mn19_possessed" value="1"> Possessed
           </label>
-          <span class="arcana-tags">, magical → Goldleaf Cloak</span>
+          <span class="arcana-tags">magical</span>
         </div>
       </summary>
       <div class="arcana-card-body">
@@ -3036,7 +3036,7 @@
           <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
             <input type="checkbox" name="attr_mn20_possessed" value="1"> Possessed
           </label>
-          <span class="arcana-tags">, fragile → Opening the Way</span>
+          <span class="arcana-tags">fragile</span>
         </div>
       </summary>
       <div class="arcana-card-body">
@@ -3071,7 +3071,7 @@
           <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
             <input type="checkbox" name="attr_mn21_possessed" value="1"> Possessed
           </label>
-          <span class="arcana-tags">, magical → The Drowning Scale</span>
+          <span class="arcana-tags">magical</span>
         </div>
       </summary>
       <div class="arcana-card-body">
@@ -3104,7 +3104,7 @@
           <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
             <input type="checkbox" name="attr_mn22_possessed" value="1"> Possessed
           </label>
-          <span class="arcana-tags">, magical → Preserving Runes</span>
+          <span class="arcana-tags">magical</span>
         </div>
       </summary>
       <div class="arcana-card-body">
@@ -3136,7 +3136,7 @@
           <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
             <input type="checkbox" name="attr_mn23_possessed" value="1"> Possessed
           </label>
-          <span class="arcana-tags">, magical → Peacebond</span>
+          <span class="arcana-tags">magical</span>
         </div>
       </summary>
       <div class="arcana-card-body">
@@ -3167,7 +3167,7 @@
           <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
             <input type="checkbox" name="attr_mn24_possessed" value="1"> Possessed
           </label>
-          <span class="arcana-tags">, magical, terrifying → The Eye, Opened</span>
+          <span class="arcana-tags">magical, terrifying</span>
         </div>
       </summary>
       <div class="arcana-card-body">
@@ -3206,7 +3206,7 @@
           <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
             <input type="checkbox" name="attr_mn25_possessed" value="1"> Possessed
           </label>
-          <span class="arcana-tags">, immobile, magical → The Green Lord's Shade</span>
+          <span class="arcana-tags">immobile, magical</span>
         </div>
       </summary>
       <div class="arcana-card-body">
@@ -3237,7 +3237,7 @@
           <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
             <input type="checkbox" name="attr_mn26_possessed" value="1"> Possessed
           </label>
-          <span class="arcana-tags">, magical → Sanctifying Mark</span>
+          <span class="arcana-tags">magical</span>
         </div>
       </summary>
       <div class="arcana-card-body">
@@ -3269,7 +3269,7 @@
           <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
             <input type="checkbox" name="attr_mn27_possessed" value="1"> Possessed
           </label>
-          <span class="arcana-tags">, fragile → Chimeric Transmogrification</span>
+          <span class="arcana-tags">fragile</span>
         </div>
       </summary>
       <div class="arcana-card-body">
@@ -3301,7 +3301,7 @@
           <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
             <input type="checkbox" name="attr_mn28_possessed" value="1"> Possessed
           </label>
-          <span class="arcana-tags">, magical → The Sylvan Web</span>
+          <span class="arcana-tags">magical</span>
         </div>
       </summary>
       <div class="arcana-card-body">
@@ -3340,7 +3340,7 @@
           <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
             <input type="checkbox" name="attr_mn29_possessed" value="1"> Possessed
           </label>
-          <span class="arcana-tags">, magical, warm → Flying Cloak</span>
+          <span class="arcana-tags">magical, warm</span>
         </div>
       </summary>
       <div class="arcana-card-body">
@@ -3383,7 +3383,7 @@
           <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
             <input type="checkbox" name="attr_mn30_possessed" value="1"> Possessed
           </label>
-          <span class="arcana-tags">, magical → Satchel of Plenty</span>
+          <span class="arcana-tags">magical</span>
         </div>
       </summary>
       <div class="arcana-card-body">
@@ -3417,7 +3417,7 @@
           <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
             <input type="checkbox" name="attr_mn31_possessed" value="1"> Possessed
           </label>
-          <span class="arcana-tags">, crude, magical → Dancing Wind Spirit</span>
+          <span class="arcana-tags">crude, magical</span>
         </div>
       </summary>
       <div class="arcana-card-body">
@@ -3460,7 +3460,7 @@
           <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
             <input type="checkbox" name="attr_mn32_possessed" value="1"> Possessed
           </label>
-          <span class="arcana-tags">, magical, warm → Call of the Hunt</span>
+          <span class="arcana-tags">magical, warm</span>
         </div>
       </summary>
       <div class="arcana-card-body">
@@ -3492,7 +3492,7 @@
           <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
             <input type="checkbox" name="attr_mn33_possessed" value="1"> Possessed
           </label>
-          <span class="arcana-tags">, immobile → Convocation of the Soil</span>
+          <span class="arcana-tags">immobile</span>
         </div>
       </summary>
       <div class="arcana-card-body">
@@ -3526,7 +3526,7 @@
           <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
             <input type="checkbox" name="attr_mn34_possessed" value="1"> Possessed
           </label>
-          <span class="arcana-tags">, immobile, magical → Unliving Chimera</span>
+          <span class="arcana-tags">immobile, magical</span>
         </div>
       </summary>
       <div class="arcana-card-body">
@@ -3570,7 +3570,7 @@
           <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
             <input type="checkbox" name="attr_mn35_possessed" value="1"> Possessed
           </label>
-          <span class="arcana-tags">, cumbersome, fragile, magical → Impudent Polymorph</span>
+          <span class="arcana-tags">cumbersome, fragile, magical</span>
         </div>
       </summary>
       <div class="arcana-card-body">
@@ -3605,7 +3605,7 @@
           <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
             <input type="checkbox" name="attr_mn36_possessed" value="1"> Possessed
           </label>
-          <span class="arcana-tags">, indestructible, magical, loud, dangerous → Make Pliant the Stone</span>
+          <span class="arcana-tags">indestructible, magical, loud, dangerous</span>
         </div>
       </summary>
       <div class="arcana-card-body">
@@ -3637,7 +3637,7 @@
           <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
             <input type="checkbox" name="attr_mn37_possessed" value="1"> Possessed
           </label>
-          <span class="arcana-tags">, beautiful, fragile, magical → Plaster of Joining</span>
+          <span class="arcana-tags">beautiful, fragile, magical</span>
         </div>
       </summary>
       <div class="arcana-card-body">
@@ -3676,7 +3676,7 @@
           <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
             <input type="checkbox" name="attr_mn38_possessed" value="1"> Possessed
           </label>
-          <span class="arcana-tags">, magical, beautiful → Cold Mind, Iron Body</span>
+          <span class="arcana-tags">magical, beautiful</span>
         </div>
       </summary>
       <div class="arcana-card-body">
@@ -3709,7 +3709,7 @@
           <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
             <input type="checkbox" name="attr_mn39_possessed" value="1"> Possessed
           </label>
-          <span class="arcana-tags">, beautiful, fragile → Little Friend (Tulpa)</span>
+          <span class="arcana-tags">beautiful, fragile</span>
         </div>
       </summary>
       <div class="arcana-card-body">
@@ -3756,7 +3756,7 @@
           <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
             <input type="checkbox" name="attr_mn40_possessed" value="1"> Possessed
           </label>
-          <span class="arcana-tags">, magical, beautiful, reach, area → Revealing Light</span>
+          <span class="arcana-tags">magical, beautiful, reach, area</span>
         </div>
       </summary>
       <div class="arcana-card-body">
@@ -3789,7 +3789,7 @@
           <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
             <input type="checkbox" name="attr_mn41_possessed" value="1"> Possessed
           </label>
-          <span class="arcana-tags">, warm, magical → Darkwalker Cloak</span>
+          <span class="arcana-tags">warm, magical</span>
         </div>
       </summary>
       <div class="arcana-card-body">
@@ -3822,7 +3822,7 @@
           <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
             <input type="checkbox" name="attr_mn42_possessed" value="1"> Possessed
           </label>
-          <span class="arcana-tags">→ The Flesh Is Like Clay</span>
+        
         </div>
       </summary>
       <div class="arcana-card-body">
@@ -3860,7 +3860,7 @@
           <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
             <input type="checkbox" name="attr_mn43_possessed" value="1"> Possessed
           </label>
-          <span class="arcana-tags">, magical → Fetch's Mask</span>
+          <span class="arcana-tags">magical</span>
         </div>
       </summary>
       <div class="arcana-card-body">
@@ -3894,7 +3894,7 @@
           <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
             <input type="checkbox" name="attr_mn44_possessed" value="1"> Possessed
           </label>
-          <span class="arcana-tags">, fragile, magical → Witch Bottle</span>
+          <span class="arcana-tags">fragile, magical</span>
         </div>
       </summary>
       <div class="arcana-card-body">
@@ -3927,7 +3927,7 @@
           <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
             <input type="checkbox" name="attr_mn45_possessed" value="1"> Possessed
           </label>
-          <span class="arcana-tags">, fragile → Wishing Candles</span>
+          <span class="arcana-tags">fragile</span>
         </div>
       </summary>
       <div class="arcana-card-body">
@@ -3962,7 +3962,7 @@
           <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
             <input type="checkbox" name="attr_mn46_possessed" value="1"> Possessed
           </label>
-          <span class="arcana-tags">, magical, immobile, terrifying → Baleful Utterance</span>
+          <span class="arcana-tags">magical, immobile, terrifying</span>
         </div>
       </summary>
       <div class="arcana-card-body">
@@ -4001,7 +4001,7 @@
           <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
             <input type="checkbox" name="attr_mn47_possessed" value="1"> Possessed
           </label>
-          <span class="arcana-tags">, magical → Aetherium Spear</span>
+          <span class="arcana-tags">magical</span>
         </div>
       </summary>
       <div class="arcana-card-body">
@@ -4036,7 +4036,7 @@
           <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
             <input type="checkbox" name="attr_mn48_possessed" value="1"> Possessed
           </label>
-          <span class="arcana-tags">, magical → Staff of Magnetism</span>
+          <span class="arcana-tags">magical</span>
         </div>
       </summary>
       <div class="arcana-card-body">
@@ -4070,7 +4070,7 @@
           <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
             <input type="checkbox" name="attr_mn49_possessed" value="1"> Possessed
           </label>
-          <span class="arcana-tags">, large, magical, fragile → Groundskimmer</span>
+          <span class="arcana-tags">large, magical, fragile</span>
         </div>
       </summary>
       <div class="arcana-card-body">
@@ -4104,7 +4104,7 @@
           <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
             <input type="checkbox" name="attr_mn50_possessed" value="1"> Possessed
           </label>
-          <span class="arcana-tags">, magical → Thunderbolt Bow</span>
+          <span class="arcana-tags">magical</span>
         </div>
       </summary>
       <div class="arcana-card-body">
@@ -4143,7 +4143,7 @@
           <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
             <input type="checkbox" name="attr_mn51_possessed" value="1"> Possessed
           </label>
-          <span class="arcana-tags">, magical, fragile → Bronze Protector</span>
+          <span class="arcana-tags">magical, fragile</span>
         </div>
       </summary>
       <div class="arcana-card-body">
@@ -4215,439 +4215,556 @@
       </div>
     </details>
 
-    <!-- MINOR 53: A Rusty Steel Blade → Flaming Sword -->
-    <details class="arcana-card arcana-minor">
-      <summary class="arcana-summary">
-        <div class="arcana-summary-top">
-          <span class="arcana-title">A Rusty Steel Blade</span>
-        </div>
-        <div class="arcana-summary-bottom">
-          <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
-            <input type="checkbox" name="attr_mn53_possessed" value="1"> Possessed
-          </label>
-          <span class="arcana-tags">, magical → Flaming Sword</span>
-        </div>
-      </summary>
-      <div class="arcana-card-body">
-        <input type="checkbox" class="arcana-unlock-trigger" id="mn53_unlocked" name="attr_mn53_unlocked" value="1">
-        <label class="arcana-unlock-label" for="mn53_unlocked">Unlocked</label>
-        <div class="arcana-front">
-          <p>A pitted old blade, the steel eaten by rust and the edge long since gone. Flakes of rust fall off with any hard use, but no matter how much rust falls away, there's always more to replace it. There are some Maker-runes on the blade, barely visible under the rust. You can unlock its secrets, but you must…</p>
-          <p class="arcana-req-heading">Requirements — mark when complete:</p>
-          <div class="arcana-requirements">
-            <label><input type="checkbox" name="attr_mn53_req1" value="1"> …find a master smith willing to work on it, or have the skills yourself.</label>
-            <label><input type="checkbox" name="attr_mn53_req2" value="1"> …spend a season and supplies (Value 2) restoring the blade.</label>
-            <label><input type="checkbox" name="attr_mn53_req3" value="1"> …decipher the Maker-runes and how to charge the blade.</label>
-            <label><input type="checkbox" name="attr_mn53_req4" value="1"> …plunge the blade into an active forge or volcanic vent for a full day.</label>
-          </div>
-        </div>
-        <div class="arcana-back">
-          <p class="arcana-back-heading">Flaming Sword</p>
-          <p><em>, close, +1 damage, 1 piercing, magical</em></p>
-          <p>When you draw the flaming sword and speak the word of ignition, the blade bursts into flames. While aflame: it does +1d4 damage (fire, ignores armor on a 12+) / it can ignite flammable things / it sheds light (hand, area) and creatures of darkness are uncomfortable near it. The blade burns for about an hour before the fuel is exhausted. You can reignite it by plunging it into a substantial source of flame for a few seconds. When you strike someone with the flaming sword and roll a 12+, they catch fire. When you Clash with the flaming sword against a creature of darkness, you have advantage on your damage roll.</p>
-        </div>
+   <!-- MINOR 53: A rusty steel blade → Flaming Sword -->
+<details class="arcana-card arcana-minor">
+  <summary class="arcana-summary">
+    <div class="arcana-summary-top">
+      <span class="arcana-title">A rusty steel blade</span>
+    </div>
+    <div class="arcana-summary-bottom">
+      <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
+        <input type="checkbox" name="attr_mn53_possessed" value="1"> Possessed
+      </label>
+      <span class="arcana-tags">close, crude</span>
+    </div>
+  </summary>
+  <div class="arcana-card-body">
+    <input type="checkbox" class="arcana-unlock-trigger" id="mn53_unlocked" name="attr_mn53_unlocked" value="1">
+    <label class="arcana-unlock-label" for="mn53_unlocked">Unlocked</label>
+    <div class="arcana-front">
+      <p>It was clearly once a fine, fine blade. The steel holds a pattern of rune-like sworls, at least where the rust hasn't taken over. The hilt is blackened, with hints of leather wrappings that long ago burned away. The metal is hot to the touch, like it's been left out for hours in the summer sun.</p>
+      <p>To unlock the mysteries of this weapon, you must...</p>
+      <p class="arcana-req-heading">Requirements — mark when complete:</p>
+      <div class="arcana-requirements">
+        <label><input type="checkbox" name="attr_mn53_req1" value="1"> …restore the blade, which requires access to a smithy, a few weeks of work, and no small amount of skill.</label>
+        <label><input type="checkbox" name="attr_mn53_req2" value="1"> …commune with the spirit of fire within the steel (Instinct to seek glory), and convince it that you are worthy to wield the blade.</label>
+        <label><input type="checkbox" name="attr_mn53_req3" value="1"> …acquire a scabbard that can withstand the fire and heat of a forge.</label>
       </div>
-    </details>
-
-    <!-- MINOR 54: A Barrow Mound → The Barrow King's Blessing -->
-    <details class="arcana-card arcana-minor">
-      <summary class="arcana-summary">
-        <div class="arcana-summary-top">
-          <span class="arcana-title">A Barrow Mound</span>
-        </div>
-        <div class="arcana-summary-bottom">
-          <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
-            <input type="checkbox" name="attr_mn54_possessed" value="1"> Possessed
-          </label>
-          <span class="arcana-tags">→ The Barrow King's Blessing</span>
-        </div>
-      </summary>
-      <div class="arcana-card-body">
-        <input type="checkbox" class="arcana-unlock-trigger" id="mn54_unlocked" name="attr_mn54_unlocked" value="1">
-        <label class="arcana-unlock-label" for="mn54_unlocked">Unlocked</label>
-        <div class="arcana-front">
-          <p>Somewhere on the Barrow Moors, there is a barrow larger and older than the rest. No amount of digging will uncover its entrance; it simply isn't there. But on nights when the moon is dark and the wind from the north, you can hear something beneath the earth, shifting and sighing. To unlock its mysteries, you must…</p>
-          <p class="arcana-req-heading">Requirements — mark when complete:</p>
-          <div class="arcana-requirements">
-            <label><input type="checkbox" name="attr_mn54_req1" value="1"> …learn the name of the Barrow King who sleeps within.</label>
-            <label><input type="checkbox" name="attr_mn54_req2" value="1"> …speak that name aloud at the mound at the witching hour of a moonless night.</label>
-            <label><input type="checkbox" name="attr_mn54_req3" value="1"> …survive the ordeal that follows.</label>
-          </div>
-        </div>
-        <div class="arcana-back">
-          <p class="arcana-back-heading">The Barrow King's Blessing</p>
-          <p>The Barrow King has marked you. You bear a visible brand: a curling, dark mark somewhere on your body. All undead and spirits of the dead recognize the mark and treat you with wary deference — you are not prey, and they will not attack you unless provoked or commanded to. When you speak the Barrow King's name and call on his authority, roll +CHA: on a 10+, the undead and spirits of the dead in your presence are compelled to heed you for the rest of the scene; on a 7-9, they heed you for now but there will be a price (the GM will say what).</p>
-        </div>
+    </div>
+    <div class="arcana-back">
+      <p class="arcana-back-heading">Flaming Sword</p>
+      <p><em>, close, beautiful, +1 damage, 1 piercing</em></p>
+      <div class="arcana-effects-track">
+        <span>Blaze: </span>
+        <label><input type="checkbox" name="attr_mn53_blaze_nil" value="1"> nil</label>
+        <label><input type="checkbox" name="attr_mn53_blaze_1d4" value="1"> 1d4</label>
+        <label><input type="checkbox" name="attr_mn53_blaze_1d6" value="1"> 1d6</label>
+        <label><input type="checkbox" name="attr_mn53_blaze_1d8" value="1"> 1d8</label>
+        <label><input type="checkbox" name="attr_mn53_blaze_1d10" value="1"> 1d10</label>
       </div>
-    </details>
-
-    <!-- MINOR 55: A Silvery Signet Ring → Sigil of Authority -->
-    <details class="arcana-card arcana-minor">
-      <summary class="arcana-summary">
-        <div class="arcana-summary-top">
-          <span class="arcana-title">A Silvery Signet Ring</span>
-        </div>
-        <div class="arcana-summary-bottom">
-          <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
-            <input type="checkbox" name="attr_mn55_possessed" value="1"> Possessed
-          </label>
-          <span class="arcana-tags">, magical, beautiful</span>
-        </div>
-      </summary>
-      <div class="arcana-card-body">
-        <input type="checkbox" class="arcana-unlock-trigger" id="mn55_unlocked" name="attr_mn55_unlocked" value="1">
-        <label class="arcana-unlock-label" for="mn55_unlocked">Unlocked</label>
-        <div class="arcana-front">
-          <p>A ring of white metal, untarnished and gleaming, a single glyph carved into the bezel. The symbol squirms under your gaze, like it exists in more dimensions than you can perceive. The ring fits you perfectly, of course.</p>
-          <p class="arcana-req-heading">Requirements — mark when complete:</p>
-          <div class="arcana-requirements">
-            <label><input type="checkbox" name="attr_mn55_req1" value="1"> spend a season wearing the ring and contemplating the glyph.</label>
-            <label><input type="checkbox" name="attr_mn55_req2" value="1"> get used to the headaches & nausea that come from wearing the ring.</label>
-            <label><input type="checkbox" name="attr_mn55_req3" value="1"> spend 1 of your follower’s Loyalty to charge the ring.</label>
-            <label><input type="checkbox" name="attr_mn55_req4" value="1"> attempt to influence one of your followers with the ring, at the risk of failing to ever master its power and/or alienating your follower(s).</label>
-          </div>
-        </div>
-        <div class="arcana-back">
-          <p class="arcana-back-heading">Sigil of Authority</p>
-          <p>When you Strengthen Your Bond with a member of your community, you can choose to hold +1 Authority (max 3) in lieu of your follower holding +1 Loyalty. If you remove the ring, lose all Authority.</p>
-          <p>When you Persuade your follower(s) while holding Authority, you have advantage.You can spend Authority 1-for-1 to:</p>
-          <ul>
-            <li>Wrap yourself in majesty for up to a few minutes, drawing all attention, cowing the weak-willed, and speaking in a voice that all can hear (far, area)</li>
-            <li>Will someone in your presence to do as you wish, attempting to Persuade them without words</li>
-            <li>Have one of your nearby followers suffer an attack on your behalf, as if they held Readi ness from Defending</li>
-        </div>
+      <p>When you <strong>call on the fire spirit within</strong>, the blade erupts in flames (+magical, +dangerous) and casts light (reach, area). The hilt gets hot; wear thick gloves!</p>
+      <p>When you <strong>Clash with the Flaming Sword</strong>, after you resolve the move and deal damage, increase the Blaze die one step.</p>
+      <p>When you <strong>roll to make a move while wielding the sword</strong>, take damage equal to the Blaze die (ignores armor).</p>
+      <p>When you <strong>deal damage with the sword</strong>, add the Blaze die.</p>
+      <p>When you <strong>sheathe the sword</strong>, the fire goes out and cannot be relit until the Blaze die is nil. Reduce the Blaze die once each hour.</p>
+    </div>
+  </div>
+</details>
+ 
+<!-- MINOR 54: A runic branding iron → Searing Touch -->
+<details class="arcana-card arcana-minor">
+  <summary class="arcana-summary">
+    <div class="arcana-summary-top">
+      <span class="arcana-title">A runic branding iron</span>
+    </div>
+    <div class="arcana-summary-bottom">
+      <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
+        <input type="checkbox" name="attr_mn54_possessed" value="1"> Possessed
+      </label>
+      <span class="arcana-tags">magical</span>
+    </div>
+  </summary>
+  <div class="arcana-card-body">
+    <input type="checkbox" class="arcana-unlock-trigger" id="mn54_unlocked" name="attr_mn54_unlocked" value="1">
+    <label class="arcana-unlock-label" for="mn54_unlocked">Unlocked</label>
+    <div class="arcana-front">
+      <p>Found in the workshop of some Forge Lord, still held in a vice-clamp. The head is a runic shape, 6 by 6 inches, with smaller runes etched into its surface. Or at least, most of its surface. A few inches are blank, the work clearly unfinished.</p>
+      <p>To unlock the mysteries of this iron and claim its power as your own, you must...</p>
+      <p class="arcana-req-heading">Requirements — mark when complete:</p>
+      <div class="arcana-requirements">
+        <label><input type="checkbox" name="attr_mn54_req1" value="1"> …decipher the meaning of the runes, and identify the missing ones.</label>
+        <label><input type="checkbox" name="attr_mn54_req2" value="1"> …finish the etchings, risking an error that will make the next step fail.</label>
+        <label><input type="checkbox" name="attr_mn54_req3" value="1"> …heat the iron red-hot and let yourself be branded (lose 3d6 HP), the runes fading from the iron and searing themselves upon your soul.</label>
+        <label><input type="checkbox" name="attr_mn54_req4" value="1"> …allow the wound to heal and scar, without the aid of any magic.</label>
       </div>
-    </details>
-
-    <!-- MINOR 56: A Pouch of Old Bones → Knucklebones of the Ancestors -->
-    <details class="arcana-card arcana-minor">
-      <summary class="arcana-summary">
-        <div class="arcana-summary-top">
-          <span class="arcana-title">A Pouch of Old Bones</span>
-        </div>
-        <div class="arcana-summary-bottom">
-          <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
-            <input type="checkbox" name="attr_mn56_possessed" value="1"> Possessed
-          </label>
-          <span class="arcana-tags">, magical → Knucklebones of the Ancestors</span>
-        </div>
-      </summary>
-      <div class="arcana-card-body">
-        <input type="checkbox" class="arcana-unlock-trigger" id="mn56_unlocked" name="attr_mn56_unlocked" value="1">
-        <label class="arcana-unlock-label" for="mn56_unlocked">Unlocked</label>
-        <div class="arcana-front">
-          <p>Seven small bones, yellowed and smooth, each carved with a single rune. They rattle softly in their pouch even when still. When you scatter them on the ground and listen carefully, you can almost hear whispered argument. To unlock their mysteries, you must…</p>
-          <p class="arcana-req-heading">Requirements — mark when complete:</p>
-          <div class="arcana-requirements">
-            <label><input type="checkbox" name="attr_mn56_req1" value="1"> …identify whose bones these are (they are the knucklebones of seven different people).</label>
-            <label><input type="checkbox" name="attr_mn56_req2" value="1"> …learn the name of each ancestor, and what they valued in life.</label>
-            <label><input type="checkbox" name="attr_mn56_req3" value="1"> …make an appropriate offering to each, in turn, at their grave or place of significance.</label>
-          </div>
-        </div>
-        <div class="arcana-back">
-          <p class="arcana-back-heading">Knucklebones of the Ancestors</p>
-          <p>When you cast the bones and ask a question about what is to come, roll +WIS: on a 10+, the ancestors argue the matter thoroughly — the GM gives you a clear and useful answer; on a 7-9, the ancestors are vague or disagree — the GM gives you a cryptic or partial answer; on a 6-, the ancestors are silent or give a dire warning with no useful guidance. You can only cast the bones once per scene. When you cast the bones and the answer involves someone present dying, you know it — but not who.</p>
-        </div>
+    </div>
+    <div class="arcana-back">
+      <p class="arcana-back-heading">Searing Touch</p>
+      <p>When you <strong>call up the fire from your soul and pour it into your hands</strong>, roll +CON: on a 7+, your hands blaze like white-hot iron (see below); but on a 10+, first pick 1; and on a 7-9, first pick 2:</p>
+      <ul>
+        <li>It takes minutes of intense focus</li>
+        <li>It burns your life force; lose 2d4 HP</li>
+        <li>The pain is terrible; mark a debility</li>
+      </ul>
+      <p><strong>On a 6-</strong>, whatever else the GM says, you cannot do this again until you Convalesce.</p>
+      <p>While your <strong>hands are ablaze</strong>, your touch deals 1d10 damage (hand, messy, dangerous, 1 piercing), sets fire to wood, boils water, heats metal. Your hands are unharmed by the heat, but your gear and the rest of your body has no such protection. Be careful.</p>
+      <p>Your hands blaze as long as you maintain your focus, up to a minute or maybe two.</p>
+    </div>
+  </div>
+</details>
+ 
+<!-- MINOR 55: A silvery signet ring → Sigil of Authority -->
+<details class="arcana-card arcana-minor">
+  <summary class="arcana-summary">
+    <div class="arcana-summary-top">
+      <span class="arcana-title">A silvery signet ring</span>
+    </div>
+    <div class="arcana-summary-bottom">
+      <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
+        <input type="checkbox" name="attr_mn55_possessed" value="1"> Possessed
+      </label>
+      <span class="arcana-tags">magical, beautiful</span>
+    </div>
+  </summary>
+  <div class="arcana-card-body">
+    <input type="checkbox" class="arcana-unlock-trigger" id="mn55_unlocked" name="attr_mn55_unlocked" value="1">
+    <label class="arcana-unlock-label" for="mn55_unlocked">Unlocked</label>
+    <div class="arcana-front">
+      <p>A ring of white metal, untarnished and gleaming, a single glyph carved into the bezel. The symbol squirms under your gaze, like it exists in more dimensions than you can perceive. The ring fits you perfectly, of course.</p>
+      <p>To unlock the ring's mysteries, you must...</p>
+      <p class="arcana-req-heading">Requirements — mark when complete:</p>
+      <div class="arcana-requirements">
+        <label><input type="checkbox" name="attr_mn55_req1" value="1"> …spend a season wearing the ring and contemplating the glyph.</label>
+        <label><input type="checkbox" name="attr_mn55_req2" value="1"> …get used to the headaches &amp; nausea that come from wearing the ring.</label>
+        <label><input type="checkbox" name="attr_mn55_req3" value="1"> …spend 1 of your follower's Loyalty to charge the ring.</label>
+        <label><input type="checkbox" name="attr_mn55_req4" value="1"> …attempt to influence one of your followers with the ring, at the risk of failing to ever master its power and/or alienating your follower(s).</label>
       </div>
-    </details>
-
-    <!-- MINOR 57: A Locked Iron Box → Plague Wind -->
-    <details class="arcana-card arcana-minor">
-      <summary class="arcana-summary">
-        <div class="arcana-summary-top">
-          <span class="arcana-title">A Locked Iron Box</span>
-        </div>
-        <div class="arcana-summary-bottom">
-          <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
-            <input type="checkbox" name="attr_mn57_possessed" value="1"> Possessed
-          </label>
-          <span class="arcana-tags">, magical, dangerous → Plague Wind</span>
-        </div>
-      </summary>
-      <div class="arcana-card-body">
-        <input type="checkbox" class="arcana-unlock-trigger" id="mn57_unlocked" name="attr_mn57_unlocked" value="1">
-        <label class="arcana-unlock-label" for="mn57_unlocked">Unlocked</label>
-        <div class="arcana-front">
-          <p>A small iron box, heavily corroded, sealed with a lock that has no keyhole. It hums faintly. When held near sick animals or people, they grow calmer. But every few nights, you dream of a grey wind moving over a grey plain, touching grey things that then cease to move. To unlock its mysteries, you must…</p>
-          <p class="arcana-req-heading">Requirements — mark when complete:</p>
-          <div class="arcana-requirements">
-            <label><input type="checkbox" name="attr_mn57_req1" value="1"> …learn the word that opens the box (the word is different each time, and changes with the phases of the moon).</label>
-            <label><input type="checkbox" name="attr_mn57_req2" value="1"> …open the box and survive what you find inside.</label>
-            <label><input type="checkbox" name="attr_mn57_req3" value="1"> …learn to re-seal the box before what's inside escapes entirely.</label>
-          </div>
-        </div>
-        <div class="arcana-back">
-          <p class="arcana-back-heading">Plague Wind</p>
-          <p>When you open the box and speak the name of a creature type or a specific individual, release the plague wind, and then re-seal the box, roll +CON: on a 10+, the plague wind seeks only your named target(s) and returns to the box when done; on a 7-9, the wind finds its target(s) but also touches 1d4 others nearby (GM's choice). On a 6-, the wind escapes before you can re-seal the box and touches everything living in the area before you can recapture it.</p>
-          <p>Those touched by the plague wind become lethargic, feverish, and weak. They mark all three debilities and cannot clear them until they rest completely for two weeks. Creatures of unusual hardiness may resist; roll +CON vs your roll to release the wind. If a creature touched by the plague wind is already sick or debilitated, they risk death.</p>
-        </div>
+    </div>
+    <div class="arcana-back">
+      <p class="arcana-back-heading">Sigil of Authority</p>
+      <div class="arcana-effects-track">
+        <span>Authority: </span>
+        <input type="checkbox" name="attr_mn55_auth1" value="1">
+        <input type="checkbox" name="attr_mn55_auth2" value="1">
+        <input type="checkbox" name="attr_mn55_auth3" value="1">
       </div>
-    </details>
-
-    <!-- MINOR 58: A Thorned Vine → Briar Bind -->
-    <details class="arcana-card arcana-minor">
-      <summary class="arcana-summary">
-        <div class="arcana-summary-top">
-          <span class="arcana-title">A Thorned Vine</span>
-        </div>
-        <div class="arcana-summary-bottom">
-          <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
-            <input type="checkbox" name="attr_mn58_possessed" value="1"> Possessed
-          </label>
-          <span class="arcana-tags">, magical → Briar Bind</span>
-        </div>
-      </summary>
-      <div class="arcana-card-body">
-        <input type="checkbox" class="arcana-unlock-trigger" id="mn58_unlocked" name="attr_mn58_unlocked" value="1">
-        <label class="arcana-unlock-label" for="mn58_unlocked">Unlocked</label>
-        <div class="arcana-front">
-          <p>A single cutting from a thornbush, supple and still alive despite having no roots. It wraps around your wrist if you hold it long enough, and its thorns never quite seem to prick you. When you speak to it, the leaves rustle in response. It wants to grow. You can teach it, but you must…</p>
-          <p class="arcana-req-heading">Requirements — mark when complete:</p>
-          <div class="arcana-requirements">
-            <label><input type="checkbox" name="attr_mn58_req1" value="1"> …feed it with your own blood each day for a season.</label>
-            <label><input type="checkbox" name="attr_mn58_req2" value="1"> …teach it the difference between friend and enemy (it will make a mistake at least once).</label>
-            <label><input type="checkbox" name="attr_mn58_req3" value="1"> …whisper to it the names of those you wish it to protect you from.</label>
-          </div>
-        </div>
-        <div class="arcana-back">
-          <p class="arcana-back-heading">Briar Bind</p>
-          <p>When you hurl the vine at a target within near range and command it to bind, roll +WIS: on a 10+, the vine lashes out and entangles the target completely — they cannot move without tearing themselves on thorns (1d4 damage, ignores armor, per attempt to break free) and dealing with growing panic; on a 7-9, the vine snags them but doesn't fully bind — they can move but with significant difficulty and take 1d4 damage attempting to do so. The vine will hold for as long as you concentrate, or until the target tears free (rolling +STR vs your WIS). When you call the vine back, it returns to your hand within moments.</p>
-        </div>
+      <p>When you <strong>Strengthen Your Bond</strong> with a member of your community, you can choose to hold +1 Authority (max 3) in lieu of your follower holding +1 Loyalty. If you <strong><em>remove the ring</em></strong>, lose all Authority.</p>
+      <p>When you <strong>Persuade your follower(s) while holding Authority</strong>, you have advantage.</p>
+      <p>You can spend Authority 1-for-1 to:</p>
+      <ul>
+        <li>Wrap yourself in majesty for up to a few minutes, drawing all attention, cowing the weak-willed, and speaking in a voice that all can hear (far, area)</li>
+        <li>Will someone in your presence to do as you wish, attempting to Persuade them without words</li>
+        <li>Have one of your nearby followers suffer an attack on your behalf, as if they held Readiness from Defending</li>
+      </ul>
+    </div>
+  </div>
+</details>
+ 
+<!-- MINOR 56: A fine drinking horn → Horn of Storms -->
+<details class="arcana-card arcana-minor">
+  <summary class="arcana-summary">
+    <div class="arcana-summary-top">
+      <span class="arcana-title">A fine drinking horn</span>
+    </div>
+    <div class="arcana-summary-bottom">
+      <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
+        <input type="checkbox" name="attr_mn56_possessed" value="1"> Possessed
+      </label>
+      <span class="arcana-tags">beautiful, magical</span>
+    </div>
+  </summary>
+  <div class="arcana-card-body">
+    <input type="checkbox" class="arcana-unlock-trigger" id="mn56_unlocked" name="attr_mn56_unlocked" value="1">
+    <label class="arcana-unlock-label" for="mn56_unlocked">Unlocked</label>
+    <div class="arcana-front">
+      <p>You got it off a stranger. Like, maybe on a bet, or in a contest, or as a gift in return for some kindness. Or maybe you took it without his consent? Regardless, he seemed a bit coy about the horn, almost glad to let you have it. And just before you parted ways, you noticed the missing finger on his left hand.</p>
+      <p>Since then, the horn has seemed to call to you, daring you to drink heavily from it. To unlock its mysteries, you must...</p>
+      <p class="arcana-req-heading">Requirements — mark when complete:</p>
+      <div class="arcana-requirements">
+        <label><input type="checkbox" name="attr_mn56_req1" value="1"> …fill it with whisky or a similarly potent spirit.</label>
+        <label><input type="checkbox" name="attr_mn56_req2" value="1"> …drink the contents in a single pull (mark dazed).</label>
+        <label><input type="checkbox" name="attr_mn56_req3" value="1"> …risk blacking out, acting the fool, or at least marking more debilities.</label>
+        <label><input type="checkbox" name="attr_mn56_req4" value="1"> …survive the storm you summon as a result (see reverse).</label>
       </div>
-    </details>
-
-    <!-- MINOR 59: A Woven Dreamcatcher → Dreamwalk -->
-    <details class="arcana-card arcana-minor">
-      <summary class="arcana-summary">
-        <div class="arcana-summary-top">
-          <span class="arcana-title">A Woven Dreamcatcher</span>
-        </div>
-        <div class="arcana-summary-bottom">
-          <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
-            <input type="checkbox" name="attr_mn59_possessed" value="1"> Possessed
-          </label>
-          <span class="arcana-tags">, magical → Dreamwalk</span>
-        </div>
-      </summary>
-      <div class="arcana-card-body">
-        <input type="checkbox" class="arcana-unlock-trigger" id="mn59_unlocked" name="attr_mn59_unlocked" value="1">
-        <label class="arcana-unlock-label" for="mn59_unlocked">Unlocked</label>
-        <div class="arcana-front">
-          <p>A hoop of pale bone strung with sinew in a complex web, hung with small stones and feathers that belong to no bird you've ever seen. When you sleep with it hanging above you, your dreams are vivid, lucid, and unusually specific. To unlock its mysteries, you must…</p>
-          <p class="arcana-req-heading">Requirements — mark when complete:</p>
-          <div class="arcana-requirements">
-            <label><input type="checkbox" name="attr_mn59_req1" value="1"> …sleep beneath it for a full lunar cycle.</label>
-            <label><input type="checkbox" name="attr_mn59_req2" value="1"> …follow a dream to its conclusion without waking, however terrible it becomes.</label>
-            <label><input type="checkbox" name="attr_mn59_req3" value="1"> …find the dreamer at the center of the web, and learn their name.</label>
-          </div>
-        </div>
-        <div class="arcana-back">
-          <p class="arcana-back-heading">Dreamwalk</p>
-          <p>When you sleep with the dreamcatcher above you and hold someone's name in your mind as you drift off, roll +WIS: on a 10+, you walk their dreams — you can observe, ask questions (they will answer honestly, believing it a dream), and leave impressions or images that they will remember on waking; on a 7-9, you enter their dreams but they become aware of an intruder — they can attempt to expel you (roll +WIS vs your WIS) or hide their true thoughts. On a 6-, you are drawn into a nightmare not of their making and cannot leave until dawn; mark dazed and weakened on waking.</p>
-        </div>
+    </div>
+    <div class="arcana-back">
+      <p class="arcana-back-heading">Horn of Storms</p>
+      <p>When you <strong>get yourself good and drunk from the horn</strong>, mark a debility. You call up a storm, centered on your location. Roll four d4s. For each additional debility you mark, roll an extra d4. <strong><em>Until the storm passes</em></strong>, you can't clear debilities.</p>
+      <p>Assign one d4 to each of the following:</p>
+      <ul>
+        <li><strong>Onset:</strong> 1 = next day; 2–3 = in a few hours; 4 = within the hour.</li>
+        <li><strong>Intensity:</strong> 1 = dangerous to be out in; 2–3 = damages weak structures; 4 = lays waste to weak structures and damages sturdy ones.</li>
+        <li><strong>Reach:</strong> 1 = a mile or so; 2–3 = a dozen miles or so; 4 = dozens or scores of miles.</li>
+        <li><strong>Duration</strong> (once it gets going): 1 = less than an hour; 2–3 = a few hours; 4 = a day or so.</li>
+      </ul>
+    </div>
+  </div>
+</details>
+ 
+<!-- MINOR 57: A vein of milky crystal → Moonstone -->
+<details class="arcana-card arcana-minor">
+  <summary class="arcana-summary">
+    <div class="arcana-summary-top">
+      <span class="arcana-title">A vein of milky crystal</span>
+    </div>
+    <div class="arcana-summary-bottom">
+      <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
+        <input type="checkbox" name="attr_mn57_possessed" value="1"> Possessed
+      </label>
+      <span class="arcana-tags">magical, beautiful, immobile</span>
+    </div>
+  </summary>
+  <div class="arcana-card-body">
+    <input type="checkbox" class="arcana-unlock-trigger" id="mn57_unlocked" name="attr_mn57_unlocked" value="1">
+    <label class="arcana-unlock-label" for="mn57_unlocked">Unlocked</label>
+    <div class="arcana-front">
+      <p>Found in a cave, a mountain, or some rocky outcrop, likely considered sacred by the locals. It looks like cloudy white quartz, but glows faintly at night.</p>
+      <p>You can unlock the mysteries of this vein and craft a talisman against the undead, but to do so you must...</p>
+      <p class="arcana-req-heading">Requirements — mark when complete:</p>
+      <div class="arcana-requirements">
+        <label><input type="checkbox" name="attr_mn57_req1" value="1"> …personally extract a large hunk of crystal (Value 1) from the vein.</label>
+        <label><input type="checkbox" name="attr_mn57_req2" value="1"> …have a gemcutter shape and polish it into a perfect sphere (a Value 1 job).</label>
+        <label><input type="checkbox" name="attr_mn57_req3" value="1"> …learn the sacred words for imbuing a moonstone with light and then calling that light forth.</label>
+        <label><input type="checkbox" name="attr_mn57_req4" value="1"> …spend three nights under the full moon, speaking the sacred words, risking a mistake that ruins the moonstone or at least wastes your efforts this month.</label>
       </div>
-    </details>
-
-    <!-- MINOR 60: A Pair of Bronze Mirrors → Mirror Gate -->
-    <details class="arcana-card arcana-minor">
-      <summary class="arcana-summary">
-        <div class="arcana-summary-top">
-          <span class="arcana-title">A Pair of Bronze Mirrors</span>
-        </div>
-        <div class="arcana-summary-bottom">
-          <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
-            <input type="checkbox" name="attr_mn60_possessed" value="1"> Possessed
-          </label>
-          <span class="arcana-tags">, magical → Mirror Gate</span>
-        </div>
-      </summary>
-      <div class="arcana-card-body">
-        <input type="checkbox" class="arcana-unlock-trigger" id="mn60_unlocked" name="attr_mn60_unlocked" value="1">
-        <label class="arcana-unlock-label" for="mn60_unlocked">Unlocked</label>
-        <div class="arcana-front">
-          <p>Two bronze hand mirrors, identical in every way, etched around their edges with the same repeating pattern of interlocked knots. When you hold one up and look into it, you see not your own reflection but a grey, fog-filled void. The other mirror shows the same thing. To unlock their mysteries, you must…</p>
-          <p class="arcana-req-heading">Requirements — mark when complete:</p>
-          <div class="arcana-requirements">
-            <label><input type="checkbox" name="attr_mn60_req1" value="1"> …step into the void and survive what you find there.</label>
-            <label><input type="checkbox" name="attr_mn60_req2" value="1"> …leave the second mirror at a fixed location while carrying the first.</label>
-            <label><input type="checkbox" name="attr_mn60_req3" value="1"> …find your way back through the void without a guide.</label>
-          </div>
-        </div>
-        <div class="arcana-back">
-          <p class="arcana-back-heading">Mirror Gate</p>
-          <p>When the two mirrors are more than a few feet apart and you step through one while holding the other, you pass through the grey void and emerge from the second mirror's location. The journey through the void takes only a moment, but the void is not empty — something lives there, and notices those who pass through. Each time you use the Mirror Gate, roll the Die of Fate. On a 1, something from the void follows you back. On a 6, the void thing is pleased by your passage and you hold 1 Void-touched (spend to add +1 to any roll involving the uncanny or impossible). On 2-5, nothing unusual occurs.</p>
-        </div>
+    </div>
+    <div class="arcana-back">
+      <p class="arcana-back-heading">Moonstone</p>
+      <p><em>beautiful, magical, fragile</em></p>
+      <div class="arcana-effects-track">
+        <span>Hours: </span>
+        <input type="checkbox" name="attr_mn57_hr1" value="1">
+        <input type="checkbox" name="attr_mn57_hr2" value="1">
+        <input type="checkbox" name="attr_mn57_hr3" value="1">
+        <input type="checkbox" name="attr_mn57_hr4" value="1">
+        <input type="checkbox" name="attr_mn57_hr5" value="1">
       </div>
-    </details>
-
-    <!-- MINOR 61: An Obsidian Needle → Soul Stitch -->
-    <details class="arcana-card arcana-minor">
-      <summary class="arcana-summary">
-        <div class="arcana-summary-top">
-          <span class="arcana-title">An Obsidian Needle</span>
-        </div>
-        <div class="arcana-summary-bottom">
-          <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
-            <input type="checkbox" name="attr_mn61_possessed" value="1"> Possessed
-          </label>
-          <span class="arcana-tags">, magical, dangerous → Soul Stitch</span>
-        </div>
-      </summary>
-      <div class="arcana-card-body">
-        <input type="checkbox" class="arcana-unlock-trigger" id="mn61_unlocked" name="attr_mn61_unlocked" value="1">
-        <label class="arcana-unlock-label" for="mn61_unlocked">Unlocked</label>
-        <div class="arcana-front">
-          <p>A needle of black volcanic glass, impossibly thin, that has never broken despite being plainly fragile. It carries no thread. When you hold it to the light, you see something moving inside the glass — a shadow that doesn't match your hand. To unlock its mysteries, you must…</p>
-          <p class="arcana-req-heading">Requirements — mark when complete:</p>
-          <div class="arcana-requirements">
-            <label><input type="checkbox" name="attr_mn61_req1" value="1"> …pierce your own skin with the needle and pull a visible thread of light from the wound.</label>
-            <label><input type="checkbox" name="attr_mn61_req2" value="1"> …sew the thread into something living (it need not be willing).</label>
-            <label><input type="checkbox" name="attr_mn61_req3" value="1"> …maintain the connection for three days without severing it, learning what flows between you.</label>
-          </div>
-        </div>
-        <div class="arcana-back">
-          <p class="arcana-back-heading">Soul Stitch</p>
-          <p>When you pierce your skin with the obsidian needle and draw out a thread of your own soul, you can stitch it into another willing or helpless living being. Roll +CON: on a 10+, the stitch holds and you are soul-linked — you each feel the other's pain and wellbeing at all times, and can share HP freely (spending your own HP to restore theirs, or allowing them to spend theirs to restore yours) at will; on a 7-9, the stitch holds but is imperfect — you feel their pain but cannot share HP until you reinforce the stitch. The link persists until the needle is used to cut the thread. While stitched to another, when they die, roll +CON: on a 10+, the thread snaps safely; on a 7-9, you lose HP equal to half their max; on a 6-, you lose HP equal to their full max.</p>
-        </div>
+      <p>When you <strong>spend a night beneath the full moon</strong>, directing its light into the moonstone, it gains 1 hour of light (max 5).</p>
+      <p>When you <strong>hold the moonstone aloft in darkness and utter a sacred word</strong>, it shines with pale white light (area, near) that shows no color, only shape and texture. The light reveals the undead, even spirits that have yet to manifest and entities masked by magic or disguise.</p>
+      <p>When the <strong>moonstone is your only light source and you shout the proper word</strong>, it blazes with silvery light and all undead in range take 1d6 damage per hour of light remaining (ignores armor). The moonstone then goes dark, its light expended until you charge it again.</p>
+    </div>
+  </div>
+</details>
+ 
+<!-- MINOR 58: A mummified hand → Hand of Aals Sannan -->
+<details class="arcana-card arcana-minor">
+  <summary class="arcana-summary">
+    <div class="arcana-summary-top">
+      <span class="arcana-title">A mummified hand</span>
+    </div>
+    <div class="arcana-summary-bottom">
+      <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
+        <input type="checkbox" name="attr_mn58_possessed" value="1"> Possessed
+      </label>
+      <span class="arcana-tags">magical, fragile</span>
+    </div>
+  </summary>
+  <div class="arcana-card-body">
+    <input type="checkbox" class="arcana-unlock-trigger" id="mn58_unlocked" name="attr_mn58_unlocked" value="1">
+    <label class="arcana-unlock-label" for="mn58_unlocked">Unlocked</label>
+    <div class="arcana-front">
+      <p>Found in an engraved lead box, this grisly relic is adorned with three golden rings (Value 2). Each ring has an empty setting, as though it was meant to hold a stone. Only dark, rust-like flakes remain.</p>
+      <p>The hand still thrums with unholy vitality. To unlock its mysteries, you must...</p>
+      <p class="arcana-req-heading">Requirements — mark when complete:</p>
+      <div class="arcana-requirements">
+        <label><input type="checkbox" name="attr_mn58_req1" value="1"> …learn the name of the sorcerer whose hand this was.</label>
+        <label><input type="checkbox" name="attr_mn58_req2" value="1"> …learn the words of power and the process below.</label>
+        <label>
+          <input type="checkbox" name="attr_mn58_req3a" value="1">
+          <input type="checkbox" name="attr_mn58_req3b" value="1">
+          <input type="checkbox" name="attr_mn58_req3c" value="1">
+          …on three separate nights, soak a different piece of red crystal (Value 1) in a bowl of your own fresh blood (5 HP, mark a debility), chanting words of power throughout the night, and then set the still-dripping crystal in one of the rings that adorn the hand.
+        </label>
       </div>
-    </details>
-
-    <!-- MINOR 62: A treasure map → The Silver Branch --> <!--done-->
-    <details class="arcana-card arcana-minor">
-      <summary class="arcana-summary">
-        <div class="arcana-summary-top">
-          <span class="arcana-title">A treasure map</span>
-        </div>
-        <div class="arcana-summary-bottom">
-          <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
-            <input type="checkbox" name="attr_mn62_possessed" value="1"> Possessed
-          </label>
-          <span class="arcana-tags">fragile</span>
-        </div>
-      </summary>
-      <div class="arcana-card-body">
-        <input type="checkbox" class="arcana-unlock-trigger" id="mn62_unlocked" name="attr_mn62_unlocked" value="1">
-        <label class="arcana-unlock-label" for="mn62_unlocked">Unlocked</label>
-        <div class="arcana-front">
-          <p>A tattered scrap of parchment. It shows a path from a particular set of standing stones: through a marsh, up a river, to a place behind a waterfall, then through a forest of sword-sharp trees. Forest Folk glyphs are scrawled all about, but at the end: a silver tree, and X marks the spot. To unlock the map’s mysteries and claim the prize at the end, you must...</p>
-          <p class="arcana-req-heading">Requirements — mark when complete:</p>
-          <div class="arcana-requirements">
-            <label><input type="checkbox" name="attr_mn62_req1" value="1"> …find the standing stones that mark the start of the path.</label>
-            <label><input type="checkbox" name="attr_mn62_req2" value="1"> …follow the map to the waterfall.</label>
-            <label><input type="checkbox" name="attr_mn62_req3" value="1"> …enter the Fae domain beyond.</label>
-            <label><input type="checkbox" name="attr_mn62_req4" value="1"> …navigate the sword-tree forest.</label>
-            <label><input type="checkbox" name="attr_mn62_req5" value="1"> …risk falling under the soporific spell of the silver tree.</label>
-            <label><input type="checkbox" name="attr_mn62_req6" value="1"> …claim a branch from the silver tree.</label>
-            <label><input type="checkbox" name="attr_mn62_req7" value="1"> …make it home again.</label>
-          </div>
-        </div>
-        <div class="arcana-back">
-          <p class="arcana-back-heading">The Silver Branch</p>
-          <p><em>Uses: </em><input type="number" name="attr_mn62_uses" value="0" style="width:44px"></p>
-          <p>A few feet long, laden with white flowers and jingling golden fruits. Surprisingly sturdy, and stays fresh indefinitely unless its powers are used. Only one such branch can leave the Fae domain at a time. When you jingle the silver branch, all who hear it (reach, area except you) are filled with bliss and forget their woes for a few hours. Roll +CHA: on a 10+, pick 1; on a 7-9, pick 1 and the GM picks another; on a 6-, all 3.</p>
-        <ul>
-            <li>The branch starts to fade; if already fading, it goes bare, its powers gone</li>
-            <li>Some (GM’s choice of who) are blissed out for days or weeks, growing weak and wretched in the meantime</li>
-            <li>Some (GM’s choice of who) become obsessed with hearing it jingle again</li>
-          </ul>
-        </div>
+    </div>
+    <div class="arcana-back">
+      <p class="arcana-back-heading">Hand of Aals Sannan</p>
+      <p>When you (and only you) <strong>touch the hand and speak the name of Aals Sannan</strong>, all three crystals dim and the power of the long-dead sorcerer infuses you. Reset your HP to max, clear your debilities, and heal any problematic wounds (if you were dying, you no longer are). Also, mark one:</p>
+      <ul>
+        <li><label><input type="checkbox" name="attr_mn58_mark1" value="1"> Part of your look changes, to be more like Aals Sannan.</label></li>
+        <li><label><input type="checkbox" name="attr_mn58_mark2" value="1"> Your instinct changes, to something more cynical/manipulative/ambitious.</label></li>
+        <li><label><input type="checkbox" name="attr_mn58_mark3" value="1"> Your heart hardens towards someone you care about, so that you see them now as only a tool or a threat.</label></li>
+      </ul>
+      <p>When <strong>all three have been marked</strong>, the three crystals crumble to dust. Clear all three marks but their effects remain. Also, clear the last three check boxes on the front of this card. Until you replace all three crystals, you can't use this arcanum.</p>
+    </div>
+  </div>
+</details>
+ 
+<!-- MINOR 59: A redwood basin → Bittersweet Elixir -->
+<details class="arcana-card arcana-minor">
+  <summary class="arcana-summary">
+    <div class="arcana-summary-top">
+      <span class="arcana-title">A redwood basin</span>
+    </div>
+    <div class="arcana-summary-bottom">
+      <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
+        <input type="checkbox" name="attr_mn59_possessed" value="1"> Possessed
+      </label>
+      <span class="arcana-tags">magical, beautiful</span>
+    </div>
+  </summary>
+  <div class="arcana-card-body">
+    <input type="checkbox" class="arcana-unlock-trigger" id="mn59_unlocked" name="attr_mn59_unlocked" value="1">
+    <label class="arcana-unlock-label" for="mn59_unlocked">Unlocked</label>
+    <div class="arcana-front">
+      <p>A wide, shallow bowl carved with flowers and thorny vines, twining through skulls of deer and other beasts. The pattern shifts when you aren't looking; it's never exactly the same twice.</p>
+      <p>To unlock the mysteries of the basin, you must...</p>
+      <p class="arcana-req-heading">Requirements — mark when complete:</p>
+      <div class="arcana-requirements">
+        <label><input type="checkbox" name="attr_mn59_req1" value="1"> …befriend the spirit of life and vitality that dwells within.</label>
+        <label><input type="checkbox" name="attr_mn59_req2" value="1"> …learn from a Fae how to pour years of your life into the basin.</label>
+        <label><input type="checkbox" name="attr_mn59_req3" value="1"> …fill the basin with a few years of your life.</label>
       </div>
-    </details>
-
-    <!-- MINOR 63: An oversized crown → Void Elemental --> <!--done-->
-    <details class="arcana-card arcana-minor">
-      <summary class="arcana-summary">
-        <div class="arcana-summary-top">
-          <span class="arcana-title">An oversized crown</span>
-        </div>
-        <div class="arcana-summary-bottom">
-          <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
-            <input type="checkbox" name="attr_mn63_possessed" value="1"> Possessed
-          </label>
-          <span class="arcana-tags">beautiful, magical, fireproof</span>
-        </div>
-      </summary>
-      <div class="arcana-card-body">
-        <input type="checkbox" class="arcana-unlock-trigger" id="mn63_unlocked" name="attr_mn63_unlocked" value="1">
-        <label class="arcana-unlock-label" for="mn63_unlocked">Unlocked</label>
-        <div class="arcana-front">
-          <p>A circlet of black, glossy metal set with eight spires of aetherium. It’s sized for a head maybe twice as large as yours, and is always a bit chill to the touch. Even cast into the hottest furnace, it will not melt nor even heat.</p>
-          <p>When you touch the crown with bare flesh and open your mind, you can speak to the primordial spirit to which the crown is attuned. But to fully unlock the mysteries of this crown,, you must…</p>
-          <p class="arcana-req-heading">Requirements — mark when complete:</p>
-          <div class="arcana-requirements">
-            <label><input type="checkbox" name="attr_mn63_req1" value="1"> …risk your sense of self as you commune with this spirit of the void.</label>
-            <label><input type="checkbox" name="attr_mn63_req2" value="1"> …learn the Words of Being, which will force the spirit to manifest.</label>
-            <label><input type="checkbox" name="attr_mn63_req3" value="1"> …learn the Words of Unbeing, which will send the spirit home.</label>
-            <label><input type="checkbox" name="attr_mn63_req4" value="1"> …convince the spirit to manifest and then successfully dismiss it.</label>
-          </div>
-        </div>
-        <div class="arcana-back">
-          <p class="arcana-back-heading">Void Elemental</p>
-          <p>When you touch the crown and speak the Words of Being, the spirit manifests. Treat it as a follower, with 3 Loyalty to start (it can never gain more). When you touch the crown and chant the Words of Unbeing, the spirit can return to the void—if it wants.</p>
-          <p>Void elemental:Spirit, primordial, confused, angry</p>
-          <p>HP 15; Armor 1 (lacks organs)</p>
-          <p>Damage void touch 1d10 w/advantage (hand, grabby, ignores armor)</p>
-          <p>Special qualities immune to most harm. Instinct to rage at all the noise and chaos</p>
-          <ul>
-            <li>Manifest as a black hole in reality</li>
-            <li>Snuff out a source of energy</li>
-            <li>Become confused, unsure what to do</li>
-          </ul>
-        </div>
+      <p>When you mark the last requirement and unlock this arcanum, mark your current age on the other side. Then trigger the Bittersweet Elixir move.</p>
+    </div>
+    <div class="arcana-back">
+      <p class="arcana-back-heading">Bittersweet Elixir</p>
+      <div class="arcana-effects-track">
+        <label><input type="checkbox" name="attr_mn59_youthful" value="1"> youthful</label>
+        <label><input type="checkbox" name="attr_mn59_mature" value="1"> mature</label>
+        <label><input type="checkbox" name="attr_mn59_elderly" value="1"> elderly</label>
       </div>
-    </details>
-
-    <!-- MINOR 64: A metal puzzle box → Runes of Creation --> <!--done-->
-    <details class="arcana-card arcana-minor">
-      <summary class="arcana-summary">
-        <div class="arcana-summary-top">
-          <span class="arcana-title">A metal puzzle box</span>
-        </div>
-        <div class="arcana-summary-bottom">
-          <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
-            <input type="checkbox" name="attr_mn64_possessed" value="1"> Possessed
-          </label>
-          <span class="arcana-tags">magical</span>
-        </div>
-      </summary>
-      <div class="arcana-card-body">
-        <input type="checkbox" class="arcana-unlock-trigger" id="mn64_unlocked" name="attr_mn64_unlocked" value="1">
-        <label class="arcana-unlock-label" for="mn64_unlocked">Unlocked</label>
-        <div class="arcana-front">
-          <p>A 6” cube of dull gray metal, covered in hinges, knobs, dials, sliders, levers, and the like. A thing of mad genius, resisting all attempts to open it by brute force. To unlock the feather's mysteries, you must…</p>
-          <p class="arcana-req-heading">Requirements — mark when complete:</p>
-          <div class="arcana-requirements">
-            <label><input type="checkbox" name="attr_mn64_req1" value="1"> …roll +INT to open the box: on a 10+, it takes a few days of fiddling; on a 7-9, it takes a few obsessive weeks; on a 6-, it’s beyond you.</label>
-            <label><input type="checkbox" name="attr_mn64_req2" value="1"> …spend a season deciphering the symbols etched along the inside.</label>
-            <label><input type="checkbox" name="attr_mn64_req3" value="1"> …risk never being able to decipher the symbols, and/or developing some mental quirk as you do so.</label>
-            <label><input type="checkbox" name="attr_mn64_req4" value="1"> …commune with a primordial spirit and learn the Silent Words from it.</label>
-            <label><input type="checkbox" name="attr_mn64_req5" value="1"> …spend a few weeks practicing the spell, risking all sorts of harm and collateral damage.</label>
-          </div>
-        </div>
-        <div class="arcana-back">
-          <p class="arcana-back-heading">Runes of Creation</p>
-          <p>When you carefully inscribe an object with the runes of creation, pick 1 desired effect:</p>
-          <ul>
-            <li>It will flow into any shape you imagine</li>
-            <li>It will become indestructible</li>
-            <li>It will become beautiful</li>
-            <li>It will blaze with terrible heat (1d10 damage, messy), if only for a moment</li>
-          </ul>
-          <p>When you speak the Silent Word that completes the spell (far range) mark a debility as elemental forces flow through you into the object. The effect works, but roll +CON: on a 10+, pick 1; on a 7-9, pick 1 and the GM picks another; on a 6-, all 3.</p>
-          <ul>
-            <li>Mark another debility & lose 1d10 HP</li>
-            <li>The elements run amok, triggering a fire/earthquake/avalanche/storm/etc.</li>
-            <li>The effect lasts only while you focus on it, and then the object is damaged in a manner of the GM’s choosing</li>
-          </ul>
-          <p>
-        </div>
-
-
-
-</div>
+      <p>When you <strong>fill the basin with a few years of your life</strong>, it becomes a draught of honey and regret. Either mark the next age above (and update your look) as the lost years catch up with you, or mark one of the following (your choice):</p>
+      <ul>
+        <li><label><input type="checkbox" name="attr_mn59_mood" value="1"> Your mood shifts, dramatically (how?)</label></li>
+        <li><label><input type="checkbox" name="attr_mn59_door" value="1"> You see the Last Door (what's it like?)</label></li>
+        <li><label><input type="checkbox" name="attr_mn59_stat" value="1"> Reduce STR, DEX, or CON by 1</label></li>
+        <li><label><input type="checkbox" name="attr_mn59_year" value="1"> You have less than a year to live</label></li>
+      </ul>
+      <p>When someone <strong><em>drinks down all of the bittersweet elixir, straight from the basin</em></strong>, they pick 1:</p>
+      <ul>
+        <li>Regain all HP, clear all debilities, and heal any active problematic wounds</li>
+        <li>Purge themselves of all poison/disease</li>
+        <li>Fully recover from a permanent injury by next season's end, or sooner</li>
+      </ul>
+    </div>
+  </div>
+</details>
+ 
+<!-- MINOR 60: A humble broom → The Broom's Lullaby -->
+<details class="arcana-card arcana-minor">
+  <summary class="arcana-summary">
+    <div class="arcana-summary-top">
+      <span class="arcana-title">A humble broom</span>
+    </div>
+    <div class="arcana-summary-bottom">
+      <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
+        <input type="checkbox" name="attr_mn60_possessed" value="1"> Possessed
+      </label>
+      <span class="arcana-tags">magical, crude</span>
+    </div>
+  </summary>
+  <div class="arcana-card-body">
+    <input type="checkbox" class="arcana-unlock-trigger" id="mn60_unlocked" name="attr_mn60_unlocked" value="1">
+    <label class="arcana-unlock-label" for="mn60_unlocked">Unlocked</label>
+    <div class="arcana-front">
+      <p>Just a well-worn stick of rowan wood, in need of some new bristles. You wouldn't give it another thought. Except... when you hold it, and sweep with it, you find yourself humming a half-remembered tune.</p>
+      <p>Clearly, there is more to this broom than meets the eye. To unlock its mysteries, you must...</p>
+      <p class="arcana-req-heading">Requirements — mark when complete:</p>
+      <div class="arcana-requirements">
+        <label><input type="checkbox" name="attr_mn60_req1" value="1"> …find a Fae who can hear the broom's song in its entirety.</label>
+        <label><input type="checkbox" name="attr_mn60_req2" value="1"> …convince them to teach you the broom's song in full.</label>
+        <label><input type="checkbox" name="attr_mn60_req3" value="1"> …use the broom at least once a day for a whole season, singing the lullaby as you do.</label>
+        <label><input type="checkbox" name="attr_mn60_req4" value="1"> …risk falling into a lasting, timeless sleep as you practice the lullaby.</label>
       </div>
-    </details>
-
+    </div>
+    <div class="arcana-back">
+      <p class="arcana-back-heading">The Broom's Lullaby</p>
+      <p><em>magical, area, near</em></p>
+      <p>When you <strong>start sweeping an area as you softly sing the lullaby</strong>, roll +CHA: on a 7+, those who see and hear you stop to watch and listen, at least for a bit, entranced or confused or bemused as fits their nature and the circumstances. They snap out of it if harmed or threatened. Also, on a 10+, you can hold their attention for the length of the lullaby, as long as no one is harmed or threatened.</p>
+      <p>When you <strong>sing the full lullaby, sweeping all the while</strong>, roll +CHA: on a 10+, all who hear you fall into a deep sleep and will be prone to dismiss this as just a dream; on a 7-9, all who hear you start to nod off or lapse into a light, jerking sleep, but they will certainly remember this when they come to; on a 6-, at least one of your audience snaps to and realizes just how weird this all is.</p>
+    </div>
+  </div>
+</details>
+ 
+<!-- MINOR 61: A stone idol → The Angry Little God -->
+<details class="arcana-card arcana-minor">
+  <summary class="arcana-summary">
+    <div class="arcana-summary-top">
+      <span class="arcana-title">A stone idol</span>
+    </div>
+    <div class="arcana-summary-bottom">
+      <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
+        <input type="checkbox" name="attr_mn61_possessed" value="1"> Possessed
+      </label>
+      <span class="arcana-tags">crude, magical</span>
+    </div>
+  </summary>
+  <div class="arcana-card-body">
+    <input type="checkbox" class="arcana-unlock-trigger" id="mn61_unlocked" name="attr_mn61_unlocked" value="1">
+    <label class="arcana-unlock-label" for="mn61_unlocked">Unlocked</label>
+    <div class="arcana-front">
+      <p>Found at the back of some cave or grotto, obscured by roots and rubble, surrounded by desiccated, rotting offerings. A crude squat thing with a possum's sneering face, a thorny tail, and flowers for its ears.</p>
+      <p>The idol is, in fact, a narcissistic little Fae, stuck (hiding? stubbornly ensconced?) in the form of a stone idol. To unlock its "mysteries" and benefit from its patronage, you must...</p>
+      <p class="arcana-req-heading">Requirements — mark when complete:</p>
+      <div class="arcana-requirements">
+        <label><input type="checkbox" name="attr_mn61_req1" value="1"> …restore the shrine, while suffering the abuse of its angry little god.</label>
+        <label><input type="checkbox" name="attr_mn61_req2" value="1"> …extract the idol from the stone and rubble in which it's embedded, at the risk of damaging/insulting it.</label>
+        <label><input type="checkbox" name="attr_mn61_req3" value="1"> …trick the idol into accepting an offering that puts it in your lasting debt. A Surplus worth of food and/or whisky ought to be enough.</label>
+      </div>
+    </div>
+    <div class="arcana-back">
+      <p class="arcana-back-heading">The Angry Little God</p>
+      <p>When you <strong>put the idol in a prominent place and beseech it to attend its humble servant</strong>, it wakes (but is still inert). Treat it as a follower, though it hardly considers itself one.</p>
+      <p><strong>All-mighty Thistlewisk</strong><br>
+      <em>Fae, tiny, magical, devious, arrogant</em><br>
+      HP 15; Armor 6 (stone, resilience), 2 vs. iron<br>
+      Special qualities inert; disembodied voice<br>
+      Instinct to heap abuse on its worshippers</p>
+      <ul>
+        <li>Make unreasonable demands</li>
+        <li>Consume the essence of foodstuffs</li>
+        <li>Sense one's idle thoughts/memories</li>
+        <li>Weave powerful illusions and hallucinations (near, area)</li>
+        <li>Grow bored/huffy and go to sleep</li>
+      </ul>
+      <p>Cost obeisance and ever-larger offerings of food</p>
+      <div class="arcana-effects-track">
+        <span>Loyalty: </span>
+        <input type="checkbox" name="attr_mn61_loy1" value="1">
+        <input type="checkbox" name="attr_mn61_loy2" value="1">
+        <input type="checkbox" name="attr_mn61_loy3" value="1">
+      </div>
+    </div>
+  </div>
+</details>
+ 
+<!-- MINOR 62: A treasure map → The Silver Branch -->
+<details class="arcana-card arcana-minor">
+  <summary class="arcana-summary">
+    <div class="arcana-summary-top">
+      <span class="arcana-title">A treasure map</span>
+    </div>
+    <div class="arcana-summary-bottom">
+      <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
+        <input type="checkbox" name="attr_mn62_possessed" value="1"> Possessed
+      </label>
+      <span class="arcana-tags">fragile</span>
+    </div>
+  </summary>
+  <div class="arcana-card-body">
+    <input type="checkbox" class="arcana-unlock-trigger" id="mn62_unlocked" name="attr_mn62_unlocked" value="1">
+    <label class="arcana-unlock-label" for="mn62_unlocked">Unlocked</label>
+    <div class="arcana-front">
+      <p>A tattered scrap of parchment. It shows a path from a particular set of standing stones: through a marsh, up a river, to a place behind a waterfall, then through a forest of sword-sharp trees. Forest Folk glyphs are scrawled all about, but at the end: a silver tree, and X marks the spot.</p>
+      <p>To unlock the map's mysteries and claim the prize at the end, you must...</p>
+      <p class="arcana-req-heading">Requirements — mark when complete:</p>
+      <div class="arcana-requirements">
+        <label><input type="checkbox" name="attr_mn62_req1" value="1"> …find the standing stones that mark the start of the path.</label>
+        <label><input type="checkbox" name="attr_mn62_req2" value="1"> …follow the map to the waterfall.</label>
+        <label><input type="checkbox" name="attr_mn62_req3" value="1"> …enter the Fae domain beyond.</label>
+        <label><input type="checkbox" name="attr_mn62_req4" value="1"> …navigate the sword-tree forest.</label>
+        <label><input type="checkbox" name="attr_mn62_req5" value="1"> …risk falling under the soporific spell of the silver tree.</label>
+        <label><input type="checkbox" name="attr_mn62_req6" value="1"> …claim a branch from the silver tree.</label>
+        <label><input type="checkbox" name="attr_mn62_req7" value="1"> …make it home again.</label>
+      </div>
+    </div>
+    <div class="arcana-back">
+      <p class="arcana-back-heading">The Silver Branch</p>
+      <p><em>, magical, beautiful</em></p>
+      <div class="arcana-effects-track">
+        <label><input type="checkbox" name="attr_mn62_fresh" value="1"> fresh</label>
+        <label><input type="checkbox" name="attr_mn62_fading" value="1"> fading</label>
+        <label><input type="checkbox" name="attr_mn62_bare" value="1"> bare</label>
+      </div>
+      <p>A few feet long, laden with white flowers and jingling golden fruits. Surprisingly sturdy, and stays fresh indefinitely unless its powers are used. Only one such branch can leave the Fae domain at a time.</p>
+      <p>When you <strong>jingle the silver branch</strong>, all who hear it (reach, area except you) are filled with bliss and forget their woes for a few hours. Roll +CHA: on a 10+, pick 1; on a 7-9, pick 1 and the GM picks another; on a 6-, all 3.</p>
+      <ul>
+        <li>The branch starts to fade; if already fading, it goes bare, its powers gone</li>
+        <li>Some (GM's choice of who) are blissed out for days or weeks, growing weak and wretched in the meantime</li>
+        <li>Some (GM's choice of who) become obsessed with hearing it jingle again</li>
+      </ul>
+    </div>
+  </div>
+</details>
+ 
+<!-- MINOR 63: An oversized crown → Void Elemental -->
+<details class="arcana-card arcana-minor">
+  <summary class="arcana-summary">
+    <div class="arcana-summary-top">
+      <span class="arcana-title">An oversized crown</span>
+    </div>
+    <div class="arcana-summary-bottom">
+      <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
+        <input type="checkbox" name="attr_mn63_possessed" value="1"> Possessed
+      </label>
+      <span class="arcana-tags">beautiful, magical, fireproof</span>
+    </div>
+  </summary>
+  <div class="arcana-card-body">
+    <input type="checkbox" class="arcana-unlock-trigger" id="mn63_unlocked" name="attr_mn63_unlocked" value="1">
+    <label class="arcana-unlock-label" for="mn63_unlocked">Unlocked</label>
+    <div class="arcana-front">
+      <p>A circlet of black, glossy metal set with eight spires of aetherium. It's sized for a head maybe twice as large as yours, and is always a bit chill to the touch. Even cast into the hottest furnace, it will not melt nor even heat.</p>
+      <p>When you <strong>touch the crown with bare flesh and open your mind</strong>, you can speak to the primordial spirit to which the crown is attuned. But to fully unlock the mysteries of this crown, you must…</p>
+      <p class="arcana-req-heading">Requirements — mark when complete:</p>
+      <div class="arcana-requirements">
+        <label><input type="checkbox" name="attr_mn63_req1" value="1"> …risk your sense of self as you commune with this spirit of the void.</label>
+        <label><input type="checkbox" name="attr_mn63_req2" value="1"> …learn the Words of Being, which will force the spirit to manifest.</label>
+        <label><input type="checkbox" name="attr_mn63_req3" value="1"> …learn the Words of Unbeing, which will send the spirit home.</label>
+        <label><input type="checkbox" name="attr_mn63_req4" value="1"> …convince the spirit to manifest and then successfully dismiss it.</label>
+      </div>
+    </div>
+    <div class="arcana-back">
+      <p class="arcana-back-heading">Void Elemental</p>
+      <div class="arcana-effects-track">
+        <span>Loyalty: </span>
+        <input type="checkbox" name="attr_mn63_loy1" value="1">
+        <input type="checkbox" name="attr_mn63_loy2" value="1">
+        <input type="checkbox" name="attr_mn63_loy3" value="1">
+      </div>
+      <p>When you <strong>touch the crown and speak the Words of Being</strong>, the spirit manifests. Treat it as a follower, with 3 Loyalty to start (it can never gain more). When you <strong>touch the crown and chant the Words of Unbeing</strong>, the spirit can return to the void — if it wants.</p>
+      <p><strong>Void elemental</strong><br>
+      <em>Spirit, primordial, confused, angry</em><br>
+      HP 15; Armor 1 (lacks organs)<br>
+      Damage void touch 1d10 w/advantage (hand, grabby, ignores armor)<br>
+      Special qualities immune to most harm<br>
+      Instinct to rage at all the noise and chaos</p>
+      <ul>
+        <li>Manifest as a black hole in reality</li>
+        <li>Snuff out a source of energy</li>
+        <li>Become confused, unsure what to do</li>
+      </ul>
+    </div>
+  </div>
+</details>
+ 
+<!-- MINOR 64: A metal puzzle box → Runes of Creation -->
+<details class="arcana-card arcana-minor">
+  <summary class="arcana-summary">
+    <div class="arcana-summary-top">
+      <span class="arcana-title">A metal puzzle box</span>
+    </div>
+    <div class="arcana-summary-bottom">
+      <label class="arcana-possessed-wrap" onclick="event.stopPropagation()">
+        <input type="checkbox" name="attr_mn64_possessed" value="1"> Possessed
+      </label>
+      <span class="arcana-tags">indestructible</span>
+    </div>
+  </summary>
+  <div class="arcana-card-body">
+    <input type="checkbox" class="arcana-unlock-trigger" id="mn64_unlocked" name="attr_mn64_unlocked" value="1">
+    <label class="arcana-unlock-label" for="mn64_unlocked">Unlocked</label>
+    <div class="arcana-front">
+      <p>A 6" cube of dull gray metal, covered in hinges, knobs, dials, sliders, levers, and the like. A thing of mad genius, resisting all attempts to open it by brute force.</p>
+      <p>To unlock its mysteries, you must...</p>
+      <p class="arcana-req-heading">Requirements — mark when complete:</p>
+      <div class="arcana-requirements">
+        <label><input type="checkbox" name="attr_mn64_req1" value="1"> …roll +INT to open the box: on a 10+, it takes a few days of fiddling; on a 7-9, it takes a few obsessive weeks; on a 6-, it's beyond you.</label>
+        <label><input type="checkbox" name="attr_mn64_req2" value="1"> …spend a season deciphering the symbols etched along the inside.</label>
+        <label><input type="checkbox" name="attr_mn64_req3" value="1"> …risk never being able to decipher the symbols, and/or developing some mental quirk as you do so.</label>
+        <label><input type="checkbox" name="attr_mn64_req4" value="1"> …commune with a primordial spirit and learn the Silent Words from it.</label>
+        <label><input type="checkbox" name="attr_mn64_req5" value="1"> …spend a few weeks practicing the spell, risking all sorts of harm and collateral damage.</label>
+      </div>
+    </div>
+    <div class="arcana-back">
+      <p class="arcana-back-heading">Runes of Creation</p>
+      <p>When you <strong>carefully inscribe an object with the runes of creation</strong>, pick 1 desired effect:</p>
+      <ul>
+        <li>It will flow into any shape you imagine</li>
+        <li>It will become <em>indestructible</em></li>
+        <li>It will become <em>beautiful</em></li>
+        <li>It will blaze with terrible heat (1d10 damage, messy), if only for a moment</li>
+      </ul>
+      <p>When you <strong>speak the Silent Word that completes the spell</strong> (far range) mark a debility as elemental forces flow through you into the object. The effect works, but roll +CON: on a 10+, pick 1; on a 7-9, pick 1 and the GM picks another; on a 6-, all 3.</p>
+      <ul>
+        <li>Mark another debility &amp; lose 1d10 HP</li>
+        <li>The elements run amok, triggering a fire/earthquake/avalanche/storm/etc.</li>
+        <li>The effect lasts only while you focus on it, and then the object is damaged in a manner of the GM's choosing</li>
+      </ul>
+    </div>
+  </div>
+</details>
     
   </div>
   <!-- END ARCANA TAB -->
