@@ -1566,7 +1566,7 @@
 </summary>
       <div class="arcana-card-body">
         <input type="checkbox" class="arcana-unlock-trigger" id="ma11_unlocked" name="attr_ma11_unlocked" value="1">
-<label class="arcana-unlock-label" for="ma11_unlocked">Unlocked</label>
+<label class="arcana-unlock-label" for="ma01_unlocked">Unlocked</label>
         <div class="arcana-front">
           <p>A sphere of greenish glass, etched with a cat's-eye design and set atop a staff of rough, pitted black iron. The orb catches the light and seems to glow, and the pupil seems to widen in the dark and narrow to a slit in daylight. And sometimes, you could swear, it seems to look about on its own. But that's preposterous.</p>
           <p>When you grip the staff, close your eyes, and see through the Lidless Orb, roll +CON: on a 10+, choose 3 from the list below; on a 7-9, choose 1: the orb sees through darkness, natural or magical / the orb sees through illusion, glamour, and invisibility / the orb can see strong emotions as auras radiating from people and lingering on places / you can move about and operate effectively while seeing through the orb (otherwise, not so much). The effect lasts until you open your eyes or let go of the staff.</p>
@@ -1608,8 +1608,8 @@
   </div>
 </summary>
       <div class="arcana-card-body">
-        <input type="checkbox" class="arcana-unlock-trigger" id="ma11_unlocked" name="attr_ma11_unlocked" value="1">
-<label class="arcana-unlock-label" for="ma11_unlocked">Unlocked</label>
+        <input type="checkbox" class="arcana-unlock-trigger" id="ma02_unlocked" name="attr_ma02_unlocked" value="1">
+<label class="arcana-unlock-label" for="ma02_unlocked">Unlocked</label>
         <div class="arcana-front">
           <p>A knobby length of wood, pale as death and hard as steel, tapering to a needle point. The shaft is scored and notched, the tip stained with blood and soot. The Spear is a potent weapon against spirits and demons. They cannot bear its touch and its presence makes them deeply ill at ease.</p>
           <p>When you wield the Twisted Spear as a weapon, you ignore magical protections and can harm spirits, demons, and insubstantial creatures.</p>
@@ -1651,8 +1651,8 @@
   </div>
 </summary>
       <div class="arcana-card-body">
-       <input type="checkbox" class="arcana-unlock-trigger" id="ma11_unlocked" name="attr_ma11_unlocked" value="1">
-<label class="arcana-unlock-label" for="ma11_unlocked">Unlocked</label>
+       <input type="checkbox" class="arcana-unlock-trigger" id="ma03_unlocked" name="attr_ma03_unlocked" value="1">
+<label class="arcana-unlock-label" for="ma03_unlocked">Unlocked</label>
         <div class="arcana-front">
           <p>A tattered cloak, stitched from a motley patchwork of unfamiliar hides and leather. Shifting odors waft from it: damp earth, ozone, musk, sulfur, rust, rot. It is not a glamorous garment. Anything but.</p>
           <p>When you wear the Cloak, its armor applies against demons in all cases, even if their attacks are piercing or ignore armor. When you draw up the hood of the Cloak, you see clearly in darkness. When you wrap the Cloak tightly about your person, you pass unnoticed by all so long as you move calmly and carefully and keep out of direct, harsh light. In retrospect, those you pass may recall a strange smell.</p>
@@ -1692,8 +1692,8 @@
   </div>
 </summary>
       <div class="arcana-card-body">
-        <input type="checkbox" class="arcana-unlock-trigger" id="ma11_unlocked" name="attr_ma11_unlocked" value="1">
-<label class="arcana-unlock-label" for="ma11_unlocked">Unlocked</label>
+        <input type="checkbox" class="arcana-unlock-trigger" id="ma04_unlocked" name="attr_ma04_unlocked" value="1">
+<label class="arcana-unlock-label" for="ma04_unlocked">Unlocked</label>
         <div class="arcana-front">
           <p>A perfect sphere of dark ice, the size of a fist, never melting, hard as stone, and set like a gaudy gem at the end of a finely wrought torc. Staring into the icy sphere brings a sense of calm, serenity, and detachment. Indeed, a lesser mind might find itself staring into its depths for hours on end.</p>
           <p>When you peer into the Ice Sphere, your mind is cleared of strong emotions. When you gaze deeply into the Ice Sphere and ponder a situation, puzzle, or mystery, ask the GM one of the questions below and get an honest answer: Who benefits (or would benefit) from __? / What about __ isn't what it seems to be? / How could I learn more about __? / What's the most likely outcome if __? / What am I overlooking?</p>
@@ -1735,8 +1735,8 @@
   </div>
 </summary>
       <div class="arcana-card-body">
-        <input type="checkbox" class="arcana-unlock-trigger" id="ma11_unlocked" name="attr_ma11_unlocked" value="1">
-<label class="arcana-unlock-label" for="ma11_unlocked">Unlocked</label>
+        <input type="checkbox" class="arcana-unlock-trigger" id="ma05_unlocked" name="attr_ma05_unlocked" value="1">
+<label class="arcana-unlock-label" for="ma05_unlocked">Unlocked</label>
         <div class="arcana-front">
           <p>A chunk of makerglass the size of a human head; inspection reveals facets within facets, a thousandfold. When you touch the glass with bare skin and open your mind to it, you contact the intelligence within — lonely, confused, longing for meaning and connection. It will happily speak with you, mind-to-mind. It knows much about the past, but naught of its own history or purpose. At least, not yet.</p>
           <p>When you consult the Mindgem about the Makers, their arts, or their history, ask a question and roll +INT: on a 7+, it answers but on a 10+, pick 1; on a 7-9, pick 2: the answer is cryptic, vague, or lacking crucial context / it takes a long time — hours or even days — to get the answer / your mind is left reeling; take disadvantage on your next roll. On a 6-, choose 1: it wastes your time with irrelevant histories and data / it answers now, but refuses to answer further questions until you make progress towards restoring its body.</p>
@@ -1781,8 +1781,8 @@
   </div>
 </summary>
       <div class="arcana-card-body">
-        <<input type="checkbox" class="arcana-unlock-trigger" id="ma11_unlocked" name="attr_ma11_unlocked" value="1">
-<label class="arcana-unlock-label" for="ma11_unlocked">Unlocked</label>
+        <<input type="checkbox" class="arcana-unlock-trigger" id="ma06_unlocked" name="attr_ma06_unlocked" value="1">
+<label class="arcana-unlock-label" for="ma06_unlocked">Unlocked</label>
         <div class="arcana-front">
           <p>Jagged hunks of black volcanic glass. Surely the swirling movement in their depths is a trick of light. And, surely, those hushed voices you've been hearing are just the sighing wind. Surely.</p>
           <p>When you spend a few hours staring into the stones and listening to their whispers, name someone you know but on whom you have never used this power before. Then, roll +INT: on a 10+, the stones reveal a secret about them; on a 7-9, the stones reveal a secret, but you must first reveal a secret to the stones (about your hopes, fears, regrets, desires); on a 6-, the stones pry a secret from you.</p>
@@ -1824,8 +1824,8 @@
   </div>
 </summary>
       <div class="arcana-card-body">
-        <input type="checkbox" class="arcana-unlock-trigger" id="ma11_unlocked" name="attr_ma11_unlocked" value="1">
-<label class="arcana-unlock-label" for="ma11_unlocked">Unlocked</label>
+        <input type="checkbox" class="arcana-unlock-trigger" id="ma07_unlocked" name="attr_ma07_unlocked" value="1">
+<label class="arcana-unlock-label" for="ma07_unlocked">Unlocked</label>
         <div class="arcana-front">
           <p>An ancient blade of deep red bronze, its pommel etched with symbols like those that the Hillfolk use to decorate their drinking horns. It thrums in its scabbard, wanting nothing more than to be drawn and to burn like a fire, quenching itself in the blood of foes.</p>
           <p>When you draw the Blood-quenched Sword, it leaps from its sheath before any present have time to even blink, and must spill blood before you can return it to its sheath. When you spill your own blood in order to return the Sword to its sheath, take 1d4 damage (ignoring armor) and the scars from the cut never fade. When you strike first in a fight with the Blood-quenched Sword, gain advantage on your first roll.</p>
@@ -1862,8 +1862,8 @@
   </div>
 </summary>
       <div class="arcana-card-body">
-       <input type="checkbox" class="arcana-unlock-trigger" id="ma11_unlocked" name="attr_ma11_unlocked" value="1">
-<label class="arcana-unlock-label" for="ma11_unlocked">Unlocked</label>
+       <input type="checkbox" class="arcana-unlock-trigger" id="ma08_unlocked" name="attr_ma08_unlocked" value="1">
+<label class="arcana-unlock-label" for="ma08_unlocked">Unlocked</label>
         <div class="arcana-front">
           <p>A shield of horn-oak, glossy from long use, shod in bronze and adorned with a stylized wisent skull. It's heavier than it looks, but its heft gives you a feeling of confidence, like anyone would be a fool to mess with a titan such as you.</p>
           <p>When you bear the Shield openly, natural creatures give you wide berth and treat you with the respect that they would give a 1,000-lb. bison. When you use the Shield to Defend with both feet planted firmly on the ground, so long as you hold Readiness you cannot be moved or tripped. When you spend Readiness to strike back at an attacker, you also break their momentum, knock them back, and/or send them reeling.</p>
@@ -1905,8 +1905,8 @@
   </div>
 </summary>
       <div class="arcana-card-body">
-       <input type="checkbox" class="arcana-unlock-trigger" id="ma11_unlocked" name="attr_ma11_unlocked" value="1">
-<label class="arcana-unlock-label" for="ma11_unlocked">Unlocked</label>
+       <input type="checkbox" class="arcana-unlock-trigger" id="ma09_unlocked" name="attr_ma09_unlocked" value="1">
+<label class="arcana-unlock-label" for="ma09_unlocked">Unlocked</label>
         <div class="arcana-front">
           <p>A dozen copper plates, green with age and bound with loops of reddish metal wire. The outer plates are embossed with strange images of man and beast while the inner plates are etched with arcane diagrams and annotated in some forgotten script.</p>
           <p>When you first run your fingers over the inscriptions, your dreams that night are filled with images of a pale, reptilian creature with skulls for eyes, slithering through darksome caverns. You awake with an alien incantation on your tongue, its words emblazoned in your mind. You can Cast a Codex Spell, and know Call the Pale Lizard.</p>
@@ -1951,8 +1951,8 @@
         </div>
       </summary>
       <div class="arcana-card-body">
-       <input type="checkbox" class="arcana-unlock-trigger" id="ma11_unlocked" name="attr_ma11_unlocked" value="1">
-<label class="arcana-unlock-label" for="ma11_unlocked">Unlocked</label>
+       <input type="checkbox" class="arcana-unlock-trigger" id="ma10_unlocked" name="attr_ma10_unlocked" value="1">
+<label class="arcana-unlock-label" for="ma10_unlocked">Unlocked</label>
         <div class="arcana-front">
           <p>A bronze rod, tipped with a glowing red crystal and carved with openwork shapes of hungry, leering faces. When you hold the Scepter and wind blows through the openings in the crystal, it makes a soft howling noise. When you gesture at an open flame with the scepter, the flame flickers or flares as if blown by the wind.</p>
           <p>When you bleed a helpless, living creature and dip the Scepter's crystal in their still-warm blood, mark 1 Charge as the crystal soaks up the blood (maximum 3 Charges).</p>
@@ -2048,8 +2048,8 @@
         </div>
       </summary>
       <div class="arcana-card-body">
-        <input type="checkbox" class="arcana-unlock-trigger" id="ma11_unlocked" name="attr_ma11_unlocked" value="1">
-<label class="arcana-unlock-label" for="ma11_unlocked">Unlocked</label>
+        <input type="checkbox" class="arcana-unlock-trigger" id="ma12_unlocked" name="attr_ma12_unlocked" value="1">
+<label class="arcana-unlock-label" for="ma12_unlocked">Unlocked</label>
         <div class="arcana-front">
           <p>An ancient vest of bluish steel, each scale etched with a silvery rune similar to those found among the ruins near Barrier Pass. The armor is surprisingly light and supple. The scales are always cold to the touch, and often edged in frost.</p>
           <p>When you wear the Rune-laden Scales, you are perfectly comfortable in cold weather and suffer no harm from exposure or magic that might otherwise freeze your flesh. When you wear the Scales and stand fast against a magical attack, roll +CON: on a 10+, the magic washes over you with no ill effect; on a 7-9, you're only partially affected — suffer half damage and a reduced effect; on a 6-, mark XP, and the magic affects you fully.</p>
@@ -2091,8 +2091,8 @@
         </div>
       </summary>
       <div class="arcana-card-body">
-        <input type="checkbox" class="arcana-unlock-trigger" id="ma11_unlocked" name="attr_ma11_unlocked" value="1">
-<label class="arcana-unlock-label" for="ma11_unlocked">Unlocked</label>
+        <input type="checkbox" class="arcana-unlock-trigger" id="ma13_unlocked" name="attr_ma13_unlocked" value="1">
+<label class="arcana-unlock-label" for="ma13_unlocked">Unlocked</label>
         <div class="arcana-front">
           <p>A pair of wooden figurines, carved from blackwood and worn smooth with age and use. A whitish shaft has been driven into the top of each figurine's head, and the eyes and forehead of each are stained a rusty, reddish color. The figurines resist all mundane attempts to damage them.</p>
           <p>When you mark a figurine's eyes with blood and likewise mark your own eyelids, you see through the eyes of the figurine whenever you close your eyes, for as long as the blood remains. When you anoint a figurine with your own blood and then sleep in its presence, roll +CON: on a 10+, you dream lucidly of the spirit in the figurine — it might be persuaded to reveal its name, or the name of its fellow spirit, or the method of calling them forth; on a 7-9, you dream of the spirit, but the dream is fleeting, strange, and disorienting.</p>
@@ -2142,8 +2142,8 @@
         </div>
       </summary>
       <div class="arcana-card-body">
-        <input type="checkbox" class="arcana-unlock-trigger" id="ma11_unlocked" name="attr_ma11_unlocked" value="1">
-<label class="arcana-unlock-label" for="ma11_unlocked">Unlocked</label>
+        <input type="checkbox" class="arcana-unlock-trigger" id="ma14_unlocked" name="attr_ma14_unlocked" value="1">
+<label class="arcana-unlock-label" for="ma14_unlocked">Unlocked</label>
         <div class="arcana-front">
           <p>A series of branching, tree-like markings coursing up and down your skin. Usually pale blue, almost like veins, but when you become agitated they seem to glow, pulse, and ripple with light. Usually seen as a blessing of Tor (rainmaker, thunderhead, slayer-of-beasts). But like most blessings of the gods, they are also a great burden.</p>
           <p>When you roil with anger, you do +1 damage until you calm down. But when you try to control your temper, roll +WIS: on a 10+, you keep your cool and act as you wish; on a 7-9, choose 1: take some deep breaths and count to ten, fuming all the while / vent your rage, but tell us how and on what. On a 6-, you just lose it — tell the GM what damn fool thing you end up doing.</p>
@@ -2196,8 +2196,8 @@
         </div>
       </summary>
       <div class="arcana-card-body">
-        <input type="checkbox" class="arcana-unlock-trigger" id="ma11_unlocked" name="attr_ma11_unlocked" value="1">
-<label class="arcana-unlock-label" for="ma11_unlocked">Unlocked</label>
+        <input type="checkbox" class="arcana-unlock-trigger" id="ma15_unlocked" name="attr_ma15_unlocked" value="1">
+<label class="arcana-unlock-label" for="ma15_unlocked">Unlocked</label>
         <div class="arcana-front">
           <p>Syllables of the first language, words of pure thought and will, emblazoned on your soul and tongue by some angelic force or being. A gift, perhaps. Or a terrible, terrible affliction. Their power thrums inside you, pulsing against the crude vessel of your flesh and blood. Sometimes, under stress or simply out of the blue, you are struck with shakes and seizures.</p>
           <p>When you enter an ecstatic delirium and allow the Ineffable Words to pour forth, roll +CON: on a 10+, you speak Truth, revealing something new and interesting about the current situation — ask the GM what, and all present understand this Truth as though it were spoken in their native tongue; on a 7-9, the 10+ result applies, but choose 1: the Truth is cryptic, vague, or incomplete / you are overcome, collapsing in a full-body seizure / you draw unwanted attention.</p>
@@ -2239,8 +2239,8 @@
         </div>
       </summary>
       <div class="arcana-card-body">
-        <input type="checkbox" class="arcana-unlock-trigger" id="ma11_unlocked" name="attr_ma11_unlocked" value="1">
-<label class="arcana-unlock-label" for="ma11_unlocked">Unlocked</label>
+        <input type="checkbox" class="arcana-unlock-trigger" id="ma16_unlocked" name="attr_ma16_unlocked" value="1">
+<label class="arcana-unlock-label" for="ma16_unlocked">Unlocked</label>
         <div class="arcana-front">
           <p>A vaguely man-shaped root of blood-red wood, wrapped in tattered cloth. Bright blue markings adorn the fabric, as do rust-colored stains. But you know that. After all, you made it yourself. You've bound your flesh and soul to the effigy, and this is the only one you will ever be able to make.</p>
           <p>When you perform the secret rite, which requires privacy, a few hours, and a drop of your own fresh blood, hold 1 Conduit (maximum per your current max).</p>
@@ -2289,8 +2289,8 @@
         </div>
       </summary>
       <div class="arcana-card-body">
-        <input type="checkbox" class="arcana-unlock-trigger" id="ma11_unlocked" name="attr_ma11_unlocked" value="1">
-<label class="arcana-unlock-label" for="ma11_unlocked">Unlocked</label>
+        <input type="checkbox" class="arcana-unlock-trigger" id="ma17_unlocked" name="attr_ma17_unlocked" value="1">
+<label class="arcana-unlock-label" for="ma17_unlocked">Unlocked</label>
         <div class="arcana-front">
           <p>A ring of black metal bands, woven in an intricate pattern beyond the skills of modern smiths. The way the bands twist on each other seems to defy reality, and the weak-willed find themselves pondering the bands for minutes or hours. The metal is always cold. Always.</p>
           <p>When you wear the ring and press it firmly into the skin of a living thing, the ring draws the life-force from your victim. If your victim is helpless or unable to struggle, they are reduced to 0 HP. If your victim struggles, roll +CON: on a 10+, deal 1d10 damage (ignores armor) and they are left reeling; on a 7-9, deal 1d10 damage (ignores armor) but you suffer whatever counterattack they dish out; on a 6-, ask the GM what happens.</p>
@@ -2330,8 +2330,8 @@
         </div>
       </summary>
       <div class="arcana-card-body">
-        <input type="checkbox" class="arcana-unlock-trigger" id="ma11_unlocked" name="attr_ma11_unlocked" value="1">
-<label class="arcana-unlock-label" for="ma11_unlocked">Unlocked</label>
+        <input type="checkbox" class="arcana-unlock-trigger" id="ma18_unlocked" name="attr_ma18_unlocked" value="1">
+<label class="arcana-unlock-label" for="ma18_unlocked">Unlocked</label>
         <div class="arcana-front">
           <p>A thick staff of gray metal, topped with a plate of aetherium in the shape of a stylized hand. The palm is embossed with a cloud and lightning bolt, and the whole thing is more than a little top-heavy. It smells of ozone, and your spine never ceases to tingle in its presence.</p>
           <p>When you bear the Azure Hand, you sense sources, currents, and reservoirs of energy much like you sense the pull of gravity or the position of your own hand. You can closely study such energy and Seek Insight about it.</p>
