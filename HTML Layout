@@ -1547,9 +1547,9 @@
     <p class="arcana-tab-intro">Check <strong>Possessed</strong> to mark arcana your character has acquired. Check <strong>Unlocked</strong> when all front requirements are complete — this reveals the back of the card.</p>
 
     <h2 class="arcana-section-heading">Major Arcana</h2>
-<!-- ═══════════════════════════════════════════ -->
+
     <!-- MAJOR ARCANA  -->
-    <!-- ═══════════════════════════════════════════ -->
+  
 
     <!-- MAJOR 1: Staff of the Lidless Orb -->
     <details class="arcana-card arcana-major">
@@ -2359,6 +2359,8 @@
     </details>
 
 <!-- MINOR ARCANA  -->
+
+<h2 class="arcana-section-heading">Minor Arcana</h2>
 
     <!-- MINOR 1: A Folktale → Truth Seeds -->
     <details class="arcana-card arcana-minor">
