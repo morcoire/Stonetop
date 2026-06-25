@@ -1,4 +1,4 @@
- <!-- Stonetop character sheet for Roll20. Based on Stonetop by Jeremy Strandberg, CC BY-SA 4.0. Sheet customizations by Morcoire. -->
+<!-- Stonetop character sheet for Roll20. Based on Stonetop by Jeremy Strandberg, CC BY-SA 4.0. Sheet customizations by Morcoire. -->
 
 <div class="stonetop-main">
   <input type="hidden" class="stonetop-tabstoggle" name="attr_sheetTab" value="character" />
@@ -1241,39 +1241,135 @@
   <!-- ========== INVENTORY TAB ========== -->
   <div class="stonetop-inventory-section">
     <input type="hidden" name="attr_activeplaybook_inv" value="none">
+    <input type="hidden" name="attr_prospmirror" value="0">
+    <input type="hidden" name="attr_loadmirror" value="normal">
+    <input type="hidden" name="attr_loadover" value="0">
+    <input type="hidden" name="attr_smallover" value="0">
     <h1 class="stonetop-sr-only">Inventory</h1>
+
+    <!-- ===== Outfit Settings (Load + Prosperity) ===== -->
+    <div class="stonetop-outfit-settings">
+      <h3>Outfit Settings</h3>
+      <p class="playbook-note">Set these when you Outfit. Light is up to 3 ✔, Normal is 4&ndash;6 ✔, Heavy is 7&ndash;9 ✔. Moves like Pack Horse raise these numbers; if you have one, add its bonus before picking your Load tier below.</p>
+      <div class="stonetop-row stonetop-outfit-row">
+        <label class="stonetop-load-field">
+          <span class="stonetop-outfit-label">Load:</span>
+          <select name="attr_loadstate">
+            <option value="light">Light (&le;3 &#10003;)</option>
+            <option value="normal" selected>Normal (4&ndash;6 &#10003;)</option>
+            <option value="heavy">Heavy (7&ndash;9 &#10003;, noisy/slow/hot/quick to tire)</option>
+          </select>
+        </label>
+        <label class="stonetop-prosperity-field">
+          <span class="stonetop-outfit-label">Town Prosperity:</span>
+          <select name="attr_prosperity">
+            <option value="-1">-1</option>
+            <option value="0" selected>0</option>
+            <option value="1">+1</option>
+            <option value="2">+2</option>
+          </select>
+        </label>
+      </div>
+    </div>
+
     <div class="stonetop-row">
       <div class="stonetop-column-thirds">
         <h3>Have What You Need</h3>
-        <label class="stonetop-inventory-field">
-          <span>Undefined:</span>
-          <input type="number" name="attr_undefinedresources" value="0" />
-        </label>
+        <p class="playbook-note">&#9671; below are marked automatically as you check items, fill in custom items, or carry Supplies, reflecting your current Load total. Clicking them directly has no lasting effect &mdash; they reset on the next change.</p>
+        <div class="stonetop-undefined-pool">
+          <span class="stonetop-outfit-label">Undefined:</span>
+          <div class="stonetop-tracker stonetop-undefined-tracker">
+            <input type="checkbox" name="attr_undefined_1" value="1">
+            <input type="checkbox" name="attr_undefined_2" value="1">
+            <input type="checkbox" name="attr_undefined_3" value="1">
+            <input type="checkbox" name="attr_undefined_4" class="stonetop-load-normal" value="1">
+            <input type="checkbox" name="attr_undefined_5" class="stonetop-load-normal" value="1">
+            <input type="checkbox" name="attr_undefined_6" class="stonetop-load-normal" value="1">
+            <input type="checkbox" name="attr_undefined_7" class="stonetop-load-heavy" value="1">
+            <input type="checkbox" name="attr_undefined_8" class="stonetop-load-heavy" value="1">
+            <input type="checkbox" name="attr_undefined_9" class="stonetop-load-heavy" value="1">
+          </div>
+        </div>
         <h3>Supplies</h3>
+        <p class="playbook-note">Each row costs &#9671; (1 Load mark). Mark a box per use. Available boxes = 4 + Prosperity (max 6, since Prosperity caps at +2).</p>
+
         <label class="stonetop-inventory-field">
           <div class="left">
-            <input type="checkbox" name="attr_supplieschecked">
-            <span>Supplies:</span>
+            <input type="checkbox" name="attr_supplieschecked" value="1">
+            <span>Supplies &#9671;:</span>
           </div>
-          <input type="number" name="attr_supplies" value="4" />
         </label>
+        <div class="stonetop-tracker stonetop-supply-uses">
+          <input type="checkbox" name="attr_supplies_use_1">
+          <input type="checkbox" name="attr_supplies_use_2">
+          <input type="checkbox" name="attr_supplies_use_3">
+          <input type="checkbox" name="attr_supplies_use_4" class="stonetop-supply-t0">
+          <input type="checkbox" name="attr_supplies_use_5" class="stonetop-supply-t1">
+          <input type="checkbox" name="attr_supplies_use_6" class="stonetop-supply-t2">
+        </div>
+
         <label class="stonetop-inventory-field">
           <div class="left">
-            <input type="checkbox" name="attr_moresupplieschecked">
-            <span>More Supplies:</span>
+            <input type="checkbox" name="attr_moresupplieschecked" value="1">
+            <span>More Supplies &#9671;:</span>
           </div>
-          <input type="number" name="attr_moresupplies" value="4" />
         </label>
+        <div class="stonetop-tracker stonetop-supply-uses">
+          <input type="checkbox" name="attr_moresupplies_use_1">
+          <input type="checkbox" name="attr_moresupplies_use_2">
+          <input type="checkbox" name="attr_moresupplies_use_3">
+          <input type="checkbox" name="attr_moresupplies_use_4" class="stonetop-supply-t0">
+          <input type="checkbox" name="attr_moresupplies_use_5" class="stonetop-supply-t1">
+          <input type="checkbox" name="attr_moresupplies_use_6" class="stonetop-supply-t2">
+        </div>
+
         <label class="stonetop-inventory-field">
           <div class="left">
-            <input type="checkbox" name="attr_evenmoresupplieschecked">
-            <span>Even More Supplies:</span>
+            <input type="checkbox" name="attr_evenmoresupplieschecked" value="1">
+            <span>Even More Supplies &#9671;:</span>
           </div>
-          <input type="number" name="attr_evenmoresupplies" value="4" />
         </label>
+        <div class="stonetop-tracker stonetop-supply-uses">
+          <input type="checkbox" name="attr_evenmoresupplies_use_1">
+          <input type="checkbox" name="attr_evenmoresupplies_use_2">
+          <input type="checkbox" name="attr_evenmoresupplies_use_3">
+          <input type="checkbox" name="attr_evenmoresupplies_use_4" class="stonetop-supply-t0">
+          <input type="checkbox" name="attr_evenmoresupplies_use_5" class="stonetop-supply-t1">
+          <input type="checkbox" name="attr_evenmoresupplies_use_6" class="stonetop-supply-t2">
+        </div>
       </div>
       <div class="stonetop-column-thirds">
-        <h3>Large Items</h3>
+        <h3>Large Items &#9671;</h3>
+        <p class="playbook-note">Each item shows its &#9671; cost. These draw from the same Undefined/Load pool above.</p>
+
+        <div class="stonetop-large-items-list">
+          <label class="stonetop-item-check"><input type="checkbox" name="attr_li_messkit" data-load="1" value="1"> <strong>Mess kit</strong> <span class="tracker-label">(requires fire &amp; water; makes Supplies last longer) &#9671;</span></label>
+          <label class="stonetop-item-check"><input type="checkbox" name="attr_li_bedroll" data-load="1" value="1"> <strong>Bedroll</strong> <span class="tracker-label">(recover 1d6 extra HP when you Make Camp) &#9671;</span></label>
+          <label class="stonetop-item-check"><input type="checkbox" name="attr_li_blanket" data-load="1" value="1"> <strong>Blanket</strong> <span class="tracker-label">(warm) &#9671;</span></label>
+          <label class="stonetop-item-check"><input type="checkbox" name="attr_li_changeofclothes" data-load="1" value="1"> <strong>Change of clothes</strong> &#9671;</label>
+          <label class="stonetop-item-check"><input type="checkbox" name="attr_li_rope" data-load="1" value="1"> <strong>Rope, ~25 ft</strong> &#9671;</label>
+          <label class="stonetop-item-check"><input type="checkbox" name="attr_li_shovel" data-load="1" value="1"> <strong>Shovel</strong> &#9671;</label>
+          <label class="stonetop-item-check"><input type="checkbox" name="attr_li_sledge" data-load="2" value="1"> <strong>Sledge/litter/travois, roll-off</strong> &#9671;&#9671;</label>
+          <label class="stonetop-item-check"><input type="checkbox" name="attr_li_torch" data-load="1" value="1"> <strong>Torch</strong> <span class="tracker-label">(lasts ~1 hour; reach, area, dangerous) &#9671;</span></label>
+          <label class="stonetop-item-check"><input type="checkbox" name="attr_li_oillamp" data-load="1" value="1"> <strong>Oil lamp</strong> <span class="tracker-label">(OOO hours, close, area, crude) &#9671;</span></label>
+          <label class="stonetop-item-check"><input type="checkbox" name="attr_li_extraoil" data-load="1" value="1"> <strong>Extra oil</strong> <span class="tracker-label">(OOOOO hours, for lamp/lantern, useless as a weapon) &#9671;</span></label>
+          <label class="stonetop-item-check"><input type="checkbox" name="attr_li_firewood" data-load="2" value="1"> <strong>Firewood</strong> <span class="tracker-label">(enough to last 1 full night, reach, area) &#9671;&#9671;</span></label>
+          <label class="stonetop-item-check"><input type="checkbox" name="attr_li_hatchet" data-load="1" value="1"> <strong>Hatchet, iron</strong> <span class="tracker-label">(hand, thrown, x piercing) &#9671;</span></label>
+          <label class="stonetop-item-check"><input type="checkbox" name="attr_li_mallet" data-load="1" value="1"> <strong>Mallet, iron and/or wood</strong> <span class="tracker-label">(hand) &#9671;</span></label>
+          <label class="stonetop-item-check"><input type="checkbox" name="attr_li_mattock" data-load="1" value="1"> <strong>Mattock, iron</strong> <span class="tracker-label">(close, x piercing, messy, awkward) &#9671;</span></label>
+          <label class="stonetop-item-check"><input type="checkbox" name="attr_li_maul" data-load="2" value="1"> <strong>Maul, iron</strong> <span class="tracker-label">(close, forceful, awkward) &#9671;&#9671;</span></label>
+          <label class="stonetop-item-check"><input type="checkbox" name="attr_li_staff" data-load="1" value="1"> <strong>Staff</strong> <span class="tracker-label">(close) &#9671;</span></label>
+          <label class="stonetop-item-check"><input type="checkbox" name="attr_li_spear" data-load="1" value="1"> <strong>Spear, iron</strong> <span class="tracker-label">(close, thrown, x piercing) &#9671;</span></label>
+          <label class="stonetop-item-check"><input type="checkbox" name="attr_li_longspear" data-load="2" value="1"> <strong>Long spear, iron</strong> <span class="tracker-label">(reach, x piercing) &#9671;&#9671;</span></label>
+          <label class="stonetop-item-check"><input type="checkbox" name="attr_li_bow" data-load="1" value="1"> <strong>Bow &amp; iron arrows</strong> <span class="tracker-label">(near, x piercing, low ammo, all out) &#9671;</span></label>
+          <label class="stonetop-item-check"><input type="checkbox" name="attr_li_extraarrows" data-load="1" value="1"> <strong>Extra arrows</strong> <span class="tracker-label">(x piercing, plenty left/low ammo/all out) &#9671;</span></label>
+          <label class="stonetop-item-check"><input type="checkbox" name="attr_li_javelins" data-load="1" value="1"> <strong>Javelins, a few, iron</strong> <span class="tracker-label">(thrown, x piercing, +1 damage, all out) &#9671;</span></label>
+          <label class="stonetop-item-check"><input type="checkbox" name="attr_li_shield" data-load="2" value="1"> <strong>Shield</strong> <span class="tracker-label">(+1 armor, +1 Readiness on a 7+ to Defend) &#9671;&#9671;</span></label>
+          <label class="stonetop-item-check"><input type="checkbox" name="attr_li_thickhides" data-load="2" value="1"> <strong>Thick hides</strong> <span class="tracker-label">(1 armor, warm) &#9671;&#9671;</span></label>
+          <label class="stonetop-item-check"><input type="checkbox" name="attr_li_cloak" data-load="1" value="1"> <strong>Cloak</strong> <span class="tracker-label">(warm) &#9671;</span></label>
+        </div>
+
+        <h4>Other large items</h4>
         <fieldset class="repeating_largeitems">
           <div class="stonetop-repeating-inventory">
             <div class="stonetop-row">
@@ -1284,8 +1380,8 @@
             </div>
             <div class="stonetop-row">
               <label class="stonetop-inventory-field left">
-                <span>Weight:</span>
-                <input type="number" name="attr_itemweight" value="1" />
+                <span>&#9671; Cost:</span>
+                <input type="number" name="attr_itemweight" value="1" min="1" max="2" />
               </label>
               <label class="stonetop-inventory-field">
                 <span>Uses:</span>
@@ -1297,6 +1393,53 @@
       </div>
       <div class="stonetop-column-thirds">
         <h3>Small Items</h3>
+        <p class="playbook-note">Fit in a pocket, pouch, or boot. No &#9671; cost &mdash; gated by a separate pool below (4 + Prosperity, max 6).</p>
+
+        <div class="stonetop-undefined-pool">
+          <span class="stonetop-outfit-label">Capacity:</span>
+          <div class="stonetop-tracker stonetop-small-capacity-tracker">
+            <input type="checkbox" name="attr_smallcap_1" value="1">
+            <input type="checkbox" name="attr_smallcap_2" value="1">
+            <input type="checkbox" name="attr_smallcap_3" value="1">
+            <input type="checkbox" name="attr_smallcap_4" class="stonetop-supply-t0" value="1">
+            <input type="checkbox" name="attr_smallcap_5" class="stonetop-supply-t1" value="1">
+            <input type="checkbox" name="attr_smallcap_6" class="stonetop-supply-t2" value="1">
+          </div>
+        </div>
+
+        <div class="stonetop-small-items-list">
+          <label class="stonetop-item-check"><input type="checkbox" name="attr_si_knife" value="1"> <strong>Knife or dagger, iron</strong> <span class="tracker-label">(hand)</span></label>
+          <label class="stonetop-item-check"><input type="checkbox" name="attr_si_sling" value="1"> <strong>Sling</strong> <span class="tracker-label">(near, reload, awkward, low ammo, all out)</span></label>
+          <label class="stonetop-item-check"><input type="checkbox" name="attr_si_rushlight" value="1"> <strong>Rushlight</strong> <span class="tracker-label">(lasts ~15-30 minutes, hand, crude)</span></label>
+          <label class="stonetop-item-check"><input type="checkbox" name="attr_si_tinderbox" value="1"> <strong>Tinderbox</strong> <span class="tracker-label">(slow)</span></label>
+          <label class="stonetop-item-check"><input type="checkbox" name="attr_si_needlethread" value="1"> <strong>Needle &amp; thread</strong></label>
+          <label class="stonetop-item-check"><input type="checkbox" name="attr_si_coppers" value="1"> <strong>Handful of coppers</strong></label>
+          <label class="stonetop-item-check"><input type="checkbox" name="attr_si_whisky" value="1"> <strong>Whisky, skin</strong> <span class="tracker-label">(OO uses)</span></label>
+        </div>
+
+        <h4>Flavor &amp; gear</h4>
+        <div class="stonetop-small-items-list stonetop-small-items-grid">
+          <label class="stonetop-item-check"><input type="checkbox" name="attr_si_awl" value="1"> <strong>Awl</strong></label>
+          <label class="stonetop-item-check"><input type="checkbox" name="attr_si_bowstring" value="1"> <strong>Bowstring</strong></label>
+          <label class="stonetop-item-check"><input type="checkbox" name="attr_si_chalk" value="1"> <strong>Chalk</strong></label>
+          <label class="stonetop-item-check"><input type="checkbox" name="attr_si_charcoal" value="1"> <strong>Charcoal</strong></label>
+          <label class="stonetop-item-check"><input type="checkbox" name="attr_si_clayjar" value="1"> <strong>Clay jar</strong></label>
+          <label class="stonetop-item-check"><input type="checkbox" name="attr_si_clothrag" value="1"> <strong>Cloth/rag</strong></label>
+          <label class="stonetop-item-check"><input type="checkbox" name="attr_si_comb" value="1"> <strong>Comb</strong></label>
+          <label class="stonetop-item-check"><input type="checkbox" name="attr_si_cup" value="1"> <strong>Cup</strong></label>
+          <label class="stonetop-item-check"><input type="checkbox" name="attr_si_extrasocks" value="1"> <strong>Extra socks</strong></label>
+          <label class="stonetop-item-check"><input type="checkbox" name="attr_si_gloves" value="1"> <strong>Gloves</strong></label>
+          <label class="stonetop-item-check"><input type="checkbox" name="attr_si_littlebox" value="1"> <strong>Little box</strong></label>
+          <label class="stonetop-item-check"><input type="checkbox" name="attr_si_sack" value="1"> <strong>Sack</strong> <span class="tracker-label">(empty)</span></label>
+          <label class="stonetop-item-check"><input type="checkbox" name="attr_si_sawdust" value="1"> <strong>Sawdust</strong></label>
+          <label class="stonetop-item-check"><input type="checkbox" name="attr_si_tallow" value="1"> <strong>Tallow</strong></label>
+          <label class="stonetop-item-check"><input type="checkbox" name="attr_si_twinecord" value="1"> <strong>Twine/cord</strong></label>
+          <label class="stonetop-item-check"><input type="checkbox" name="attr_si_waterskin" value="1"> <strong>Waterskin</strong></label>
+          <label class="stonetop-item-check"><input type="checkbox" name="attr_si_whetstone" value="1"> <strong>Whetstone</strong></label>
+          <label class="stonetop-item-check"><input type="checkbox" name="attr_si_whistle" value="1"> <strong>Whistle</strong></label>
+        </div>
+
+        <h4>Other small items</h4>
         <fieldset class="repeating_smallitems">
           <div class="stonetop-repeating-inventory">
             <div class="stonetop-row">
@@ -1314,9 +1457,10 @@
       </div>
     </div>
 
-    <!-- CHANGE 5: Special Possessions moved here, playbook-specific checklists -->
+    
     <div class="stonetop-special-possessions">
       <h3>Special Possessions</h3>
+      <p class="playbook-note">Your playbook's starting kit options, filtered automatically below.</p>
 
       <div class="sp-section blessed-section">
         <p class="playbook-note">Pick 2, in addition to your sacred pouch.</p>
@@ -1368,7 +1512,7 @@
           <div class="stonetop-tracker">
             <label><input type="checkbox" name="attr_sp_judge_maul"> Black iron maul, immune to all magic (close, forceful, awkward, +1 damage)</label><br>
             <label><input type="checkbox" name="attr_sp_judge_shield"> Makerglass shield, etched with Aratis's symbol (indestructible, +1 armor, +1 Readiness on Defend 7+)</label><br>
-            <label><input type="checkbox" name="attr_sp_judge_helm"> Helm set with a dark ice "jewel" — advantage to resist mind-affecting magic</label>
+            <label><input type="checkbox" name="attr_sp_judge_helm"> Helm set with a dark ice "jewel," advantage to resist mind-affecting magic</label>
           </div>
         </div>
         <div class="stonetop-move"><label><input type="checkbox" name="attr_sp_judge_scribestools"> <strong>★ Scribe's Tools</strong></label><p>Parchment, ink, pigments, vials, quills, a notebook, etc.</p></div>
@@ -4790,4 +4934,164 @@
       setAttrs({ activeplaybook: val, activeplaybook_inv: val });
     });
   });
+
+  // STAGE 1: mirror attr_prosperity (visible dropdown, nested inside the
+  // Outfit Settings block) onto attr_prospmirror (hidden, sits as a direct
+  // child of .stonetop-inventory-section) so CSS sibling selectors can
+  // reach it, following the same pattern as activeplaybook / activeplaybook_inv.
+  on('change:prosperity sheet:opened', () => {
+    getAttrs(['prosperity'], (attrs) => {
+      setAttrs({ prospmirror: attrs.prosperity || '0' });
+    });
+  });
+
+  // STAGE 1: same mirroring pattern for Load, so it can gate the Undefined
+  // pool (Light = 3 boxes, Normal = 6, Heavy = 9).
+  on('change:loadstate sheet:opened', () => {
+    getAttrs(['loadstate'], (attrs) => {
+      setAttrs({ loadmirror: attrs.loadstate || 'normal' });
+    });
+  });
+
+  // STAGE 2b: live Load total. Sums ◇ cost across the 24 hardcoded Large
+  // items (cost map below), every row in the custom repeating_largeitems
+  // section (itemweight field), and the 3 Supplies rows (◇1 each, if that
+  // row's own checked-box is marked). Drives the Undefined pool display
+  // (read-only, set via setAttrs) and a text readout, and flags an
+  // over-capacity attribute used by CSS for a warning style. No blocking.
+
+  const stonetopLargeItemCosts = {
+    li_messkit: 1, li_bedroll: 1, li_blanket: 1, li_changeofclothes: 1,
+    li_rope: 1, li_shovel: 1, li_sledge: 2, li_torch: 1, li_oillamp: 1,
+    li_extraoil: 1, li_firewood: 2, li_hatchet: 1, li_mallet: 1,
+    li_mattock: 1, li_maul: 2, li_staff: 1, li_spear: 1, li_longspear: 2,
+    li_bow: 1, li_extraarrows: 1, li_javelins: 1, li_shield: 2,
+    li_thickhides: 2, li_cloak: 1
+  };
+  const stonetopLargeItemKeys = Object.keys(stonetopLargeItemCosts);
+  const stonetopLoadCapacity = { light: 3, normal: 6, heavy: 9 };
+
+  function stonetopRecalcLoad() {
+    const watched = stonetopLargeItemKeys.concat([
+      'supplieschecked', 'moresupplieschecked', 'evenmoresupplieschecked',
+      'loadstate'
+    ]);
+
+    getAttrs(watched, (attrs) => {
+      let total = 0;
+
+      stonetopLargeItemKeys.forEach((key) => {
+        if (attrs[key] === '1') {
+          total += stonetopLargeItemCosts[key];
+        }
+      });
+
+      if (attrs.supplieschecked === '1') total += 1;
+      if (attrs.moresupplieschecked === '1') total += 1;
+      if (attrs.evenmoresupplieschecked === '1') total += 1;
+
+      // STAGE 2f: fold in custom "Other large items" rows. getSectionIDs
+      // proven working via isolated diagnostic before being wired in here.
+      getSectionIDs('repeating_largeitems', (ids) => {
+        if (!ids || ids.length === 0) {
+          stonetopFinishLoadCalc(total, attrs.loadstate);
+          return;
+        }
+        const fields = ids.map((id) => `repeating_largeitems_${id}_itemweight`);
+        getAttrs(fields, (rowAttrs) => {
+          ids.forEach((id) => {
+            const w = parseInt(rowAttrs[`repeating_largeitems_${id}_itemweight`]) || 0;
+            total += w;
+          });
+          stonetopFinishLoadCalc(total, attrs.loadstate);
+        });
+      });
+    });
+  }
+
+  function stonetopFinishLoadCalc(total, loadstate) {
+    const capacity = stonetopLoadCapacity[loadstate] || stonetopLoadCapacity.normal;
+    const clamped = Math.min(total, 9);
+
+    const boxUpdates = {};
+    for (let i = 1; i <= 9; i++) {
+      boxUpdates[`undefined_${i}`] = i <= clamped ? '1' : '0';
+    }
+
+    boxUpdates.loadover = total > capacity ? '1' : '0';
+
+    setAttrs(boxUpdates);
+  }
+
+  const stonetopLoadTriggers = stonetopLargeItemKeys
+    .map((k) => `change:${k}`)
+    .concat([
+      'change:supplieschecked', 'change:moresupplieschecked', 'change:evenmoresupplieschecked',
+      'change:loadstate', 'change:repeating_largeitems:itemweight',
+      'change:repeating_largeitems:itemname', 'sheet:opened'
+    ])
+    .join(' ');
+
+  on(stonetopLoadTriggers, stonetopRecalcLoad);
+
+  // STAGE 2d: live Small Items count. Sums checked hardcoded Small items
+  // (all flat cost 1, no custom-row counting yet -- see 2f for Large items'
+  // equivalent gap). Drives the Small Items capacity tracker (smallcap_1-6),
+  // gated by Prosperity (4 + Prosperity, max 6, min 3). No disabled
+  // attribute anywhere in this path -- setAttrs cannot visually update a
+  // disabled checkbox in Roll20 (confirmed via live diagnostic in 2b).
+
+  const stonetopSmallItemKeys = [
+    'si_knife', 'si_sling', 'si_rushlight', 'si_tinderbox', 'si_needlethread',
+    'si_coppers', 'si_whisky', 'si_awl', 'si_bowstring', 'si_chalk',
+    'si_charcoal', 'si_clayjar', 'si_clothrag', 'si_comb', 'si_cup',
+    'si_extrasocks', 'si_gloves', 'si_littlebox', 'si_sack', 'si_sawdust',
+    'si_tallow', 'si_twinecord', 'si_waterskin', 'si_whetstone', 'si_whistle'
+  ];
+  const stonetopSmallCapacityByProsperity = { '-1': 3, '0': 4, '1': 5, '2': 6 };
+
+  function stonetopRecalcSmall() {
+    const watched = stonetopSmallItemKeys.concat(['prosperity']);
+
+    getAttrs(watched, (attrs) => {
+      let total = 0;
+
+      stonetopSmallItemKeys.forEach((key) => {
+        if (attrs[key] === '1') total += 1;
+      });
+
+      // STAGE 2f: fold in custom "Other small items" rows. Each row counts
+      // as 1 regardless of content -- a non-empty row represents an item
+      // the player is carrying. Empty/never-touched rows still count once
+      // created, matching how a player would actually use "+Add".
+      getSectionIDs('repeating_smallitems', (ids) => {
+        const rowCount = ids ? ids.length : 0;
+        total += rowCount;
+        stonetopFinishSmallCalc(total, attrs.prosperity);
+      });
+    });
+  }
+
+  function stonetopFinishSmallCalc(total, prosperity) {
+    const capacity = stonetopSmallCapacityByProsperity[prosperity] || 4;
+    const clamped = Math.min(total, 6);
+
+    const boxUpdates = {};
+    for (let i = 1; i <= 6; i++) {
+      boxUpdates[`smallcap_${i}`] = i <= clamped ? '1' : '0';
+    }
+    boxUpdates.smallover = total > capacity ? '1' : '0';
+
+    setAttrs(boxUpdates);
+  }
+
+  const stonetopSmallTriggers = stonetopSmallItemKeys
+    .map((k) => `change:${k}`)
+    .concat([
+      'change:prosperity', 'change:repeating_smallitems:itemname',
+      'change:repeating_smallitems', 'sheet:opened'
+    ])
+    .join(' ');
+
+  on(stonetopSmallTriggers, stonetopRecalcSmall);
 </script>
